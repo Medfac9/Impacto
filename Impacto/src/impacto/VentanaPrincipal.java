@@ -1775,6 +1775,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
 
         mm22.setText("-");
+        mm22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm22ActionPerformed(evt);
+            }
+        });
 
         ss22.setText("+");
         ss22.addActionListener(new java.awt.event.ActionListener() {
@@ -1784,44 +1789,144 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
 
         mm29.setText("-");
+        mm29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm29ActionPerformed(evt);
+            }
+        });
 
         mm28.setText("-");
+        mm28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm28ActionPerformed(evt);
+            }
+        });
 
         mm30.setText("-");
+        mm30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm30ActionPerformed(evt);
+            }
+        });
 
         mm31.setText("-");
+        mm31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm31ActionPerformed(evt);
+            }
+        });
 
         mm32.setText("-");
+        mm32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm32ActionPerformed(evt);
+            }
+        });
 
         mm33.setText("-");
+        mm33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm33ActionPerformed(evt);
+            }
+        });
 
         mm34.setText("-");
+        mm34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm34ActionPerformed(evt);
+            }
+        });
 
         mm35.setText("-");
+        mm35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm35ActionPerformed(evt);
+            }
+        });
 
         mm36.setText("-");
+        mm36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm36ActionPerformed(evt);
+            }
+        });
 
         mm37.setText("-");
+        mm37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm37ActionPerformed(evt);
+            }
+        });
 
         mm39.setText("-");
+        mm39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm39ActionPerformed(evt);
+            }
+        });
 
         mm38.setText("-");
+        mm38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm38ActionPerformed(evt);
+            }
+        });
 
         mm40.setText("-");
+        mm40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm40ActionPerformed(evt);
+            }
+        });
 
         mm41.setText("-");
+        mm41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm41ActionPerformed(evt);
+            }
+        });
 
         mm42.setText("-");
+        mm42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm42ActionPerformed(evt);
+            }
+        });
 
         mm43.setText("-");
+        mm43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm43ActionPerformed(evt);
+            }
+        });
 
         mm44.setText("-");
+        mm44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm44ActionPerformed(evt);
+            }
+        });
 
         mm45.setText("-");
+        mm45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm45ActionPerformed(evt);
+            }
+        });
 
         mm46.setText("-");
+        mm46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm46ActionPerformed(evt);
+            }
+        });
 
         mm47.setText("-");
+        mm47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm47ActionPerformed(evt);
+            }
+        });
 
         rr34.setText("0");
 
@@ -2057,10 +2162,25 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
 
         mm3.setText("-");
+        mm3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm3ActionPerformed(evt);
+            }
+        });
 
         mm2.setText("-");
+        mm2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm2ActionPerformed(evt);
+            }
+        });
 
         mm4.setText("-");
+        mm4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm4ActionPerformed(evt);
+            }
+        });
 
         ss50.setText("+");
         ss50.addActionListener(new java.awt.event.ActionListener() {
@@ -2084,12 +2204,32 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
 
         mm50.setText("-");
+        mm50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm50ActionPerformed(evt);
+            }
+        });
 
         mm49.setText("-");
+        mm49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm49ActionPerformed(evt);
+            }
+        });
 
         mm51.setText("-");
+        mm51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm51ActionPerformed(evt);
+            }
+        });
 
         mm52.setText("-");
+        mm52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm52ActionPerformed(evt);
+            }
+        });
 
         ss51.setText("+");
         ss51.addActionListener(new java.awt.event.ActionListener() {
@@ -2106,38 +2246,123 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
 
         mm5.setText("-");
+        mm5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm5ActionPerformed(evt);
+            }
+        });
 
         mm6.setText("-");
+        mm6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm6ActionPerformed(evt);
+            }
+        });
 
         mm7.setText("-");
+        mm7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm7ActionPerformed(evt);
+            }
+        });
 
         mm8.setText("-");
+        mm8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm8ActionPerformed(evt);
+            }
+        });
 
         mm9.setText("-");
+        mm9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm9ActionPerformed(evt);
+            }
+        });
 
         mm10.setText("-");
+        mm10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm10ActionPerformed(evt);
+            }
+        });
 
         mm11.setText("-");
+        mm11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm11ActionPerformed(evt);
+            }
+        });
 
         mm13.setText("-");
+        mm13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm13ActionPerformed(evt);
+            }
+        });
 
         mm12.setText("-");
+        mm12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm12ActionPerformed(evt);
+            }
+        });
 
         mm14.setText("-");
+        mm14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm14ActionPerformed(evt);
+            }
+        });
 
         mm15.setText("-");
+        mm15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm15ActionPerformed(evt);
+            }
+        });
 
         mm16.setText("-");
+        mm16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm16ActionPerformed(evt);
+            }
+        });
 
         mm17.setText("-");
+        mm17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm17ActionPerformed(evt);
+            }
+        });
 
         mm18.setText("-");
+        mm18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm18ActionPerformed(evt);
+            }
+        });
 
         mm19.setText("-");
+        mm19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm19ActionPerformed(evt);
+            }
+        });
 
         mm20.setText("-");
+        mm20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm20ActionPerformed(evt);
+            }
+        });
 
         mm21.setText("-");
+        mm21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm21ActionPerformed(evt);
+            }
+        });
 
         rr8.setText("0");
 
@@ -2343,6 +2568,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
 
         mm48.setText("-");
+        mm48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm48ActionPerformed(evt);
+            }
+        });
 
         ss48.setText("+");
         ss48.addActionListener(new java.awt.event.ActionListener() {
@@ -2415,6 +2645,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
 
         mm27.setText("-");
+        mm27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm27ActionPerformed(evt);
+            }
+        });
 
         rr22.setText("0");
         rr22.addActionListener(new java.awt.event.ActionListener() {
@@ -2424,12 +2659,32 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
 
         mm24.setText("-");
+        mm24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm24ActionPerformed(evt);
+            }
+        });
 
         mm23.setText("-");
+        mm23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm23ActionPerformed(evt);
+            }
+        });
 
         mm25.setText("-");
+        mm25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm25ActionPerformed(evt);
+            }
+        });
 
         mm26.setText("-");
+        mm26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mm26ActionPerformed(evt);
+            }
+        });
 
         ss25.setText("+");
         ss25.addActionListener(new java.awt.event.ActionListener() {
@@ -6305,6 +6560,363 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr1);
     }//GEN-LAST:event_mm1ActionPerformed
+
+    private void mm2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm2ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr2.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr2);
+    }//GEN-LAST:event_mm2ActionPerformed
+
+    private void mm3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm3ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr3.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr3);
+    }//GEN-LAST:event_mm3ActionPerformed
+
+    private void mm4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm4ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr4.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr4);
+    }//GEN-LAST:event_mm4ActionPerformed
+
+    private void mm5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm5ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr5.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr5);
+    }//GEN-LAST:event_mm5ActionPerformed
+
+    private void mm6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm6ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr6.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr6);
+    }//GEN-LAST:event_mm6ActionPerformed
+
+    private void mm7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm7ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr7.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr7);
+    }//GEN-LAST:event_mm7ActionPerformed
+
+    private void mm8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm8ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr8.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr8);
+    }//GEN-LAST:event_mm8ActionPerformed
+
+    private void mm9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm9ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr9.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr9);
+    }//GEN-LAST:event_mm9ActionPerformed
+
+    private void mm10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm10ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr10.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr10);
+    }//GEN-LAST:event_mm10ActionPerformed
+
+    private void mm11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm11ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr11.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr11);
+    }//GEN-LAST:event_mm11ActionPerformed
+
+    private void mm12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm12ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr12.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr12);
+    }//GEN-LAST:event_mm12ActionPerformed
+
+    private void mm13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm13ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr13.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr13);
+    }//GEN-LAST:event_mm13ActionPerformed
+
+    private void mm14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm14ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr14.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr14);
+    }//GEN-LAST:event_mm14ActionPerformed
+
+    private void mm15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm15ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr15.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr15);
+    }//GEN-LAST:event_mm15ActionPerformed
+
+    private void mm16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm16ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr16.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr16);
+    }//GEN-LAST:event_mm16ActionPerformed
+
+    private void mm17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm17ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr17.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr17);
+    }//GEN-LAST:event_mm17ActionPerformed
+
+    private void mm18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm18ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr18.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr18);
+    }//GEN-LAST:event_mm18ActionPerformed
+
+    private void mm19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm19ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr19.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr19);
+    }//GEN-LAST:event_mm19ActionPerformed
+
+    private void mm20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm20ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr20.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr20);
+    }//GEN-LAST:event_mm20ActionPerformed
+
+    private void mm21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm21ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr21.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr21);
+    }//GEN-LAST:event_mm21ActionPerformed
+
+    private void mm22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm22ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr22.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr22);
+    }//GEN-LAST:event_mm22ActionPerformed
+
+    private void mm23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm23ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr23.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr23);
+    }//GEN-LAST:event_mm23ActionPerformed
+
+    private void mm24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm24ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr24.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr24);
+    }//GEN-LAST:event_mm24ActionPerformed
+
+    private void mm25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm25ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr25.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr25);
+    }//GEN-LAST:event_mm25ActionPerformed
+
+    private void mm26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm26ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr26.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr26);
+    }//GEN-LAST:event_mm26ActionPerformed
+
+    private void mm27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm27ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr27.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr27);
+    }//GEN-LAST:event_mm27ActionPerformed
+
+    private void mm28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm28ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr28.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr28);
+    }//GEN-LAST:event_mm28ActionPerformed
+
+    private void mm29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm29ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr29.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr29);
+    }//GEN-LAST:event_mm29ActionPerformed
+
+    private void mm30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm30ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr30.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr30);
+    }//GEN-LAST:event_mm30ActionPerformed
+
+    private void mm31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm31ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr31.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr31);
+    }//GEN-LAST:event_mm31ActionPerformed
+
+    private void mm32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm32ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr32.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr32);
+    }//GEN-LAST:event_mm32ActionPerformed
+
+    private void mm33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm33ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr33.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr33);
+    }//GEN-LAST:event_mm33ActionPerformed
+
+    private void mm34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm34ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr34.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr34);
+    }//GEN-LAST:event_mm34ActionPerformed
+
+    private void mm35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm35ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr35.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr35);
+    }//GEN-LAST:event_mm35ActionPerformed
+
+    private void mm36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm36ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr36.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr36);
+    }//GEN-LAST:event_mm36ActionPerformed
+
+    private void mm37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm37ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr37.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr37);
+    }//GEN-LAST:event_mm37ActionPerformed
+
+    private void mm38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm38ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr38.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr38);
+    }//GEN-LAST:event_mm38ActionPerformed
+
+    private void mm39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm39ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr39.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr39);
+    }//GEN-LAST:event_mm39ActionPerformed
+
+    private void mm40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm40ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr40.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr40);
+    }//GEN-LAST:event_mm40ActionPerformed
+
+    private void mm41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm41ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr41.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr41);
+    }//GEN-LAST:event_mm41ActionPerformed
+
+    private void mm42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm42ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr42.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr42);
+    }//GEN-LAST:event_mm42ActionPerformed
+
+    private void mm43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm43ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr43.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr43);
+    }//GEN-LAST:event_mm43ActionPerformed
+
+    private void mm44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm44ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr44.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr44);
+    }//GEN-LAST:event_mm44ActionPerformed
+
+    private void mm45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm45ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr45.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr45);
+    }//GEN-LAST:event_mm45ActionPerformed
+
+    private void mm46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm46ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr46.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr46);
+    }//GEN-LAST:event_mm46ActionPerformed
+
+    private void mm47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm47ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr47.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr47);
+    }//GEN-LAST:event_mm47ActionPerformed
+
+    private void mm48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm48ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr48.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr48);
+    }//GEN-LAST:event_mm48ActionPerformed
+
+    private void mm49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm49ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr49.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr49);
+    }//GEN-LAST:event_mm49ActionPerformed
+
+    private void mm50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm50ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr50.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr50);
+    }//GEN-LAST:event_mm50ActionPerformed
+
+    private void mm51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm51ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr51.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr51);
+    }//GEN-LAST:event_mm51ActionPerformed
+
+    private void mm52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm52ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(rr52.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, rr52);
+    }//GEN-LAST:event_mm52ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton aceptar;
