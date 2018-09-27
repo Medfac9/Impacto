@@ -39,6 +39,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         cancelar = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        impacto = new javax.swing.JFrame();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -47,7 +48,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         limpiar = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        impacto = new javax.swing.JTextArea();
+        otras = new javax.swing.JTextArea();
         jScrollPane4 = new javax.swing.JScrollPane();
         jPanel6 = new javax.swing.JPanel();
         uno = new javax.swing.JLabel();
@@ -604,6 +605,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         seguridad.getContentPane().add(jPanel5, java.awt.BorderLayout.CENTER);
 
+        impacto.setMinimumSize(new java.awt.Dimension(700, 700));
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(825, 1000));
 
@@ -643,9 +646,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jPanel3.setLayout(new java.awt.BorderLayout());
 
-        impacto.setColumns(20);
-        impacto.setRows(5);
-        jScrollPane3.setViewportView(impacto);
+        otras.setColumns(20);
+        otras.setRows(5);
+        jScrollPane3.setViewportView(otras);
 
         jPanel3.add(jScrollPane3, java.awt.BorderLayout.PAGE_END);
 
@@ -4358,7 +4361,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                                 .addComponent(mm22)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(rr22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel6Layout.createSequentialGroup()
@@ -5542,6 +5545,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     
     private void generarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generarActionPerformed
         // TODO add your handling code here:
+        impacto.setVisible(true);
     }//GEN-LAST:event_generarActionPerformed
 
     private void limpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpiarActionPerformed
@@ -5554,7 +5558,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         Clipboard cb = Toolkit.getDefaultToolkit().getSystemClipboard();
         String resultado;
         
-        resultado = impacto.getText();
+        resultado = otras.getText();
         StringSelection ss = new StringSelection(resultado);
         cb.setContents(ss, ss);
     }//GEN-LAST:event_copiarActionPerformed
@@ -6250,8 +6254,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     private void aceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarActionPerformed
         // TODO add your handling code here:
-        impacto.selectAll();
-        impacto.replaceSelection("");
+        otras.selectAll();
+        otras.replaceSelection("");
         anio1.selectAll();
         anio1.replaceSelection("");
         anio2.selectAll();
@@ -8371,7 +8375,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel doce;
     private javax.swing.JLabel dos;
     private javax.swing.JButton generar;
-    private javax.swing.JTextArea impacto;
+    private javax.swing.JFrame impacto;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
@@ -8542,6 +8546,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel nueve;
     private javax.swing.JLabel ocho;
     private javax.swing.JLabel once;
+    private javax.swing.JTextArea otras;
     private javax.swing.JLabel quince;
     private javax.swing.JTextField r1;
     private javax.swing.JTextField r10;
