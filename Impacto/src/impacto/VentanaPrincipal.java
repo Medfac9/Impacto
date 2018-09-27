@@ -157,23 +157,23 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         m29 = new javax.swing.JButton();
         m28 = new javax.swing.JButton();
         m30 = new javax.swing.JButton();
-        jButton102 = new javax.swing.JButton();
-        jButton103 = new javax.swing.JButton();
-        jButton104 = new javax.swing.JButton();
-        jButton105 = new javax.swing.JButton();
-        jButton106 = new javax.swing.JButton();
-        jButton107 = new javax.swing.JButton();
-        jButton108 = new javax.swing.JButton();
-        jButton109 = new javax.swing.JButton();
-        jButton110 = new javax.swing.JButton();
-        jButton111 = new javax.swing.JButton();
-        jButton112 = new javax.swing.JButton();
-        jButton113 = new javax.swing.JButton();
-        jButton114 = new javax.swing.JButton();
-        jButton115 = new javax.swing.JButton();
-        jButton116 = new javax.swing.JButton();
-        jButton117 = new javax.swing.JButton();
-        jButton118 = new javax.swing.JButton();
+        m31 = new javax.swing.JButton();
+        m32 = new javax.swing.JButton();
+        m33 = new javax.swing.JButton();
+        m34 = new javax.swing.JButton();
+        m35 = new javax.swing.JButton();
+        m36 = new javax.swing.JButton();
+        m37 = new javax.swing.JButton();
+        m39 = new javax.swing.JButton();
+        m38 = new javax.swing.JButton();
+        m40 = new javax.swing.JButton();
+        m41 = new javax.swing.JButton();
+        m42 = new javax.swing.JButton();
+        m43 = new javax.swing.JButton();
+        m44 = new javax.swing.JButton();
+        m45 = new javax.swing.JButton();
+        m46 = new javax.swing.JButton();
+        m47 = new javax.swing.JButton();
         r34 = new javax.swing.JTextField();
         r35 = new javax.swing.JTextField();
         r36 = new javax.swing.JTextField();
@@ -199,10 +199,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         s50 = new javax.swing.JButton();
         r49 = new javax.swing.JTextField();
         r48 = new javax.swing.JTextField();
-        jButton121 = new javax.swing.JButton();
-        jButton122 = new javax.swing.JButton();
-        jButton123 = new javax.swing.JButton();
-        jButton124 = new javax.swing.JButton();
+        m50 = new javax.swing.JButton();
+        m49 = new javax.swing.JButton();
+        m51 = new javax.swing.JButton();
+        m52 = new javax.swing.JButton();
         s51 = new javax.swing.JButton();
         s52 = new javax.swing.JButton();
         veintisiete = new javax.swing.JLabel();
@@ -247,7 +247,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         r52 = new javax.swing.JTextField();
         r51 = new javax.swing.JTextField();
         r50 = new javax.swing.JTextField();
-        jButton140 = new javax.swing.JButton();
+        m48 = new javax.swing.JButton();
         s48 = new javax.swing.JButton();
         s40 = new javax.swing.JButton();
         s41 = new javax.swing.JButton();
@@ -1223,39 +1223,124 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButton102.setText("-");
+        m31.setText("-");
+        m31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m31ActionPerformed(evt);
+            }
+        });
 
-        jButton103.setText("-");
+        m32.setText("-");
+        m32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m32ActionPerformed(evt);
+            }
+        });
 
-        jButton104.setText("-");
+        m33.setText("-");
+        m33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m33ActionPerformed(evt);
+            }
+        });
 
-        jButton105.setText("-");
+        m34.setText("-");
+        m34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m34ActionPerformed(evt);
+            }
+        });
 
-        jButton106.setText("-");
+        m35.setText("-");
+        m35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m35ActionPerformed(evt);
+            }
+        });
 
-        jButton107.setText("-");
+        m36.setText("-");
+        m36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m36ActionPerformed(evt);
+            }
+        });
 
-        jButton108.setText("-");
+        m37.setText("-");
+        m37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m37ActionPerformed(evt);
+            }
+        });
 
-        jButton109.setText("-");
+        m39.setText("-");
+        m39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m39ActionPerformed(evt);
+            }
+        });
 
-        jButton110.setText("-");
+        m38.setText("-");
+        m38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m38ActionPerformed(evt);
+            }
+        });
 
-        jButton111.setText("-");
+        m40.setText("-");
+        m40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m40ActionPerformed(evt);
+            }
+        });
 
-        jButton112.setText("-");
+        m41.setText("-");
+        m41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m41ActionPerformed(evt);
+            }
+        });
 
-        jButton113.setText("-");
+        m42.setText("-");
+        m42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m42ActionPerformed(evt);
+            }
+        });
 
-        jButton114.setText("-");
+        m43.setText("-");
+        m43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m43ActionPerformed(evt);
+            }
+        });
 
-        jButton115.setText("-");
+        m44.setText("-");
+        m44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m44ActionPerformed(evt);
+            }
+        });
 
-        jButton116.setText("-");
+        m45.setText("-");
+        m45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m45ActionPerformed(evt);
+            }
+        });
 
-        jButton117.setText("-");
+        m46.setText("-");
+        m46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m46ActionPerformed(evt);
+            }
+        });
 
-        jButton118.setText("-");
+        m47.setText("-");
+        m47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m47ActionPerformed(evt);
+            }
+        });
 
         r34.setText("0");
         r34.setPreferredSize(new java.awt.Dimension(18, 36));
@@ -1380,13 +1465,33 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButton121.setText("-");
+        m50.setText("-");
+        m50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m50ActionPerformed(evt);
+            }
+        });
 
-        jButton122.setText("-");
+        m49.setText("-");
+        m49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m49ActionPerformed(evt);
+            }
+        });
 
-        jButton123.setText("-");
+        m51.setText("-");
+        m51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m51ActionPerformed(evt);
+            }
+        });
 
-        jButton124.setText("-");
+        m52.setText("-");
+        m52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m52ActionPerformed(evt);
+            }
+        });
 
         s51.setText("+");
         s51.addActionListener(new java.awt.event.ActionListener() {
@@ -1566,7 +1671,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButton140.setText("-");
+        m48.setText("-");
+        m48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m48ActionPerformed(evt);
+            }
+        });
 
         s48.setText("+");
         s48.addActionListener(new java.awt.event.ActionListener() {
@@ -2724,55 +2834,55 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s39)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton109)
+                                .addComponent(m39)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r39, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s38)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton110)
+                                .addComponent(m38)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r38, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s37)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton108)
+                                .addComponent(m37)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r37, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s36)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton107)
+                                .addComponent(m36)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r36, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s35)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton106)
+                                .addComponent(m35)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r35, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s34)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton105)
+                                .addComponent(m34)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r34, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s33)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton104)
+                                .addComponent(m33)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r33, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s32)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton103)
+                                .addComponent(m32)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r32, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s31)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton102)
+                                .addComponent(m31)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r31, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
@@ -2802,49 +2912,49 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s47)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton118)
+                                .addComponent(m47)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r47, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s40)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton111)
+                                .addComponent(m40)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r40, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s46)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton117)
+                                .addComponent(m46)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r46, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s45)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton116)
+                                .addComponent(m45)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r45, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s44)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton115)
+                                .addComponent(m44)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r44, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s43)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton114)
+                                .addComponent(m43)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r43, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s42)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton113)
+                                .addComponent(m42)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r42, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s41)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton112)
+                                .addComponent(m41)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r41, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel6Layout.createSequentialGroup()
@@ -2859,31 +2969,31 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s52)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton124)
+                                .addComponent(m52)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r52, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s51)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton123)
+                                .addComponent(m51)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r51, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s50)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton121)
+                                .addComponent(m50)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r50, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s49)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton122)
+                                .addComponent(m49)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r49, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s48)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton140)
+                                .addComponent(m48)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(r48, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel6Layout.createSequentialGroup()
@@ -4284,133 +4394,133 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(treintauno)
                             .addComponent(s31)
-                            .addComponent(jButton102)
+                            .addComponent(m31)
                             .addComponent(r31, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(treintados)
                             .addComponent(s32)
-                            .addComponent(jButton103)
+                            .addComponent(m32)
                             .addComponent(r32, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(treintatres)
                             .addComponent(s33)
-                            .addComponent(jButton104)
+                            .addComponent(m33)
                             .addComponent(r33, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(treintacuatro)
                             .addComponent(s34)
-                            .addComponent(jButton105)
+                            .addComponent(m34)
                             .addComponent(r34, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(treintacinco)
                             .addComponent(s35)
-                            .addComponent(jButton106)
+                            .addComponent(m35)
                             .addComponent(r35, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(treintaseis)
                             .addComponent(s36)
-                            .addComponent(jButton107)
+                            .addComponent(m36)
                             .addComponent(r36, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(treintasiete)
                             .addComponent(s37)
-                            .addComponent(jButton108)
+                            .addComponent(m37)
                             .addComponent(r37, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(treintaocho)
                             .addComponent(s38)
-                            .addComponent(jButton110)
+                            .addComponent(m38)
                             .addComponent(r38, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(treintanueve)
                             .addComponent(s39)
-                            .addComponent(jButton109)
+                            .addComponent(m39)
                             .addComponent(r39, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarenta)
                             .addComponent(s40)
-                            .addComponent(jButton111)
+                            .addComponent(m40)
                             .addComponent(r40, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentauno)
                             .addComponent(s41)
-                            .addComponent(jButton112)
+                            .addComponent(m41)
                             .addComponent(r41, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentados)
                             .addComponent(s42)
-                            .addComponent(jButton113)
+                            .addComponent(m42)
                             .addComponent(r42, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentatres)
                             .addComponent(s43)
-                            .addComponent(jButton114)
+                            .addComponent(m43)
                             .addComponent(r43, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentacuatro)
                             .addComponent(s44)
-                            .addComponent(jButton115)
+                            .addComponent(m44)
                             .addComponent(r44, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentacinco)
                             .addComponent(s45)
-                            .addComponent(jButton116)
+                            .addComponent(m45)
                             .addComponent(r45, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentaseis)
                             .addComponent(s46)
-                            .addComponent(jButton117)
+                            .addComponent(m46)
                             .addComponent(r46, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentasiete)
                             .addComponent(s47)
-                            .addComponent(jButton118)
+                            .addComponent(m47)
                             .addComponent(r47, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentaocho)
                             .addComponent(s48)
-                            .addComponent(jButton140)
+                            .addComponent(m48)
                             .addComponent(r48, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentanueve)
                             .addComponent(s49)
-                            .addComponent(jButton122)
+                            .addComponent(m49)
                             .addComponent(r49, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cincuenta)
                             .addComponent(s50)
-                            .addComponent(jButton121)
+                            .addComponent(m50)
                             .addComponent(r50, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cincuentauno)
                             .addComponent(s51)
-                            .addComponent(jButton123)
+                            .addComponent(m51)
                             .addComponent(r51, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cincuentados)
                             .addComponent(s52)
-                            .addComponent(jButton124)
+                            .addComponent(m52)
                             .addComponent(r52, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))))
         );
 
@@ -5337,6 +5447,160 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         actualizar(nuevo, r30);
     }//GEN-LAST:event_m30ActionPerformed
 
+    private void m31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m31ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r31.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r31);
+    }//GEN-LAST:event_m31ActionPerformed
+
+    private void m32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m32ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r32.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r32);
+    }//GEN-LAST:event_m32ActionPerformed
+
+    private void m33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m33ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r33.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r33);
+    }//GEN-LAST:event_m33ActionPerformed
+
+    private void m34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m34ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r34.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r34);
+    }//GEN-LAST:event_m34ActionPerformed
+
+    private void m35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m35ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r35.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r35);
+    }//GEN-LAST:event_m35ActionPerformed
+
+    private void m36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m36ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r36.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r36);
+    }//GEN-LAST:event_m36ActionPerformed
+
+    private void m37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m37ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r37.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r37);
+    }//GEN-LAST:event_m37ActionPerformed
+
+    private void m38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m38ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r38.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r38);
+    }//GEN-LAST:event_m38ActionPerformed
+
+    private void m39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m39ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r39.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r39);
+    }//GEN-LAST:event_m39ActionPerformed
+
+    private void m40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m40ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r40.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r40);
+    }//GEN-LAST:event_m40ActionPerformed
+
+    private void m41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m41ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r41.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r41);
+    }//GEN-LAST:event_m41ActionPerformed
+
+    private void m42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m42ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r42.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r42);
+    }//GEN-LAST:event_m42ActionPerformed
+
+    private void m43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m43ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r43.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r43);
+    }//GEN-LAST:event_m43ActionPerformed
+
+    private void m44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m44ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r44.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r44);
+    }//GEN-LAST:event_m44ActionPerformed
+
+    private void m45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m45ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r45.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r45);
+    }//GEN-LAST:event_m45ActionPerformed
+
+    private void m46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m46ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r46.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r46);
+    }//GEN-LAST:event_m46ActionPerformed
+
+    private void m47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m47ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r47.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r47);
+    }//GEN-LAST:event_m47ActionPerformed
+
+    private void m48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m48ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r48.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r48);
+    }//GEN-LAST:event_m48ActionPerformed
+
+    private void m49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m49ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r49.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r49);
+    }//GEN-LAST:event_m49ActionPerformed
+
+    private void m50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m50ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r50.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r50);
+    }//GEN-LAST:event_m50ActionPerformed
+
+    private void m51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m51ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r51.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r51);
+    }//GEN-LAST:event_m51ActionPerformed
+
+    private void m52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m52ActionPerformed
+        // TODO add your handling code here:
+        int antiguo = Integer.parseInt(r52.getText());
+        int nuevo = antiguo - 1;
+        actualizar(nuevo, r52);
+    }//GEN-LAST:event_m52ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton aceptar;
     private javax.swing.JTextArea anio1;
@@ -5369,28 +5633,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel dos;
     private javax.swing.JButton generar;
     private javax.swing.JTextArea impacto;
-    private javax.swing.JButton jButton102;
-    private javax.swing.JButton jButton103;
-    private javax.swing.JButton jButton104;
-    private javax.swing.JButton jButton105;
-    private javax.swing.JButton jButton106;
-    private javax.swing.JButton jButton107;
-    private javax.swing.JButton jButton108;
-    private javax.swing.JButton jButton109;
-    private javax.swing.JButton jButton110;
-    private javax.swing.JButton jButton111;
-    private javax.swing.JButton jButton112;
-    private javax.swing.JButton jButton113;
-    private javax.swing.JButton jButton114;
-    private javax.swing.JButton jButton115;
-    private javax.swing.JButton jButton116;
-    private javax.swing.JButton jButton117;
-    private javax.swing.JButton jButton118;
-    private javax.swing.JButton jButton121;
-    private javax.swing.JButton jButton122;
-    private javax.swing.JButton jButton123;
-    private javax.swing.JButton jButton124;
-    private javax.swing.JButton jButton140;
     private javax.swing.JButton jButton203;
     private javax.swing.JButton jButton204;
     private javax.swing.JButton jButton205;
@@ -5565,8 +5807,30 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton m29;
     private javax.swing.JButton m3;
     private javax.swing.JButton m30;
+    private javax.swing.JButton m31;
+    private javax.swing.JButton m32;
+    private javax.swing.JButton m33;
+    private javax.swing.JButton m34;
+    private javax.swing.JButton m35;
+    private javax.swing.JButton m36;
+    private javax.swing.JButton m37;
+    private javax.swing.JButton m38;
+    private javax.swing.JButton m39;
     private javax.swing.JButton m4;
+    private javax.swing.JButton m40;
+    private javax.swing.JButton m41;
+    private javax.swing.JButton m42;
+    private javax.swing.JButton m43;
+    private javax.swing.JButton m44;
+    private javax.swing.JButton m45;
+    private javax.swing.JButton m46;
+    private javax.swing.JButton m47;
+    private javax.swing.JButton m48;
+    private javax.swing.JButton m49;
     private javax.swing.JButton m5;
+    private javax.swing.JButton m50;
+    private javax.swing.JButton m51;
+    private javax.swing.JButton m52;
     private javax.swing.JButton m6;
     private javax.swing.JButton m7;
     private javax.swing.JButton m8;
