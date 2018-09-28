@@ -5,16 +5,38 @@
  */
 package impacto;
 
+import java.awt.BorderLayout;
+import java.awt.Cursor;
+import java.awt.Dimension;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.Point;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import javax.swing.GroupLayout;
+import javax.swing.JButton;
+import javax.swing.JDialog;
 import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.LayoutStyle;
+import javax.swing.SwingConstants;
+import javax.swing.WindowConstants;
+import javax.swing.event.TableModelListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 
@@ -41,599 +63,600 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        seguridad = new javax.swing.JDialog();
-        jPanel4 = new javax.swing.JPanel();
-        aceptar = new javax.swing.JButton();
-        cancelar = new javax.swing.JButton();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        impacto = new javax.swing.JFrame();
-        jPanel7 = new javax.swing.JPanel();
-        exportar = new javax.swing.JButton();
-        jPanel8 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        generado = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        generar = new javax.swing.JButton();
-        limpiar = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        otras = new javax.swing.JTextArea();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jPanel6 = new javax.swing.JPanel();
-        uno = new javax.swing.JLabel();
-        dos = new javax.swing.JLabel();
-        tres = new javax.swing.JLabel();
-        cuatro = new javax.swing.JLabel();
-        cinco = new javax.swing.JLabel();
-        seis = new javax.swing.JLabel();
-        siete = new javax.swing.JLabel();
-        ocho = new javax.swing.JLabel();
-        nueve = new javax.swing.JLabel();
-        diez = new javax.swing.JLabel();
-        once = new javax.swing.JLabel();
-        doce = new javax.swing.JLabel();
-        trece = new javax.swing.JLabel();
-        catorce = new javax.swing.JLabel();
-        quince = new javax.swing.JLabel();
-        dieciseis = new javax.swing.JLabel();
-        diecisiete = new javax.swing.JLabel();
-        dieciocho = new javax.swing.JLabel();
-        diecinueve = new javax.swing.JLabel();
-        veinte = new javax.swing.JLabel();
-        veintiuno = new javax.swing.JLabel();
-        s1 = new javax.swing.JButton();
-        s2 = new javax.swing.JButton();
-        s3 = new javax.swing.JButton();
-        s4 = new javax.swing.JButton();
-        s5 = new javax.swing.JButton();
-        s6 = new javax.swing.JButton();
-        s7 = new javax.swing.JButton();
-        s8 = new javax.swing.JButton();
-        s9 = new javax.swing.JButton();
-        s10 = new javax.swing.JButton();
-        s11 = new javax.swing.JButton();
-        s12 = new javax.swing.JButton();
-        s13 = new javax.swing.JButton();
-        s14 = new javax.swing.JButton();
-        s15 = new javax.swing.JButton();
-        s16 = new javax.swing.JButton();
-        s17 = new javax.swing.JButton();
-        s18 = new javax.swing.JButton();
-        s19 = new javax.swing.JButton();
-        s20 = new javax.swing.JButton();
-        s21 = new javax.swing.JButton();
-        m1 = new javax.swing.JButton();
-        m3 = new javax.swing.JButton();
-        m2 = new javax.swing.JButton();
-        m4 = new javax.swing.JButton();
-        m5 = new javax.swing.JButton();
-        m6 = new javax.swing.JButton();
-        m7 = new javax.swing.JButton();
-        m8 = new javax.swing.JButton();
-        m9 = new javax.swing.JButton();
-        m10 = new javax.swing.JButton();
-        m11 = new javax.swing.JButton();
-        m13 = new javax.swing.JButton();
-        m12 = new javax.swing.JButton();
-        m14 = new javax.swing.JButton();
-        m15 = new javax.swing.JButton();
-        m16 = new javax.swing.JButton();
-        m17 = new javax.swing.JButton();
-        m18 = new javax.swing.JButton();
-        m19 = new javax.swing.JButton();
-        m20 = new javax.swing.JButton();
-        m21 = new javax.swing.JButton();
-        r8 = new javax.swing.JTextField();
-        r9 = new javax.swing.JTextField();
-        r10 = new javax.swing.JTextField();
-        r11 = new javax.swing.JTextField();
-        r12 = new javax.swing.JTextField();
-        r13 = new javax.swing.JTextField();
-        r14 = new javax.swing.JTextField();
-        r15 = new javax.swing.JTextField();
-        r16 = new javax.swing.JTextField();
-        r17 = new javax.swing.JTextField();
-        r18 = new javax.swing.JTextField();
-        r19 = new javax.swing.JTextField();
-        r20 = new javax.swing.JTextField();
-        r21 = new javax.swing.JTextField();
-        r7 = new javax.swing.JTextField();
-        r6 = new javax.swing.JTextField();
-        r5 = new javax.swing.JTextField();
-        r4 = new javax.swing.JTextField();
-        r3 = new javax.swing.JTextField();
-        r2 = new javax.swing.JTextField();
-        r1 = new javax.swing.JTextField();
-        s23 = new javax.swing.JButton();
-        s24 = new javax.swing.JButton();
-        r23 = new javax.swing.JTextField();
-        r22 = new javax.swing.JTextField();
-        m24 = new javax.swing.JButton();
-        m23 = new javax.swing.JButton();
-        m25 = new javax.swing.JButton();
-        m26 = new javax.swing.JButton();
-        s25 = new javax.swing.JButton();
-        s26 = new javax.swing.JButton();
-        veintidos = new javax.swing.JLabel();
-        veintitres = new javax.swing.JLabel();
-        veinticuatro = new javax.swing.JLabel();
-        veinticinco = new javax.swing.JLabel();
-        veintiseis = new javax.swing.JLabel();
-        r26 = new javax.swing.JTextField();
-        r25 = new javax.swing.JTextField();
-        r24 = new javax.swing.JTextField();
-        m22 = new javax.swing.JButton();
-        s22 = new javax.swing.JButton();
-        m29 = new javax.swing.JButton();
-        m28 = new javax.swing.JButton();
-        m30 = new javax.swing.JButton();
-        m31 = new javax.swing.JButton();
-        m32 = new javax.swing.JButton();
-        m33 = new javax.swing.JButton();
-        m34 = new javax.swing.JButton();
-        m35 = new javax.swing.JButton();
-        m36 = new javax.swing.JButton();
-        m37 = new javax.swing.JButton();
-        m39 = new javax.swing.JButton();
-        m38 = new javax.swing.JButton();
-        m40 = new javax.swing.JButton();
-        m41 = new javax.swing.JButton();
-        m42 = new javax.swing.JButton();
-        m43 = new javax.swing.JButton();
-        m44 = new javax.swing.JButton();
-        m45 = new javax.swing.JButton();
-        m46 = new javax.swing.JButton();
-        m47 = new javax.swing.JButton();
-        r34 = new javax.swing.JTextField();
-        r35 = new javax.swing.JTextField();
-        r36 = new javax.swing.JTextField();
-        r37 = new javax.swing.JTextField();
-        r38 = new javax.swing.JTextField();
-        r39 = new javax.swing.JTextField();
-        r40 = new javax.swing.JTextField();
-        r41 = new javax.swing.JTextField();
-        r42 = new javax.swing.JTextField();
-        r43 = new javax.swing.JTextField();
-        r44 = new javax.swing.JTextField();
-        r45 = new javax.swing.JTextField();
-        r46 = new javax.swing.JTextField();
-        r47 = new javax.swing.JTextField();
-        r33 = new javax.swing.JTextField();
-        r32 = new javax.swing.JTextField();
-        r31 = new javax.swing.JTextField();
-        r30 = new javax.swing.JTextField();
-        r29 = new javax.swing.JTextField();
-        r28 = new javax.swing.JTextField();
-        r27 = new javax.swing.JTextField();
-        s49 = new javax.swing.JButton();
-        s50 = new javax.swing.JButton();
-        r49 = new javax.swing.JTextField();
-        r48 = new javax.swing.JTextField();
-        m50 = new javax.swing.JButton();
-        m49 = new javax.swing.JButton();
-        m51 = new javax.swing.JButton();
-        m52 = new javax.swing.JButton();
-        s51 = new javax.swing.JButton();
-        s52 = new javax.swing.JButton();
-        veintisiete = new javax.swing.JLabel();
-        veintiocho = new javax.swing.JLabel();
-        veintinueve = new javax.swing.JLabel();
-        treinta = new javax.swing.JLabel();
-        treintauno = new javax.swing.JLabel();
-        treintados = new javax.swing.JLabel();
-        treintatres = new javax.swing.JLabel();
-        cuarentaocho = new javax.swing.JLabel();
-        treintacuatro = new javax.swing.JLabel();
-        treintacinco = new javax.swing.JLabel();
-        treintaseis = new javax.swing.JLabel();
-        treintasiete = new javax.swing.JLabel();
-        treintaocho = new javax.swing.JLabel();
-        treintanueve = new javax.swing.JLabel();
-        cuarenta = new javax.swing.JLabel();
-        cuarentanueve = new javax.swing.JLabel();
-        cincuenta = new javax.swing.JLabel();
-        cincuentauno = new javax.swing.JLabel();
-        cincuentados = new javax.swing.JLabel();
-        cuarentauno = new javax.swing.JLabel();
-        cuarentados = new javax.swing.JLabel();
-        cuarentatres = new javax.swing.JLabel();
-        cuarentacuatro = new javax.swing.JLabel();
-        cuarentacinco = new javax.swing.JLabel();
-        cuarentaseis = new javax.swing.JLabel();
-        cuarentasiete = new javax.swing.JLabel();
-        s27 = new javax.swing.JButton();
-        s28 = new javax.swing.JButton();
-        s29 = new javax.swing.JButton();
-        s30 = new javax.swing.JButton();
-        s31 = new javax.swing.JButton();
-        s32 = new javax.swing.JButton();
-        s33 = new javax.swing.JButton();
-        s34 = new javax.swing.JButton();
-        s35 = new javax.swing.JButton();
-        s36 = new javax.swing.JButton();
-        s37 = new javax.swing.JButton();
-        s38 = new javax.swing.JButton();
-        s39 = new javax.swing.JButton();
-        r52 = new javax.swing.JTextField();
-        r51 = new javax.swing.JTextField();
-        r50 = new javax.swing.JTextField();
-        m48 = new javax.swing.JButton();
-        s48 = new javax.swing.JButton();
-        s40 = new javax.swing.JButton();
-        s41 = new javax.swing.JButton();
-        s42 = new javax.swing.JButton();
-        s43 = new javax.swing.JButton();
-        s44 = new javax.swing.JButton();
-        s45 = new javax.swing.JButton();
-        s46 = new javax.swing.JButton();
-        s47 = new javax.swing.JButton();
-        m27 = new javax.swing.JButton();
-        anio1 = new javax.swing.JTextArea();
-        rr26 = new javax.swing.JTextField();
-        rr25 = new javax.swing.JTextField();
-        rr24 = new javax.swing.JTextField();
-        mm22 = new javax.swing.JButton();
-        ss22 = new javax.swing.JButton();
-        mm29 = new javax.swing.JButton();
-        mm28 = new javax.swing.JButton();
-        mm30 = new javax.swing.JButton();
-        mm31 = new javax.swing.JButton();
-        mm32 = new javax.swing.JButton();
-        mm33 = new javax.swing.JButton();
-        mm34 = new javax.swing.JButton();
-        mm35 = new javax.swing.JButton();
-        mm36 = new javax.swing.JButton();
-        mm37 = new javax.swing.JButton();
-        mm39 = new javax.swing.JButton();
-        mm38 = new javax.swing.JButton();
-        mm40 = new javax.swing.JButton();
-        mm41 = new javax.swing.JButton();
-        mm42 = new javax.swing.JButton();
-        mm43 = new javax.swing.JButton();
-        mm44 = new javax.swing.JButton();
-        mm45 = new javax.swing.JButton();
-        mm46 = new javax.swing.JButton();
-        mm47 = new javax.swing.JButton();
-        rr34 = new javax.swing.JTextField();
-        rr35 = new javax.swing.JTextField();
-        ss1 = new javax.swing.JButton();
-        ss2 = new javax.swing.JButton();
-        ss3 = new javax.swing.JButton();
-        ss4 = new javax.swing.JButton();
-        ss5 = new javax.swing.JButton();
-        rr36 = new javax.swing.JTextField();
-        rr37 = new javax.swing.JTextField();
-        rr38 = new javax.swing.JTextField();
-        rr39 = new javax.swing.JTextField();
-        rr40 = new javax.swing.JTextField();
-        rr41 = new javax.swing.JTextField();
-        rr42 = new javax.swing.JTextField();
-        rr43 = new javax.swing.JTextField();
-        rr44 = new javax.swing.JTextField();
-        rr45 = new javax.swing.JTextField();
-        ss6 = new javax.swing.JButton();
-        ss7 = new javax.swing.JButton();
-        ss8 = new javax.swing.JButton();
-        ss9 = new javax.swing.JButton();
-        ss10 = new javax.swing.JButton();
-        ss11 = new javax.swing.JButton();
-        ss12 = new javax.swing.JButton();
-        ss13 = new javax.swing.JButton();
-        ss14 = new javax.swing.JButton();
-        ss15 = new javax.swing.JButton();
-        rr46 = new javax.swing.JTextField();
-        rr47 = new javax.swing.JTextField();
-        rr33 = new javax.swing.JTextField();
-        rr32 = new javax.swing.JTextField();
-        rr31 = new javax.swing.JTextField();
-        rr30 = new javax.swing.JTextField();
-        rr29 = new javax.swing.JTextField();
-        rr28 = new javax.swing.JTextField();
-        rr27 = new javax.swing.JTextField();
-        ss49 = new javax.swing.JButton();
-        ss16 = new javax.swing.JButton();
-        ss17 = new javax.swing.JButton();
-        ss18 = new javax.swing.JButton();
-        ss19 = new javax.swing.JButton();
-        ss20 = new javax.swing.JButton();
-        ss21 = new javax.swing.JButton();
-        mm1 = new javax.swing.JButton();
-        mm3 = new javax.swing.JButton();
-        mm2 = new javax.swing.JButton();
-        mm4 = new javax.swing.JButton();
-        ss50 = new javax.swing.JButton();
-        rr49 = new javax.swing.JTextField();
-        rr48 = new javax.swing.JTextField();
-        mm50 = new javax.swing.JButton();
-        mm49 = new javax.swing.JButton();
-        mm51 = new javax.swing.JButton();
-        mm52 = new javax.swing.JButton();
-        ss51 = new javax.swing.JButton();
-        ss52 = new javax.swing.JButton();
-        mm5 = new javax.swing.JButton();
-        mm6 = new javax.swing.JButton();
-        mm7 = new javax.swing.JButton();
-        mm8 = new javax.swing.JButton();
-        mm9 = new javax.swing.JButton();
-        mm10 = new javax.swing.JButton();
-        mm11 = new javax.swing.JButton();
-        mm13 = new javax.swing.JButton();
-        mm12 = new javax.swing.JButton();
-        mm14 = new javax.swing.JButton();
-        mm15 = new javax.swing.JButton();
-        mm16 = new javax.swing.JButton();
-        mm17 = new javax.swing.JButton();
-        mm18 = new javax.swing.JButton();
-        mm19 = new javax.swing.JButton();
-        mm20 = new javax.swing.JButton();
-        mm21 = new javax.swing.JButton();
-        rr8 = new javax.swing.JTextField();
-        rr9 = new javax.swing.JTextField();
-        rr10 = new javax.swing.JTextField();
-        rr11 = new javax.swing.JTextField();
-        rr12 = new javax.swing.JTextField();
-        rr13 = new javax.swing.JTextField();
-        rr14 = new javax.swing.JTextField();
-        rr15 = new javax.swing.JTextField();
-        rr16 = new javax.swing.JTextField();
-        rr17 = new javax.swing.JTextField();
-        rr18 = new javax.swing.JTextField();
-        rr19 = new javax.swing.JTextField();
-        rr20 = new javax.swing.JTextField();
-        ss27 = new javax.swing.JButton();
-        ss28 = new javax.swing.JButton();
-        ss29 = new javax.swing.JButton();
-        ss30 = new javax.swing.JButton();
-        ss31 = new javax.swing.JButton();
-        rr21 = new javax.swing.JTextField();
-        rr7 = new javax.swing.JTextField();
-        rr6 = new javax.swing.JTextField();
-        rr5 = new javax.swing.JTextField();
-        rr4 = new javax.swing.JTextField();
-        rr3 = new javax.swing.JTextField();
-        rr2 = new javax.swing.JTextField();
-        rr1 = new javax.swing.JTextField();
-        ss23 = new javax.swing.JButton();
-        ss24 = new javax.swing.JButton();
-        anio2 = new javax.swing.JTextArea();
-        ss32 = new javax.swing.JButton();
-        ss33 = new javax.swing.JButton();
-        ss34 = new javax.swing.JButton();
-        ss35 = new javax.swing.JButton();
-        ss36 = new javax.swing.JButton();
-        ss37 = new javax.swing.JButton();
-        ss38 = new javax.swing.JButton();
-        ss39 = new javax.swing.JButton();
-        rr52 = new javax.swing.JTextField();
-        rr51 = new javax.swing.JTextField();
-        rr50 = new javax.swing.JTextField();
-        mm48 = new javax.swing.JButton();
-        ss48 = new javax.swing.JButton();
-        ss40 = new javax.swing.JButton();
-        ss41 = new javax.swing.JButton();
-        ss42 = new javax.swing.JButton();
-        ss43 = new javax.swing.JButton();
-        ss44 = new javax.swing.JButton();
-        ss45 = new javax.swing.JButton();
-        ss46 = new javax.swing.JButton();
-        ss47 = new javax.swing.JButton();
-        rr23 = new javax.swing.JTextField();
-        mm27 = new javax.swing.JButton();
-        rr22 = new javax.swing.JTextField();
-        mm24 = new javax.swing.JButton();
-        mm23 = new javax.swing.JButton();
-        mm25 = new javax.swing.JButton();
-        mm26 = new javax.swing.JButton();
-        ss25 = new javax.swing.JButton();
-        ss26 = new javax.swing.JButton();
-        rrr26 = new javax.swing.JTextField();
-        rrr25 = new javax.swing.JTextField();
-        rrr24 = new javax.swing.JTextField();
-        mmm22 = new javax.swing.JButton();
-        sss22 = new javax.swing.JButton();
-        mmm29 = new javax.swing.JButton();
-        mmm28 = new javax.swing.JButton();
-        mmm30 = new javax.swing.JButton();
-        mmm31 = new javax.swing.JButton();
-        mmm32 = new javax.swing.JButton();
-        mmm33 = new javax.swing.JButton();
-        mmm34 = new javax.swing.JButton();
-        mmm35 = new javax.swing.JButton();
-        mmm36 = new javax.swing.JButton();
-        mmm37 = new javax.swing.JButton();
-        mmm39 = new javax.swing.JButton();
-        mmm38 = new javax.swing.JButton();
-        mmm40 = new javax.swing.JButton();
-        mmm41 = new javax.swing.JButton();
-        mmm42 = new javax.swing.JButton();
-        mmm43 = new javax.swing.JButton();
-        mmm44 = new javax.swing.JButton();
-        mmm45 = new javax.swing.JButton();
-        mmm46 = new javax.swing.JButton();
-        mmm47 = new javax.swing.JButton();
-        rrr34 = new javax.swing.JTextField();
-        rrr35 = new javax.swing.JTextField();
-        sss1 = new javax.swing.JButton();
-        sss2 = new javax.swing.JButton();
-        sss3 = new javax.swing.JButton();
-        sss4 = new javax.swing.JButton();
-        sss5 = new javax.swing.JButton();
-        rrr36 = new javax.swing.JTextField();
-        rrr37 = new javax.swing.JTextField();
-        rrr38 = new javax.swing.JTextField();
-        rrr39 = new javax.swing.JTextField();
-        rrr40 = new javax.swing.JTextField();
-        rrr41 = new javax.swing.JTextField();
-        rrr42 = new javax.swing.JTextField();
-        rrr43 = new javax.swing.JTextField();
-        rrr44 = new javax.swing.JTextField();
-        rrr45 = new javax.swing.JTextField();
-        sss6 = new javax.swing.JButton();
-        sss7 = new javax.swing.JButton();
-        sss8 = new javax.swing.JButton();
-        sss9 = new javax.swing.JButton();
-        sss10 = new javax.swing.JButton();
-        sss11 = new javax.swing.JButton();
-        sss12 = new javax.swing.JButton();
-        sss13 = new javax.swing.JButton();
-        sss14 = new javax.swing.JButton();
-        sss15 = new javax.swing.JButton();
-        rrr46 = new javax.swing.JTextField();
-        rrr47 = new javax.swing.JTextField();
-        rrr33 = new javax.swing.JTextField();
-        rrr32 = new javax.swing.JTextField();
-        rrr31 = new javax.swing.JTextField();
-        rrr30 = new javax.swing.JTextField();
-        rrr29 = new javax.swing.JTextField();
-        rrr28 = new javax.swing.JTextField();
-        rrr27 = new javax.swing.JTextField();
-        sss49 = new javax.swing.JButton();
-        sss16 = new javax.swing.JButton();
-        sss17 = new javax.swing.JButton();
-        sss18 = new javax.swing.JButton();
-        sss19 = new javax.swing.JButton();
-        sss20 = new javax.swing.JButton();
-        sss21 = new javax.swing.JButton();
-        mmm1 = new javax.swing.JButton();
-        mmm3 = new javax.swing.JButton();
-        mmm2 = new javax.swing.JButton();
-        mmm4 = new javax.swing.JButton();
-        sss50 = new javax.swing.JButton();
-        rrr49 = new javax.swing.JTextField();
-        rrr48 = new javax.swing.JTextField();
-        mmm50 = new javax.swing.JButton();
-        mmm49 = new javax.swing.JButton();
-        mmm51 = new javax.swing.JButton();
-        mmm52 = new javax.swing.JButton();
-        sss51 = new javax.swing.JButton();
-        sss52 = new javax.swing.JButton();
-        mmm5 = new javax.swing.JButton();
-        mmm6 = new javax.swing.JButton();
-        mmm7 = new javax.swing.JButton();
-        mmm8 = new javax.swing.JButton();
-        mmm9 = new javax.swing.JButton();
-        mmm10 = new javax.swing.JButton();
-        mmm11 = new javax.swing.JButton();
-        mmm13 = new javax.swing.JButton();
-        mmm12 = new javax.swing.JButton();
-        mmm14 = new javax.swing.JButton();
-        mmm15 = new javax.swing.JButton();
-        mmm16 = new javax.swing.JButton();
-        mmm17 = new javax.swing.JButton();
-        mmm18 = new javax.swing.JButton();
-        mmm19 = new javax.swing.JButton();
-        mmm20 = new javax.swing.JButton();
-        mmm21 = new javax.swing.JButton();
-        rrr8 = new javax.swing.JTextField();
-        rrr9 = new javax.swing.JTextField();
-        rrr10 = new javax.swing.JTextField();
-        rrr11 = new javax.swing.JTextField();
-        rrr12 = new javax.swing.JTextField();
-        rrr13 = new javax.swing.JTextField();
-        rrr14 = new javax.swing.JTextField();
-        rrr15 = new javax.swing.JTextField();
-        rrr16 = new javax.swing.JTextField();
-        rrr17 = new javax.swing.JTextField();
-        rrr18 = new javax.swing.JTextField();
-        rrr19 = new javax.swing.JTextField();
-        rrr20 = new javax.swing.JTextField();
-        sss27 = new javax.swing.JButton();
-        sss28 = new javax.swing.JButton();
-        sss29 = new javax.swing.JButton();
-        sss30 = new javax.swing.JButton();
-        sss31 = new javax.swing.JButton();
-        rrr21 = new javax.swing.JTextField();
-        rrr7 = new javax.swing.JTextField();
-        rrr6 = new javax.swing.JTextField();
-        rrr5 = new javax.swing.JTextField();
-        rrr4 = new javax.swing.JTextField();
-        rrr3 = new javax.swing.JTextField();
-        rrr2 = new javax.swing.JTextField();
-        rrr1 = new javax.swing.JTextField();
-        sss23 = new javax.swing.JButton();
-        sss24 = new javax.swing.JButton();
-        anio3 = new javax.swing.JTextArea();
-        sss32 = new javax.swing.JButton();
-        sss33 = new javax.swing.JButton();
-        sss34 = new javax.swing.JButton();
-        sss35 = new javax.swing.JButton();
-        sss36 = new javax.swing.JButton();
-        sss37 = new javax.swing.JButton();
-        sss38 = new javax.swing.JButton();
-        sss39 = new javax.swing.JButton();
-        rrr52 = new javax.swing.JTextField();
-        rrr51 = new javax.swing.JTextField();
-        rrr50 = new javax.swing.JTextField();
-        mmm48 = new javax.swing.JButton();
-        sss48 = new javax.swing.JButton();
-        sss40 = new javax.swing.JButton();
-        sss41 = new javax.swing.JButton();
-        sss42 = new javax.swing.JButton();
-        sss43 = new javax.swing.JButton();
-        sss44 = new javax.swing.JButton();
-        sss45 = new javax.swing.JButton();
-        sss46 = new javax.swing.JButton();
-        sss47 = new javax.swing.JButton();
-        rrr23 = new javax.swing.JTextField();
-        mmm27 = new javax.swing.JButton();
-        rrr22 = new javax.swing.JTextField();
-        mmm24 = new javax.swing.JButton();
-        mmm23 = new javax.swing.JButton();
-        mmm25 = new javax.swing.JButton();
-        mmm26 = new javax.swing.JButton();
-        sss25 = new javax.swing.JButton();
-        sss26 = new javax.swing.JButton();
+        seguridad = new JDialog();
+        jPanel4 = new JPanel();
+        aceptar = new JButton();
+        cancelar = new JButton();
+        jPanel5 = new JPanel();
+        jLabel2 = new JLabel();
+        impacto = new JFrame();
+        jPanel7 = new JPanel();
+        exportar = new JButton();
+        jPanel8 = new JPanel();
+        jScrollPane1 = new JScrollPane();
+        generado = new JTable();
+        jLabel1 = new JLabel();
+        jPanel1 = new JPanel();
+        jPanel2 = new JPanel();
+        generar = new JButton();
+        limpiar = new JButton();
+        jPanel3 = new JPanel();
+        jPanel9 = new JPanel();
+        jScrollPane3 = new JScrollPane();
+        jTable1 = new JTable();
+        jScrollPane4 = new JScrollPane();
+        jPanel6 = new JPanel();
+        uno = new JLabel();
+        dos = new JLabel();
+        tres = new JLabel();
+        cuatro = new JLabel();
+        cinco = new JLabel();
+        seis = new JLabel();
+        siete = new JLabel();
+        ocho = new JLabel();
+        nueve = new JLabel();
+        diez = new JLabel();
+        once = new JLabel();
+        doce = new JLabel();
+        trece = new JLabel();
+        catorce = new JLabel();
+        quince = new JLabel();
+        dieciseis = new JLabel();
+        diecisiete = new JLabel();
+        dieciocho = new JLabel();
+        diecinueve = new JLabel();
+        veinte = new JLabel();
+        veintiuno = new JLabel();
+        s1 = new JButton();
+        s2 = new JButton();
+        s3 = new JButton();
+        s4 = new JButton();
+        s5 = new JButton();
+        s6 = new JButton();
+        s7 = new JButton();
+        s8 = new JButton();
+        s9 = new JButton();
+        s10 = new JButton();
+        s11 = new JButton();
+        s12 = new JButton();
+        s13 = new JButton();
+        s14 = new JButton();
+        s15 = new JButton();
+        s16 = new JButton();
+        s17 = new JButton();
+        s18 = new JButton();
+        s19 = new JButton();
+        s20 = new JButton();
+        s21 = new JButton();
+        m1 = new JButton();
+        m3 = new JButton();
+        m2 = new JButton();
+        m4 = new JButton();
+        m5 = new JButton();
+        m6 = new JButton();
+        m7 = new JButton();
+        m8 = new JButton();
+        m9 = new JButton();
+        m10 = new JButton();
+        m11 = new JButton();
+        m13 = new JButton();
+        m12 = new JButton();
+        m14 = new JButton();
+        m15 = new JButton();
+        m16 = new JButton();
+        m17 = new JButton();
+        m18 = new JButton();
+        m19 = new JButton();
+        m20 = new JButton();
+        m21 = new JButton();
+        r8 = new JTextField();
+        r9 = new JTextField();
+        r10 = new JTextField();
+        r11 = new JTextField();
+        r12 = new JTextField();
+        r13 = new JTextField();
+        r14 = new JTextField();
+        r15 = new JTextField();
+        r16 = new JTextField();
+        r17 = new JTextField();
+        r18 = new JTextField();
+        r19 = new JTextField();
+        r20 = new JTextField();
+        r21 = new JTextField();
+        r7 = new JTextField();
+        r6 = new JTextField();
+        r5 = new JTextField();
+        r4 = new JTextField();
+        r3 = new JTextField();
+        r2 = new JTextField();
+        r1 = new JTextField();
+        s23 = new JButton();
+        s24 = new JButton();
+        r23 = new JTextField();
+        r22 = new JTextField();
+        m24 = new JButton();
+        m23 = new JButton();
+        m25 = new JButton();
+        m26 = new JButton();
+        s25 = new JButton();
+        s26 = new JButton();
+        veintidos = new JLabel();
+        veintitres = new JLabel();
+        veinticuatro = new JLabel();
+        veinticinco = new JLabel();
+        veintiseis = new JLabel();
+        r26 = new JTextField();
+        r25 = new JTextField();
+        r24 = new JTextField();
+        m22 = new JButton();
+        s22 = new JButton();
+        m29 = new JButton();
+        m28 = new JButton();
+        m30 = new JButton();
+        m31 = new JButton();
+        m32 = new JButton();
+        m33 = new JButton();
+        m34 = new JButton();
+        m35 = new JButton();
+        m36 = new JButton();
+        m37 = new JButton();
+        m39 = new JButton();
+        m38 = new JButton();
+        m40 = new JButton();
+        m41 = new JButton();
+        m42 = new JButton();
+        m43 = new JButton();
+        m44 = new JButton();
+        m45 = new JButton();
+        m46 = new JButton();
+        m47 = new JButton();
+        r34 = new JTextField();
+        r35 = new JTextField();
+        r36 = new JTextField();
+        r37 = new JTextField();
+        r38 = new JTextField();
+        r39 = new JTextField();
+        r40 = new JTextField();
+        r41 = new JTextField();
+        r42 = new JTextField();
+        r43 = new JTextField();
+        r44 = new JTextField();
+        r45 = new JTextField();
+        r46 = new JTextField();
+        r47 = new JTextField();
+        r33 = new JTextField();
+        r32 = new JTextField();
+        r31 = new JTextField();
+        r30 = new JTextField();
+        r29 = new JTextField();
+        r28 = new JTextField();
+        r27 = new JTextField();
+        s49 = new JButton();
+        s50 = new JButton();
+        r49 = new JTextField();
+        r48 = new JTextField();
+        m50 = new JButton();
+        m49 = new JButton();
+        m51 = new JButton();
+        m52 = new JButton();
+        s51 = new JButton();
+        s52 = new JButton();
+        veintisiete = new JLabel();
+        veintiocho = new JLabel();
+        veintinueve = new JLabel();
+        treinta = new JLabel();
+        treintauno = new JLabel();
+        treintados = new JLabel();
+        treintatres = new JLabel();
+        cuarentaocho = new JLabel();
+        treintacuatro = new JLabel();
+        treintacinco = new JLabel();
+        treintaseis = new JLabel();
+        treintasiete = new JLabel();
+        treintaocho = new JLabel();
+        treintanueve = new JLabel();
+        cuarenta = new JLabel();
+        cuarentanueve = new JLabel();
+        cincuenta = new JLabel();
+        cincuentauno = new JLabel();
+        cincuentados = new JLabel();
+        cuarentauno = new JLabel();
+        cuarentados = new JLabel();
+        cuarentatres = new JLabel();
+        cuarentacuatro = new JLabel();
+        cuarentacinco = new JLabel();
+        cuarentaseis = new JLabel();
+        cuarentasiete = new JLabel();
+        s27 = new JButton();
+        s28 = new JButton();
+        s29 = new JButton();
+        s30 = new JButton();
+        s31 = new JButton();
+        s32 = new JButton();
+        s33 = new JButton();
+        s34 = new JButton();
+        s35 = new JButton();
+        s36 = new JButton();
+        s37 = new JButton();
+        s38 = new JButton();
+        s39 = new JButton();
+        r52 = new JTextField();
+        r51 = new JTextField();
+        r50 = new JTextField();
+        m48 = new JButton();
+        s48 = new JButton();
+        s40 = new JButton();
+        s41 = new JButton();
+        s42 = new JButton();
+        s43 = new JButton();
+        s44 = new JButton();
+        s45 = new JButton();
+        s46 = new JButton();
+        s47 = new JButton();
+        m27 = new JButton();
+        anio1 = new JTextArea();
+        rr26 = new JTextField();
+        rr25 = new JTextField();
+        rr24 = new JTextField();
+        mm22 = new JButton();
+        ss22 = new JButton();
+        mm29 = new JButton();
+        mm28 = new JButton();
+        mm30 = new JButton();
+        mm31 = new JButton();
+        mm32 = new JButton();
+        mm33 = new JButton();
+        mm34 = new JButton();
+        mm35 = new JButton();
+        mm36 = new JButton();
+        mm37 = new JButton();
+        mm39 = new JButton();
+        mm38 = new JButton();
+        mm40 = new JButton();
+        mm41 = new JButton();
+        mm42 = new JButton();
+        mm43 = new JButton();
+        mm44 = new JButton();
+        mm45 = new JButton();
+        mm46 = new JButton();
+        mm47 = new JButton();
+        rr34 = new JTextField();
+        rr35 = new JTextField();
+        ss1 = new JButton();
+        ss2 = new JButton();
+        ss3 = new JButton();
+        ss4 = new JButton();
+        ss5 = new JButton();
+        rr36 = new JTextField();
+        rr37 = new JTextField();
+        rr38 = new JTextField();
+        rr39 = new JTextField();
+        rr40 = new JTextField();
+        rr41 = new JTextField();
+        rr42 = new JTextField();
+        rr43 = new JTextField();
+        rr44 = new JTextField();
+        rr45 = new JTextField();
+        ss6 = new JButton();
+        ss7 = new JButton();
+        ss8 = new JButton();
+        ss9 = new JButton();
+        ss10 = new JButton();
+        ss11 = new JButton();
+        ss12 = new JButton();
+        ss13 = new JButton();
+        ss14 = new JButton();
+        ss15 = new JButton();
+        rr46 = new JTextField();
+        rr47 = new JTextField();
+        rr33 = new JTextField();
+        rr32 = new JTextField();
+        rr31 = new JTextField();
+        rr30 = new JTextField();
+        rr29 = new JTextField();
+        rr28 = new JTextField();
+        rr27 = new JTextField();
+        ss49 = new JButton();
+        ss16 = new JButton();
+        ss17 = new JButton();
+        ss18 = new JButton();
+        ss19 = new JButton();
+        ss20 = new JButton();
+        ss21 = new JButton();
+        mm1 = new JButton();
+        mm3 = new JButton();
+        mm2 = new JButton();
+        mm4 = new JButton();
+        ss50 = new JButton();
+        rr49 = new JTextField();
+        rr48 = new JTextField();
+        mm50 = new JButton();
+        mm49 = new JButton();
+        mm51 = new JButton();
+        mm52 = new JButton();
+        ss51 = new JButton();
+        ss52 = new JButton();
+        mm5 = new JButton();
+        mm6 = new JButton();
+        mm7 = new JButton();
+        mm8 = new JButton();
+        mm9 = new JButton();
+        mm10 = new JButton();
+        mm11 = new JButton();
+        mm13 = new JButton();
+        mm12 = new JButton();
+        mm14 = new JButton();
+        mm15 = new JButton();
+        mm16 = new JButton();
+        mm17 = new JButton();
+        mm18 = new JButton();
+        mm19 = new JButton();
+        mm20 = new JButton();
+        mm21 = new JButton();
+        rr8 = new JTextField();
+        rr9 = new JTextField();
+        rr10 = new JTextField();
+        rr11 = new JTextField();
+        rr12 = new JTextField();
+        rr13 = new JTextField();
+        rr14 = new JTextField();
+        rr15 = new JTextField();
+        rr16 = new JTextField();
+        rr17 = new JTextField();
+        rr18 = new JTextField();
+        rr19 = new JTextField();
+        rr20 = new JTextField();
+        ss27 = new JButton();
+        ss28 = new JButton();
+        ss29 = new JButton();
+        ss30 = new JButton();
+        ss31 = new JButton();
+        rr21 = new JTextField();
+        rr7 = new JTextField();
+        rr6 = new JTextField();
+        rr5 = new JTextField();
+        rr4 = new JTextField();
+        rr3 = new JTextField();
+        rr2 = new JTextField();
+        rr1 = new JTextField();
+        ss23 = new JButton();
+        ss24 = new JButton();
+        anio2 = new JTextArea();
+        ss32 = new JButton();
+        ss33 = new JButton();
+        ss34 = new JButton();
+        ss35 = new JButton();
+        ss36 = new JButton();
+        ss37 = new JButton();
+        ss38 = new JButton();
+        ss39 = new JButton();
+        rr52 = new JTextField();
+        rr51 = new JTextField();
+        rr50 = new JTextField();
+        mm48 = new JButton();
+        ss48 = new JButton();
+        ss40 = new JButton();
+        ss41 = new JButton();
+        ss42 = new JButton();
+        ss43 = new JButton();
+        ss44 = new JButton();
+        ss45 = new JButton();
+        ss46 = new JButton();
+        ss47 = new JButton();
+        rr23 = new JTextField();
+        mm27 = new JButton();
+        rr22 = new JTextField();
+        mm24 = new JButton();
+        mm23 = new JButton();
+        mm25 = new JButton();
+        mm26 = new JButton();
+        ss25 = new JButton();
+        ss26 = new JButton();
+        rrr26 = new JTextField();
+        rrr25 = new JTextField();
+        rrr24 = new JTextField();
+        mmm22 = new JButton();
+        sss22 = new JButton();
+        mmm29 = new JButton();
+        mmm28 = new JButton();
+        mmm30 = new JButton();
+        mmm31 = new JButton();
+        mmm32 = new JButton();
+        mmm33 = new JButton();
+        mmm34 = new JButton();
+        mmm35 = new JButton();
+        mmm36 = new JButton();
+        mmm37 = new JButton();
+        mmm39 = new JButton();
+        mmm38 = new JButton();
+        mmm40 = new JButton();
+        mmm41 = new JButton();
+        mmm42 = new JButton();
+        mmm43 = new JButton();
+        mmm44 = new JButton();
+        mmm45 = new JButton();
+        mmm46 = new JButton();
+        mmm47 = new JButton();
+        rrr34 = new JTextField();
+        rrr35 = new JTextField();
+        sss1 = new JButton();
+        sss2 = new JButton();
+        sss3 = new JButton();
+        sss4 = new JButton();
+        sss5 = new JButton();
+        rrr36 = new JTextField();
+        rrr37 = new JTextField();
+        rrr38 = new JTextField();
+        rrr39 = new JTextField();
+        rrr40 = new JTextField();
+        rrr41 = new JTextField();
+        rrr42 = new JTextField();
+        rrr43 = new JTextField();
+        rrr44 = new JTextField();
+        rrr45 = new JTextField();
+        sss6 = new JButton();
+        sss7 = new JButton();
+        sss8 = new JButton();
+        sss9 = new JButton();
+        sss10 = new JButton();
+        sss11 = new JButton();
+        sss12 = new JButton();
+        sss13 = new JButton();
+        sss14 = new JButton();
+        sss15 = new JButton();
+        rrr46 = new JTextField();
+        rrr47 = new JTextField();
+        rrr33 = new JTextField();
+        rrr32 = new JTextField();
+        rrr31 = new JTextField();
+        rrr30 = new JTextField();
+        rrr29 = new JTextField();
+        rrr28 = new JTextField();
+        rrr27 = new JTextField();
+        sss49 = new JButton();
+        sss16 = new JButton();
+        sss17 = new JButton();
+        sss18 = new JButton();
+        sss19 = new JButton();
+        sss20 = new JButton();
+        sss21 = new JButton();
+        mmm1 = new JButton();
+        mmm3 = new JButton();
+        mmm2 = new JButton();
+        mmm4 = new JButton();
+        sss50 = new JButton();
+        rrr49 = new JTextField();
+        rrr48 = new JTextField();
+        mmm50 = new JButton();
+        mmm49 = new JButton();
+        mmm51 = new JButton();
+        mmm52 = new JButton();
+        sss51 = new JButton();
+        sss52 = new JButton();
+        mmm5 = new JButton();
+        mmm6 = new JButton();
+        mmm7 = new JButton();
+        mmm8 = new JButton();
+        mmm9 = new JButton();
+        mmm10 = new JButton();
+        mmm11 = new JButton();
+        mmm13 = new JButton();
+        mmm12 = new JButton();
+        mmm14 = new JButton();
+        mmm15 = new JButton();
+        mmm16 = new JButton();
+        mmm17 = new JButton();
+        mmm18 = new JButton();
+        mmm19 = new JButton();
+        mmm20 = new JButton();
+        mmm21 = new JButton();
+        rrr8 = new JTextField();
+        rrr9 = new JTextField();
+        rrr10 = new JTextField();
+        rrr11 = new JTextField();
+        rrr12 = new JTextField();
+        rrr13 = new JTextField();
+        rrr14 = new JTextField();
+        rrr15 = new JTextField();
+        rrr16 = new JTextField();
+        rrr17 = new JTextField();
+        rrr18 = new JTextField();
+        rrr19 = new JTextField();
+        rrr20 = new JTextField();
+        sss27 = new JButton();
+        sss28 = new JButton();
+        sss29 = new JButton();
+        sss30 = new JButton();
+        sss31 = new JButton();
+        rrr21 = new JTextField();
+        rrr7 = new JTextField();
+        rrr6 = new JTextField();
+        rrr5 = new JTextField();
+        rrr4 = new JTextField();
+        rrr3 = new JTextField();
+        rrr2 = new JTextField();
+        rrr1 = new JTextField();
+        sss23 = new JButton();
+        sss24 = new JButton();
+        anio3 = new JTextArea();
+        sss32 = new JButton();
+        sss33 = new JButton();
+        sss34 = new JButton();
+        sss35 = new JButton();
+        sss36 = new JButton();
+        sss37 = new JButton();
+        sss38 = new JButton();
+        sss39 = new JButton();
+        rrr52 = new JTextField();
+        rrr51 = new JTextField();
+        rrr50 = new JTextField();
+        mmm48 = new JButton();
+        sss48 = new JButton();
+        sss40 = new JButton();
+        sss41 = new JButton();
+        sss42 = new JButton();
+        sss43 = new JButton();
+        sss44 = new JButton();
+        sss45 = new JButton();
+        sss46 = new JButton();
+        sss47 = new JButton();
+        rrr23 = new JTextField();
+        mmm27 = new JButton();
+        rrr22 = new JTextField();
+        mmm24 = new JButton();
+        mmm23 = new JButton();
+        mmm25 = new JButton();
+        mmm26 = new JButton();
+        sss25 = new JButton();
+        sss26 = new JButton();
 
-        seguridad.setLocation(new java.awt.Point(270, 270));
-        seguridad.setMinimumSize(new java.awt.Dimension(300, 200));
+        seguridad.setLocation(new Point(270, 270));
+        seguridad.setMinimumSize(new Dimension(300, 200));
 
-        jPanel4.setLayout(new java.awt.GridLayout(1, 0));
+        jPanel4.setLayout(new GridLayout(1, 0));
 
         aceptar.setText("Aceptar");
-        aceptar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        aceptar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 aceptarActionPerformed(evt);
             }
         });
         jPanel4.add(aceptar);
 
         cancelar.setText("Cancelar");
-        cancelar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        cancelar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 cancelarActionPerformed(evt);
             }
         });
         jPanel4.add(cancelar);
 
-        seguridad.getContentPane().add(jPanel4, java.awt.BorderLayout.PAGE_END);
+        seguridad.getContentPane().add(jPanel4, BorderLayout.PAGE_END);
 
-        jPanel5.setLayout(new java.awt.GridBagLayout());
+        jPanel5.setLayout(new GridBagLayout());
 
         jLabel2.setText("¿Realmente desea limpiar los datos?");
-        jPanel5.add(jLabel2, new java.awt.GridBagConstraints());
+        jPanel5.add(jLabel2, new GridBagConstraints());
 
-        seguridad.getContentPane().add(jPanel5, java.awt.BorderLayout.CENTER);
+        seguridad.getContentPane().add(jPanel5, BorderLayout.CENTER);
 
-        impacto.setMinimumSize(new java.awt.Dimension(930, 700));
+        impacto.setMinimumSize(new Dimension(930, 700));
 
-        jPanel7.setLayout(new java.awt.GridLayout());
+        jPanel7.setLayout(new GridLayout(1, 0));
 
         exportar.setText("Exportar a Excel");
-        exportar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        exportar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 exportarActionPerformed(evt);
             }
         });
         jPanel7.add(exportar);
 
-        impacto.getContentPane().add(jPanel7, java.awt.BorderLayout.PAGE_END);
+        impacto.getContentPane().add(jPanel7, BorderLayout.PAGE_END);
 
-        jPanel8.setLayout(new java.awt.BorderLayout());
+        jPanel8.setLayout(new BorderLayout());
 
-        generado.setModel(new javax.swing.table.DefaultTableModel(
+        generado.setModel(new DefaultTableModel(
             new Object [][] {
 
             },
@@ -643,50 +666,63 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(generado);
 
-        jPanel8.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+        jPanel8.add(jScrollPane1, BorderLayout.CENTER);
 
-        impacto.getContentPane().add(jPanel8, java.awt.BorderLayout.CENTER);
+        impacto.getContentPane().add(jPanel8, BorderLayout.CENTER);
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(825, 1000));
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setHorizontalAlignment(SwingConstants.RIGHT);
         jLabel1.setText("Hecho por Rafael Medina Facal     ");
-        getContentPane().add(jLabel1, java.awt.BorderLayout.PAGE_END);
+        getContentPane().add(jLabel1, BorderLayout.PAGE_END);
 
-        jPanel1.setLayout(new java.awt.BorderLayout());
+        jPanel1.setLayout(new BorderLayout());
 
-        jPanel2.setLayout(new java.awt.GridLayout(1, 0));
+        jPanel2.setLayout(new GridLayout(1, 0));
 
         generar.setText("Generar");
-        generar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        generar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 generarActionPerformed(evt);
             }
         });
         jPanel2.add(generar);
 
         limpiar.setText("Limpiar");
-        limpiar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        limpiar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 limpiarActionPerformed(evt);
             }
         });
         jPanel2.add(limpiar);
 
-        jPanel1.add(jPanel2, java.awt.BorderLayout.PAGE_END);
+        jPanel1.add(jPanel2, BorderLayout.PAGE_END);
 
-        jPanel3.setLayout(new java.awt.BorderLayout());
+        jPanel3.setLayout(new BorderLayout());
 
-        otras.setColumns(20);
-        otras.setRows(5);
-        jScrollPane3.setViewportView(otras);
+        jPanel9.setLayout(new BorderLayout());
 
-        jPanel3.add(jScrollPane3, java.awt.BorderLayout.PAGE_END);
+        jTable1.setModel(new DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jTable1.setPreferredSize(new Dimension(800, 1750));
+        jScrollPane3.setViewportView(jTable1);
 
-        jScrollPane4.setPreferredSize(new java.awt.Dimension(825, 1750));
+        jPanel9.add(jScrollPane3, BorderLayout.CENTER);
 
-        jPanel6.setPreferredSize(new java.awt.Dimension(600, 1750));
+        jPanel3.add(jPanel9, BorderLayout.PAGE_END);
+
+        jScrollPane4.setPreferredSize(new Dimension(825, 1750));
+
+        jPanel6.setPreferredSize(new Dimension(800, 1750));
 
         uno.setText("Acta Paul Enferm");
 
@@ -731,460 +767,460 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         veintiuno.setText("Inv Enf");
 
         s1.setText("+");
-        s1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s1ActionPerformed(evt);
             }
         });
 
         s2.setText("+");
-        s2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s2ActionPerformed(evt);
             }
         });
 
         s3.setText("+");
-        s3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s3ActionPerformed(evt);
             }
         });
 
         s4.setText("+");
-        s4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s4ActionPerformed(evt);
             }
         });
 
         s5.setText("+");
-        s5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s5ActionPerformed(evt);
             }
         });
 
         s6.setText("+");
-        s6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s6.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s6ActionPerformed(evt);
             }
         });
 
         s7.setText("+");
-        s7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s7.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s7ActionPerformed(evt);
             }
         });
 
         s8.setText("+");
-        s8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s8.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s8ActionPerformed(evt);
             }
         });
 
         s9.setText("+");
-        s9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s9.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s9ActionPerformed(evt);
             }
         });
 
         s10.setText("+");
-        s10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s10.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s10ActionPerformed(evt);
             }
         });
 
         s11.setText("+");
-        s11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s11.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s11ActionPerformed(evt);
             }
         });
 
         s12.setText("+");
-        s12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s12.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s12ActionPerformed(evt);
             }
         });
 
         s13.setText("+");
-        s13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s13.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s13ActionPerformed(evt);
             }
         });
 
         s14.setText("+");
-        s14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s14.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s14ActionPerformed(evt);
             }
         });
 
         s15.setText("+");
-        s15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s15.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s15ActionPerformed(evt);
             }
         });
 
         s16.setText("+");
-        s16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s16.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s16ActionPerformed(evt);
             }
         });
 
         s17.setText("+");
-        s17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s17.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s17ActionPerformed(evt);
             }
         });
 
         s18.setText("+");
-        s18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s18.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s18ActionPerformed(evt);
             }
         });
 
         s19.setText("+");
-        s19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s19.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s19ActionPerformed(evt);
             }
         });
 
         s20.setText("+");
-        s20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s20.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s20ActionPerformed(evt);
             }
         });
 
         s21.setText("+");
-        s21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s21.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s21ActionPerformed(evt);
             }
         });
 
         m1.setText("-");
-        m1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m1ActionPerformed(evt);
             }
         });
 
         m3.setText("-");
-        m3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m3ActionPerformed(evt);
             }
         });
 
         m2.setText("-");
-        m2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m2ActionPerformed(evt);
             }
         });
 
         m4.setText("-");
-        m4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m4ActionPerformed(evt);
             }
         });
 
         m5.setText("-");
-        m5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m5ActionPerformed(evt);
             }
         });
 
         m6.setText("-");
-        m6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m6.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m6ActionPerformed(evt);
             }
         });
 
         m7.setText("-");
-        m7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m7.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m7ActionPerformed(evt);
             }
         });
 
         m8.setText("-");
-        m8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m8.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m8ActionPerformed(evt);
             }
         });
 
         m9.setText("-");
-        m9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m9.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m9ActionPerformed(evt);
             }
         });
 
         m10.setText("-");
-        m10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m10.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m10ActionPerformed(evt);
             }
         });
 
         m11.setText("-");
-        m11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m11.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m11ActionPerformed(evt);
             }
         });
 
         m13.setText("-");
-        m13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m13.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m13ActionPerformed(evt);
             }
         });
 
         m12.setText("-");
-        m12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m12.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m12ActionPerformed(evt);
             }
         });
 
         m14.setText("-");
-        m14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m14.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m14ActionPerformed(evt);
             }
         });
 
         m15.setText("-");
-        m15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m15.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m15ActionPerformed(evt);
             }
         });
 
         m16.setText("-");
-        m16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m16.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m16ActionPerformed(evt);
             }
         });
 
         m17.setText("-");
-        m17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m17.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m17ActionPerformed(evt);
             }
         });
 
         m18.setText("-");
-        m18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m18.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m18ActionPerformed(evt);
             }
         });
 
         m19.setText("-");
-        m19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m19.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m19ActionPerformed(evt);
             }
         });
 
         m20.setText("-");
-        m20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m20.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m20ActionPerformed(evt);
             }
         });
 
         m21.setText("-");
-        m21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m21.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m21ActionPerformed(evt);
             }
         });
 
         r8.setText("0");
-        r8.setPreferredSize(new java.awt.Dimension(18, 36));
+        r8.setPreferredSize(new Dimension(18, 36));
 
         r9.setText("0");
-        r9.setPreferredSize(new java.awt.Dimension(18, 36));
+        r9.setPreferredSize(new Dimension(18, 36));
 
         r10.setText("0");
-        r10.setPreferredSize(new java.awt.Dimension(18, 36));
+        r10.setPreferredSize(new Dimension(18, 36));
 
         r11.setText("0");
-        r11.setPreferredSize(new java.awt.Dimension(18, 36));
+        r11.setPreferredSize(new Dimension(18, 36));
 
         r12.setText("0");
-        r12.setPreferredSize(new java.awt.Dimension(18, 36));
+        r12.setPreferredSize(new Dimension(18, 36));
 
         r13.setText("0");
-        r13.setPreferredSize(new java.awt.Dimension(18, 36));
+        r13.setPreferredSize(new Dimension(18, 36));
 
         r14.setText("0");
-        r14.setPreferredSize(new java.awt.Dimension(18, 36));
+        r14.setPreferredSize(new Dimension(18, 36));
 
         r15.setText("0");
-        r15.setPreferredSize(new java.awt.Dimension(18, 36));
+        r15.setPreferredSize(new Dimension(18, 36));
 
         r16.setText("0");
-        r16.setPreferredSize(new java.awt.Dimension(18, 36));
+        r16.setPreferredSize(new Dimension(18, 36));
 
         r17.setText("0");
-        r17.setPreferredSize(new java.awt.Dimension(18, 36));
+        r17.setPreferredSize(new Dimension(18, 36));
 
         r18.setText("0");
-        r18.setPreferredSize(new java.awt.Dimension(18, 36));
+        r18.setPreferredSize(new Dimension(18, 36));
 
         r19.setText("0");
-        r19.setPreferredSize(new java.awt.Dimension(18, 36));
+        r19.setPreferredSize(new Dimension(18, 36));
 
         r20.setText("0");
-        r20.setPreferredSize(new java.awt.Dimension(18, 36));
+        r20.setPreferredSize(new Dimension(18, 36));
 
         r21.setText("0");
-        r21.setPreferredSize(new java.awt.Dimension(18, 36));
+        r21.setPreferredSize(new Dimension(18, 36));
 
         r7.setText("0");
-        r7.setPreferredSize(new java.awt.Dimension(18, 36));
+        r7.setPreferredSize(new Dimension(18, 36));
 
         r6.setText("0");
-        r6.setPreferredSize(new java.awt.Dimension(18, 36));
-        r6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r6.setPreferredSize(new Dimension(18, 36));
+        r6.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r6ActionPerformed(evt);
             }
         });
 
         r5.setText("0");
-        r5.setPreferredSize(new java.awt.Dimension(18, 36));
-        r5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r5.setPreferredSize(new Dimension(18, 36));
+        r5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r5ActionPerformed(evt);
             }
         });
 
         r4.setText("0");
-        r4.setPreferredSize(new java.awt.Dimension(18, 36));
-        r4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r4.setPreferredSize(new Dimension(18, 36));
+        r4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r4ActionPerformed(evt);
             }
         });
 
         r3.setText("0");
-        r3.setPreferredSize(new java.awt.Dimension(18, 36));
-        r3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r3.setPreferredSize(new Dimension(18, 36));
+        r3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r3ActionPerformed(evt);
             }
         });
 
         r2.setText("0");
-        r2.setPreferredSize(new java.awt.Dimension(18, 36));
-        r2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r2.setPreferredSize(new Dimension(18, 36));
+        r2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r2ActionPerformed(evt);
             }
         });
 
         r1.setText("0");
-        r1.setPreferredSize(new java.awt.Dimension(18, 36));
-        r1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r1.setPreferredSize(new Dimension(18, 36));
+        r1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r1ActionPerformed(evt);
             }
         });
 
         s23.setText("+");
-        s23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s23.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s23ActionPerformed(evt);
             }
         });
 
         s24.setText("+");
-        s24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s24.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s24ActionPerformed(evt);
             }
         });
 
         r23.setText("0");
-        r23.setPreferredSize(new java.awt.Dimension(18, 36));
-        r23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r23.setPreferredSize(new Dimension(18, 36));
+        r23.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r23ActionPerformed(evt);
             }
         });
 
         r22.setText("0");
-        r22.setPreferredSize(new java.awt.Dimension(18, 36));
-        r22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r22.setPreferredSize(new Dimension(18, 36));
+        r22.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r22ActionPerformed(evt);
             }
         });
 
         m24.setText("-");
-        m24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m24.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m24ActionPerformed(evt);
             }
         });
 
         m23.setText("-");
-        m23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m23.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m23ActionPerformed(evt);
             }
         });
 
         m25.setText("-");
-        m25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m25.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m25ActionPerformed(evt);
             }
         });
 
         m26.setText("-");
-        m26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m26.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m26ActionPerformed(evt);
             }
         });
 
         s25.setText("+");
-        s25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s25.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s25ActionPerformed(evt);
             }
         });
 
         s26.setText("+");
-        s26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s26.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s26ActionPerformed(evt);
             }
         });
@@ -1200,344 +1236,344 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         veintiseis.setText("R de Pesq: cuidado é fundamental Online");
 
         r26.setText("0");
-        r26.setPreferredSize(new java.awt.Dimension(18, 36));
-        r26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r26.setPreferredSize(new Dimension(18, 36));
+        r26.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r26ActionPerformed(evt);
             }
         });
 
         r25.setText("0");
-        r25.setPreferredSize(new java.awt.Dimension(18, 36));
-        r25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r25.setPreferredSize(new Dimension(18, 36));
+        r25.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r25ActionPerformed(evt);
             }
         });
 
         r24.setText("0");
-        r24.setPreferredSize(new java.awt.Dimension(18, 36));
-        r24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r24.setPreferredSize(new Dimension(18, 36));
+        r24.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r24ActionPerformed(evt);
             }
         });
 
         m22.setText("-");
-        m22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m22.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m22ActionPerformed(evt);
             }
         });
 
         s22.setText("+");
-        s22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s22.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s22ActionPerformed(evt);
             }
         });
 
         m29.setText("-");
-        m29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m29.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m29ActionPerformed(evt);
             }
         });
 
         m28.setText("-");
-        m28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m28.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m28ActionPerformed(evt);
             }
         });
 
         m30.setText("-");
-        m30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m30.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m30ActionPerformed(evt);
             }
         });
 
         m31.setText("-");
-        m31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m31.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m31ActionPerformed(evt);
             }
         });
 
         m32.setText("-");
-        m32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m32.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m32ActionPerformed(evt);
             }
         });
 
         m33.setText("-");
-        m33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m33.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m33ActionPerformed(evt);
             }
         });
 
         m34.setText("-");
-        m34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m34.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m34ActionPerformed(evt);
             }
         });
 
         m35.setText("-");
-        m35.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m35.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m35ActionPerformed(evt);
             }
         });
 
         m36.setText("-");
-        m36.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m36.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m36ActionPerformed(evt);
             }
         });
 
         m37.setText("-");
-        m37.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m37.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m37ActionPerformed(evt);
             }
         });
 
         m39.setText("-");
-        m39.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m39.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m39ActionPerformed(evt);
             }
         });
 
         m38.setText("-");
-        m38.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m38.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m38ActionPerformed(evt);
             }
         });
 
         m40.setText("-");
-        m40.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m40.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m40ActionPerformed(evt);
             }
         });
 
         m41.setText("-");
-        m41.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m41.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m41ActionPerformed(evt);
             }
         });
 
         m42.setText("-");
-        m42.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m42.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m42ActionPerformed(evt);
             }
         });
 
         m43.setText("-");
-        m43.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m43.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m43ActionPerformed(evt);
             }
         });
 
         m44.setText("-");
-        m44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m44.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m44ActionPerformed(evt);
             }
         });
 
         m45.setText("-");
-        m45.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m45.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m45ActionPerformed(evt);
             }
         });
 
         m46.setText("-");
-        m46.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m46.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m46ActionPerformed(evt);
             }
         });
 
         m47.setText("-");
-        m47.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m47.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m47ActionPerformed(evt);
             }
         });
 
         r34.setText("0");
-        r34.setPreferredSize(new java.awt.Dimension(18, 36));
+        r34.setPreferredSize(new Dimension(18, 36));
 
         r35.setText("0");
-        r35.setPreferredSize(new java.awt.Dimension(18, 36));
+        r35.setPreferredSize(new Dimension(18, 36));
 
         r36.setText("0");
-        r36.setPreferredSize(new java.awt.Dimension(18, 36));
+        r36.setPreferredSize(new Dimension(18, 36));
 
         r37.setText("0");
-        r37.setPreferredSize(new java.awt.Dimension(18, 36));
+        r37.setPreferredSize(new Dimension(18, 36));
 
         r38.setText("0");
-        r38.setPreferredSize(new java.awt.Dimension(18, 36));
+        r38.setPreferredSize(new Dimension(18, 36));
 
         r39.setText("0");
-        r39.setPreferredSize(new java.awt.Dimension(18, 36));
+        r39.setPreferredSize(new Dimension(18, 36));
 
         r40.setText("0");
-        r40.setPreferredSize(new java.awt.Dimension(18, 36));
+        r40.setPreferredSize(new Dimension(18, 36));
 
         r41.setText("0");
-        r41.setPreferredSize(new java.awt.Dimension(18, 36));
+        r41.setPreferredSize(new Dimension(18, 36));
 
         r42.setText("0");
-        r42.setPreferredSize(new java.awt.Dimension(18, 36));
+        r42.setPreferredSize(new Dimension(18, 36));
 
         r43.setText("0");
-        r43.setPreferredSize(new java.awt.Dimension(18, 36));
+        r43.setPreferredSize(new Dimension(18, 36));
 
         r44.setText("0");
-        r44.setPreferredSize(new java.awt.Dimension(18, 36));
+        r44.setPreferredSize(new Dimension(18, 36));
 
         r45.setText("0");
-        r45.setPreferredSize(new java.awt.Dimension(18, 36));
+        r45.setPreferredSize(new Dimension(18, 36));
 
         r46.setText("0");
-        r46.setPreferredSize(new java.awt.Dimension(18, 36));
+        r46.setPreferredSize(new Dimension(18, 36));
 
         r47.setText("0");
-        r47.setPreferredSize(new java.awt.Dimension(18, 36));
+        r47.setPreferredSize(new Dimension(18, 36));
 
         r33.setText("0");
-        r33.setPreferredSize(new java.awt.Dimension(18, 36));
+        r33.setPreferredSize(new Dimension(18, 36));
 
         r32.setText("0");
-        r32.setPreferredSize(new java.awt.Dimension(18, 36));
-        r32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r32.setPreferredSize(new Dimension(18, 36));
+        r32.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r32ActionPerformed(evt);
             }
         });
 
         r31.setText("0");
-        r31.setPreferredSize(new java.awt.Dimension(18, 36));
-        r31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r31.setPreferredSize(new Dimension(18, 36));
+        r31.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r31ActionPerformed(evt);
             }
         });
 
         r30.setText("0");
-        r30.setPreferredSize(new java.awt.Dimension(18, 36));
-        r30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r30.setPreferredSize(new Dimension(18, 36));
+        r30.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r30ActionPerformed(evt);
             }
         });
 
         r29.setText("0");
-        r29.setPreferredSize(new java.awt.Dimension(18, 36));
-        r29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r29.setPreferredSize(new Dimension(18, 36));
+        r29.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r29ActionPerformed(evt);
             }
         });
 
         r28.setText("0");
-        r28.setPreferredSize(new java.awt.Dimension(18, 36));
-        r28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r28.setPreferredSize(new Dimension(18, 36));
+        r28.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r28ActionPerformed(evt);
             }
         });
 
         r27.setText("0");
-        r27.setPreferredSize(new java.awt.Dimension(18, 36));
-        r27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r27.setPreferredSize(new Dimension(18, 36));
+        r27.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r27ActionPerformed(evt);
             }
         });
 
         s49.setText("+");
-        s49.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s49.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s49ActionPerformed(evt);
             }
         });
 
         s50.setText("+");
-        s50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s50.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s50ActionPerformed(evt);
             }
         });
 
         r49.setText("0");
-        r49.setPreferredSize(new java.awt.Dimension(18, 36));
-        r49.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r49.setPreferredSize(new Dimension(18, 36));
+        r49.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r49ActionPerformed(evt);
             }
         });
 
         r48.setText("0");
-        r48.setPreferredSize(new java.awt.Dimension(18, 36));
-        r48.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r48.setPreferredSize(new Dimension(18, 36));
+        r48.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r48ActionPerformed(evt);
             }
         });
 
         m50.setText("-");
-        m50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m50.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m50ActionPerformed(evt);
             }
         });
 
         m49.setText("-");
-        m49.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m49.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m49ActionPerformed(evt);
             }
         });
 
         m51.setText("-");
-        m51.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m51.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m51ActionPerformed(evt);
             }
         });
 
         m52.setText("-");
-        m52.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m52.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m52ActionPerformed(evt);
             }
         });
 
         s51.setText("+");
-        s51.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s51.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s51ActionPerformed(evt);
             }
         });
 
         s52.setText("+");
-        s52.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s52.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s52ActionPerformed(evt);
             }
         });
@@ -1595,370 +1631,370 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         cuarentasiete.setText("Rev RENE");
 
         s27.setText("+");
-        s27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s27.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s27ActionPerformed(evt);
             }
         });
 
         s28.setText("+");
-        s28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s28.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s28ActionPerformed(evt);
             }
         });
 
         s29.setText("+");
-        s29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s29.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s29ActionPerformed(evt);
             }
         });
 
         s30.setText("+");
-        s30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s30.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s30ActionPerformed(evt);
             }
         });
 
         s31.setText("+");
-        s31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s31.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s31ActionPerformed(evt);
             }
         });
 
         s32.setText("+");
-        s32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s32.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s32ActionPerformed(evt);
             }
         });
 
         s33.setText("+");
-        s33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s33.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s33ActionPerformed(evt);
             }
         });
 
         s34.setText("+");
-        s34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s34.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s34ActionPerformed(evt);
             }
         });
 
         s35.setText("+");
-        s35.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s35.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s35ActionPerformed(evt);
             }
         });
 
         s36.setText("+");
-        s36.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s36.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s36ActionPerformed(evt);
             }
         });
 
         s37.setText("+");
-        s37.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s37.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s37ActionPerformed(evt);
             }
         });
 
         s38.setText("+");
-        s38.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s38.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s38ActionPerformed(evt);
             }
         });
 
         s39.setText("+");
-        s39.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s39.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s39ActionPerformed(evt);
             }
         });
 
         r52.setText("0");
-        r52.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r52.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r52ActionPerformed(evt);
             }
         });
 
         r51.setText("0");
-        r51.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r51.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r51ActionPerformed(evt);
             }
         });
 
         r50.setText("0");
-        r50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        r50.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 r50ActionPerformed(evt);
             }
         });
 
         m48.setText("-");
-        m48.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m48.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m48ActionPerformed(evt);
             }
         });
 
         s48.setText("+");
-        s48.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s48.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s48ActionPerformed(evt);
             }
         });
 
         s40.setText("+");
-        s40.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s40.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s40ActionPerformed(evt);
             }
         });
 
         s41.setText("+");
-        s41.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s41.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s41ActionPerformed(evt);
             }
         });
 
         s42.setText("+");
-        s42.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s42.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s42ActionPerformed(evt);
             }
         });
 
         s43.setText("+");
-        s43.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s43.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s43ActionPerformed(evt);
             }
         });
 
         s44.setText("+");
-        s44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s44.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s44ActionPerformed(evt);
             }
         });
 
         s45.setText("+");
-        s45.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s45.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s45ActionPerformed(evt);
             }
         });
 
         s46.setText("+");
-        s46.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s46.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s46ActionPerformed(evt);
             }
         });
 
         s47.setText("+");
-        s47.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        s47.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 s47ActionPerformed(evt);
             }
         });
 
         m27.setText("-");
-        m27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        m27.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 m27ActionPerformed(evt);
             }
         });
 
         anio1.setColumns(20);
         anio1.setRows(5);
-        anio1.setPreferredSize(new java.awt.Dimension(190, 30));
-        anio1.setSize(new java.awt.Dimension(190, 30));
+        anio1.setPreferredSize(new Dimension(190, 30));
+        anio1.setSize(new Dimension(190, 30));
 
         rr26.setText("0");
-        rr26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr26.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr26ActionPerformed(evt);
             }
         });
 
         rr25.setText("0");
-        rr25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr25.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr25ActionPerformed(evt);
             }
         });
 
         rr24.setText("0");
-        rr24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr24.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr24ActionPerformed(evt);
             }
         });
 
         mm22.setText("-");
-        mm22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm22.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm22ActionPerformed(evt);
             }
         });
 
         ss22.setText("+");
-        ss22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss22.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss22ActionPerformed(evt);
             }
         });
 
         mm29.setText("-");
-        mm29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm29.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm29ActionPerformed(evt);
             }
         });
 
         mm28.setText("-");
-        mm28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm28.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm28ActionPerformed(evt);
             }
         });
 
         mm30.setText("-");
-        mm30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm30.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm30ActionPerformed(evt);
             }
         });
 
         mm31.setText("-");
-        mm31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm31.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm31ActionPerformed(evt);
             }
         });
 
         mm32.setText("-");
-        mm32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm32.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm32ActionPerformed(evt);
             }
         });
 
         mm33.setText("-");
-        mm33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm33.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm33ActionPerformed(evt);
             }
         });
 
         mm34.setText("-");
-        mm34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm34.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm34ActionPerformed(evt);
             }
         });
 
         mm35.setText("-");
-        mm35.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm35.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm35ActionPerformed(evt);
             }
         });
 
         mm36.setText("-");
-        mm36.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm36.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm36ActionPerformed(evt);
             }
         });
 
         mm37.setText("-");
-        mm37.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm37.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm37ActionPerformed(evt);
             }
         });
 
         mm39.setText("-");
-        mm39.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm39.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm39ActionPerformed(evt);
             }
         });
 
         mm38.setText("-");
-        mm38.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm38.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm38ActionPerformed(evt);
             }
         });
 
         mm40.setText("-");
-        mm40.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm40.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm40ActionPerformed(evt);
             }
         });
 
         mm41.setText("-");
-        mm41.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm41.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm41ActionPerformed(evt);
             }
         });
 
         mm42.setText("-");
-        mm42.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm42.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm42ActionPerformed(evt);
             }
         });
 
         mm43.setText("-");
-        mm43.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm43.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm43ActionPerformed(evt);
             }
         });
 
         mm44.setText("-");
-        mm44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm44.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm44ActionPerformed(evt);
             }
         });
 
         mm45.setText("-");
-        mm45.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm45.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm45ActionPerformed(evt);
             }
         });
 
         mm46.setText("-");
-        mm46.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm46.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm46ActionPerformed(evt);
             }
         });
 
         mm47.setText("-");
-        mm47.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm47.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm47ActionPerformed(evt);
             }
         });
@@ -1968,36 +2004,36 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rr35.setText("0");
 
         ss1.setText("+");
-        ss1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss1ActionPerformed(evt);
             }
         });
 
         ss2.setText("+");
-        ss2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss2ActionPerformed(evt);
             }
         });
 
         ss3.setText("+");
-        ss3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss3ActionPerformed(evt);
             }
         });
 
         ss4.setText("+");
-        ss4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss4ActionPerformed(evt);
             }
         });
 
         ss5.setText("+");
-        ss5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss5ActionPerformed(evt);
             }
         });
@@ -2023,71 +2059,71 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rr45.setText("0");
 
         ss6.setText("+");
-        ss6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss6.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss6ActionPerformed(evt);
             }
         });
 
         ss7.setText("+");
-        ss7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss7.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss7ActionPerformed(evt);
             }
         });
 
         ss8.setText("+");
-        ss8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss8.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss8ActionPerformed(evt);
             }
         });
 
         ss9.setText("+");
-        ss9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss9.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss9ActionPerformed(evt);
             }
         });
 
         ss10.setText("+");
-        ss10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss10.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss10ActionPerformed(evt);
             }
         });
 
         ss11.setText("+");
-        ss11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss11.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss11ActionPerformed(evt);
             }
         });
 
         ss12.setText("+");
-        ss12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss12.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss12ActionPerformed(evt);
             }
         });
 
         ss13.setText("+");
-        ss13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss13.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss13ActionPerformed(evt);
             }
         });
 
         ss14.setText("+");
-        ss14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss14.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss14ActionPerformed(evt);
             }
         });
 
         ss15.setText("+");
-        ss15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss15.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss15ActionPerformed(evt);
             }
         });
@@ -2099,302 +2135,302 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rr33.setText("0");
 
         rr32.setText("0");
-        rr32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr32.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr32ActionPerformed(evt);
             }
         });
 
         rr31.setText("0");
-        rr31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr31.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr31ActionPerformed(evt);
             }
         });
 
         rr30.setText("0");
-        rr30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr30.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr30ActionPerformed(evt);
             }
         });
 
         rr29.setText("0");
-        rr29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr29.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr29ActionPerformed(evt);
             }
         });
 
         rr28.setText("0");
-        rr28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr28.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr28ActionPerformed(evt);
             }
         });
 
         rr27.setText("0");
-        rr27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr27.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr27ActionPerformed(evt);
             }
         });
 
         ss49.setText("+");
-        ss49.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss49.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss49ActionPerformed(evt);
             }
         });
 
         ss16.setText("+");
-        ss16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss16.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss16ActionPerformed(evt);
             }
         });
 
         ss17.setText("+");
-        ss17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss17.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss17ActionPerformed(evt);
             }
         });
 
         ss18.setText("+");
-        ss18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss18.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss18ActionPerformed(evt);
             }
         });
 
         ss19.setText("+");
-        ss19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss19.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss19ActionPerformed(evt);
             }
         });
 
         ss20.setText("+");
-        ss20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss20.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss20ActionPerformed(evt);
             }
         });
 
         ss21.setText("+");
-        ss21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss21.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss21ActionPerformed(evt);
             }
         });
 
         mm1.setText("-");
-        mm1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm1ActionPerformed(evt);
             }
         });
 
         mm3.setText("-");
-        mm3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm3ActionPerformed(evt);
             }
         });
 
         mm2.setText("-");
-        mm2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm2ActionPerformed(evt);
             }
         });
 
         mm4.setText("-");
-        mm4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm4ActionPerformed(evt);
             }
         });
 
         ss50.setText("+");
-        ss50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss50.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss50ActionPerformed(evt);
             }
         });
 
         rr49.setText("0");
-        rr49.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr49.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr49ActionPerformed(evt);
             }
         });
 
         rr48.setText("0");
-        rr48.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr48.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr48ActionPerformed(evt);
             }
         });
 
         mm50.setText("-");
-        mm50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm50.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm50ActionPerformed(evt);
             }
         });
 
         mm49.setText("-");
-        mm49.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm49.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm49ActionPerformed(evt);
             }
         });
 
         mm51.setText("-");
-        mm51.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm51.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm51ActionPerformed(evt);
             }
         });
 
         mm52.setText("-");
-        mm52.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm52.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm52ActionPerformed(evt);
             }
         });
 
         ss51.setText("+");
-        ss51.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss51.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss51ActionPerformed(evt);
             }
         });
 
         ss52.setText("+");
-        ss52.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss52.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss52ActionPerformed(evt);
             }
         });
 
         mm5.setText("-");
-        mm5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm5ActionPerformed(evt);
             }
         });
 
         mm6.setText("-");
-        mm6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm6.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm6ActionPerformed(evt);
             }
         });
 
         mm7.setText("-");
-        mm7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm7.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm7ActionPerformed(evt);
             }
         });
 
         mm8.setText("-");
-        mm8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm8.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm8ActionPerformed(evt);
             }
         });
 
         mm9.setText("-");
-        mm9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm9.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm9ActionPerformed(evt);
             }
         });
 
         mm10.setText("-");
-        mm10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm10.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm10ActionPerformed(evt);
             }
         });
 
         mm11.setText("-");
-        mm11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm11.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm11ActionPerformed(evt);
             }
         });
 
         mm13.setText("-");
-        mm13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm13.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm13ActionPerformed(evt);
             }
         });
 
         mm12.setText("-");
-        mm12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm12.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm12ActionPerformed(evt);
             }
         });
 
         mm14.setText("-");
-        mm14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm14.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm14ActionPerformed(evt);
             }
         });
 
         mm15.setText("-");
-        mm15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm15.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm15ActionPerformed(evt);
             }
         });
 
         mm16.setText("-");
-        mm16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm16.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm16ActionPerformed(evt);
             }
         });
 
         mm17.setText("-");
-        mm17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm17.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm17ActionPerformed(evt);
             }
         });
 
         mm18.setText("-");
-        mm18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm18.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm18ActionPerformed(evt);
             }
         });
 
         mm19.setText("-");
-        mm19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm19.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm19ActionPerformed(evt);
             }
         });
 
         mm20.setText("-");
-        mm20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm20.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm20ActionPerformed(evt);
             }
         });
 
         mm21.setText("-");
-        mm21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm21.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm21ActionPerformed(evt);
             }
         });
@@ -2426,36 +2462,36 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rr20.setText("0");
 
         ss27.setText("+");
-        ss27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss27.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss27ActionPerformed(evt);
             }
         });
 
         ss28.setText("+");
-        ss28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss28.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss28ActionPerformed(evt);
             }
         });
 
         ss29.setText("+");
-        ss29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss29.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss29ActionPerformed(evt);
             }
         });
 
         ss30.setText("+");
-        ss30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss30.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss30ActionPerformed(evt);
             }
         });
 
         ss31.setText("+");
-        ss31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss31.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss31ActionPerformed(evt);
             }
         });
@@ -2465,447 +2501,447 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rr7.setText("0");
 
         rr6.setText("0");
-        rr6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr6.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr6ActionPerformed(evt);
             }
         });
 
         rr5.setText("0");
-        rr5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr5ActionPerformed(evt);
             }
         });
 
         rr4.setText("0");
-        rr4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr4ActionPerformed(evt);
             }
         });
 
         rr3.setText("0");
-        rr3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr3ActionPerformed(evt);
             }
         });
 
         rr2.setText("0");
-        rr2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr2ActionPerformed(evt);
             }
         });
 
         rr1.setText("0");
-        rr1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr1ActionPerformed(evt);
             }
         });
 
         ss23.setText("+");
-        ss23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss23.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss23ActionPerformed(evt);
             }
         });
 
         ss24.setText("+");
-        ss24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss24.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss24ActionPerformed(evt);
             }
         });
 
         anio2.setColumns(20);
         anio2.setRows(5);
-        anio2.setPreferredSize(new java.awt.Dimension(190, 30));
-        anio2.setSize(new java.awt.Dimension(190, 30));
+        anio2.setPreferredSize(new Dimension(190, 30));
+        anio2.setSize(new Dimension(190, 30));
 
         ss32.setText("+");
-        ss32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss32.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss32ActionPerformed(evt);
             }
         });
 
         ss33.setText("+");
-        ss33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss33.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss33ActionPerformed(evt);
             }
         });
 
         ss34.setText("+");
-        ss34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss34.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss34ActionPerformed(evt);
             }
         });
 
         ss35.setText("+");
-        ss35.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss35.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss35ActionPerformed(evt);
             }
         });
 
         ss36.setText("+");
-        ss36.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss36.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss36ActionPerformed(evt);
             }
         });
 
         ss37.setText("+");
-        ss37.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss37.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss37ActionPerformed(evt);
             }
         });
 
         ss38.setText("+");
-        ss38.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss38.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss38ActionPerformed(evt);
             }
         });
 
         ss39.setText("+");
-        ss39.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss39.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss39ActionPerformed(evt);
             }
         });
 
         rr52.setText("0");
-        rr52.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr52.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr52ActionPerformed(evt);
             }
         });
 
         rr51.setText("0");
-        rr51.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr51.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr51ActionPerformed(evt);
             }
         });
 
         rr50.setText("0");
-        rr50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr50.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr50ActionPerformed(evt);
             }
         });
 
         mm48.setText("-");
-        mm48.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm48.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm48ActionPerformed(evt);
             }
         });
 
         ss48.setText("+");
-        ss48.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss48.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss48ActionPerformed(evt);
             }
         });
 
         ss40.setText("+");
-        ss40.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss40.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss40ActionPerformed(evt);
             }
         });
 
         ss41.setText("+");
-        ss41.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss41.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss41ActionPerformed(evt);
             }
         });
 
         ss42.setText("+");
-        ss42.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss42.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss42ActionPerformed(evt);
             }
         });
 
         ss43.setText("+");
-        ss43.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss43.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss43ActionPerformed(evt);
             }
         });
 
         ss44.setText("+");
-        ss44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss44.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss44ActionPerformed(evt);
             }
         });
 
         ss45.setText("+");
-        ss45.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss45.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss45ActionPerformed(evt);
             }
         });
 
         ss46.setText("+");
-        ss46.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss46.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss46ActionPerformed(evt);
             }
         });
 
         ss47.setText("+");
-        ss47.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss47.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss47ActionPerformed(evt);
             }
         });
 
         rr23.setText("0");
-        rr23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr23.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr23ActionPerformed(evt);
             }
         });
 
         mm27.setText("-");
-        mm27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm27.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm27ActionPerformed(evt);
             }
         });
 
         rr22.setText("0");
-        rr22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rr22.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rr22ActionPerformed(evt);
             }
         });
 
         mm24.setText("-");
-        mm24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm24.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm24ActionPerformed(evt);
             }
         });
 
         mm23.setText("-");
-        mm23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm23.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm23ActionPerformed(evt);
             }
         });
 
         mm25.setText("-");
-        mm25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm25.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm25ActionPerformed(evt);
             }
         });
 
         mm26.setText("-");
-        mm26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mm26.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mm26ActionPerformed(evt);
             }
         });
 
         ss25.setText("+");
-        ss25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss25.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss25ActionPerformed(evt);
             }
         });
 
         ss26.setText("+");
-        ss26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ss26.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 ss26ActionPerformed(evt);
             }
         });
 
         rrr26.setText("0");
-        rrr26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr26.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr26ActionPerformed(evt);
             }
         });
 
         rrr25.setText("0");
-        rrr25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr25.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr25ActionPerformed(evt);
             }
         });
 
         rrr24.setText("0");
-        rrr24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr24.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr24ActionPerformed(evt);
             }
         });
 
         mmm22.setText("-");
-        mmm22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm22.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm22ActionPerformed(evt);
             }
         });
 
         sss22.setText("+");
-        sss22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss22.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss22ActionPerformed(evt);
             }
         });
 
         mmm29.setText("-");
-        mmm29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm29.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm29ActionPerformed(evt);
             }
         });
 
         mmm28.setText("-");
-        mmm28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm28.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm28ActionPerformed(evt);
             }
         });
 
         mmm30.setText("-");
-        mmm30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm30.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm30ActionPerformed(evt);
             }
         });
 
         mmm31.setText("-");
-        mmm31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm31.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm31ActionPerformed(evt);
             }
         });
 
         mmm32.setText("-");
-        mmm32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm32.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm32ActionPerformed(evt);
             }
         });
 
         mmm33.setText("-");
-        mmm33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm33.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm33ActionPerformed(evt);
             }
         });
 
         mmm34.setText("-");
-        mmm34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm34.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm34ActionPerformed(evt);
             }
         });
 
         mmm35.setText("-");
-        mmm35.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm35.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm35ActionPerformed(evt);
             }
         });
 
         mmm36.setText("-");
-        mmm36.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm36.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm36ActionPerformed(evt);
             }
         });
 
         mmm37.setText("-");
-        mmm37.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm37.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm37ActionPerformed(evt);
             }
         });
 
         mmm39.setText("-");
-        mmm39.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm39.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm39ActionPerformed(evt);
             }
         });
 
         mmm38.setText("-");
-        mmm38.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm38.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm38ActionPerformed(evt);
             }
         });
 
         mmm40.setText("-");
-        mmm40.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm40.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm40ActionPerformed(evt);
             }
         });
 
         mmm41.setText("-");
-        mmm41.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm41.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm41ActionPerformed(evt);
             }
         });
 
         mmm42.setText("-");
-        mmm42.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm42.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm42ActionPerformed(evt);
             }
         });
 
         mmm43.setText("-");
-        mmm43.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm43.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm43ActionPerformed(evt);
             }
         });
 
         mmm44.setText("-");
-        mmm44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm44.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm44ActionPerformed(evt);
             }
         });
 
         mmm45.setText("-");
-        mmm45.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm45.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm45ActionPerformed(evt);
             }
         });
 
         mmm46.setText("-");
-        mmm46.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm46.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm46ActionPerformed(evt);
             }
         });
 
         mmm47.setText("-");
-        mmm47.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm47.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm47ActionPerformed(evt);
             }
         });
@@ -2915,36 +2951,36 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rrr35.setText("0");
 
         sss1.setText("+");
-        sss1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss1ActionPerformed(evt);
             }
         });
 
         sss2.setText("+");
-        sss2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss2ActionPerformed(evt);
             }
         });
 
         sss3.setText("+");
-        sss3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss3ActionPerformed(evt);
             }
         });
 
         sss4.setText("+");
-        sss4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss4ActionPerformed(evt);
             }
         });
 
         sss5.setText("+");
-        sss5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss5ActionPerformed(evt);
             }
         });
@@ -2970,71 +3006,71 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rrr45.setText("0");
 
         sss6.setText("+");
-        sss6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss6.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss6ActionPerformed(evt);
             }
         });
 
         sss7.setText("+");
-        sss7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss7.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss7ActionPerformed(evt);
             }
         });
 
         sss8.setText("+");
-        sss8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss8.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss8ActionPerformed(evt);
             }
         });
 
         sss9.setText("+");
-        sss9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss9.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss9ActionPerformed(evt);
             }
         });
 
         sss10.setText("+");
-        sss10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss10.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss10ActionPerformed(evt);
             }
         });
 
         sss11.setText("+");
-        sss11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss11.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss11ActionPerformed(evt);
             }
         });
 
         sss12.setText("+");
-        sss12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss12.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss12ActionPerformed(evt);
             }
         });
 
         sss13.setText("+");
-        sss13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss13.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss13ActionPerformed(evt);
             }
         });
 
         sss14.setText("+");
-        sss14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss14.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss14ActionPerformed(evt);
             }
         });
 
         sss15.setText("+");
-        sss15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss15.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss15ActionPerformed(evt);
             }
         });
@@ -3046,302 +3082,302 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rrr33.setText("0");
 
         rrr32.setText("0");
-        rrr32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr32.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr32ActionPerformed(evt);
             }
         });
 
         rrr31.setText("0");
-        rrr31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr31.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr31ActionPerformed(evt);
             }
         });
 
         rrr30.setText("0");
-        rrr30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr30.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr30ActionPerformed(evt);
             }
         });
 
         rrr29.setText("0");
-        rrr29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr29.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr29ActionPerformed(evt);
             }
         });
 
         rrr28.setText("0");
-        rrr28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr28.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr28ActionPerformed(evt);
             }
         });
 
         rrr27.setText("0");
-        rrr27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr27.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr27ActionPerformed(evt);
             }
         });
 
         sss49.setText("+");
-        sss49.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss49.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss49ActionPerformed(evt);
             }
         });
 
         sss16.setText("+");
-        sss16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss16.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss16ActionPerformed(evt);
             }
         });
 
         sss17.setText("+");
-        sss17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss17.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss17ActionPerformed(evt);
             }
         });
 
         sss18.setText("+");
-        sss18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss18.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss18ActionPerformed(evt);
             }
         });
 
         sss19.setText("+");
-        sss19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss19.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss19ActionPerformed(evt);
             }
         });
 
         sss20.setText("+");
-        sss20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss20.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss20ActionPerformed(evt);
             }
         });
 
         sss21.setText("+");
-        sss21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss21.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss21ActionPerformed(evt);
             }
         });
 
         mmm1.setText("-");
-        mmm1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm1ActionPerformed(evt);
             }
         });
 
         mmm3.setText("-");
-        mmm3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm3ActionPerformed(evt);
             }
         });
 
         mmm2.setText("-");
-        mmm2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm2ActionPerformed(evt);
             }
         });
 
         mmm4.setText("-");
-        mmm4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm4ActionPerformed(evt);
             }
         });
 
         sss50.setText("+");
-        sss50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss50.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss50ActionPerformed(evt);
             }
         });
 
         rrr49.setText("0");
-        rrr49.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr49.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr49ActionPerformed(evt);
             }
         });
 
         rrr48.setText("0");
-        rrr48.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr48.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr48ActionPerformed(evt);
             }
         });
 
         mmm50.setText("-");
-        mmm50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm50.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm50ActionPerformed(evt);
             }
         });
 
         mmm49.setText("-");
-        mmm49.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm49.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm49ActionPerformed(evt);
             }
         });
 
         mmm51.setText("-");
-        mmm51.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm51.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm51ActionPerformed(evt);
             }
         });
 
         mmm52.setText("-");
-        mmm52.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm52.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm52ActionPerformed(evt);
             }
         });
 
         sss51.setText("+");
-        sss51.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss51.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss51ActionPerformed(evt);
             }
         });
 
         sss52.setText("+");
-        sss52.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss52.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss52ActionPerformed(evt);
             }
         });
 
         mmm5.setText("-");
-        mmm5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm5ActionPerformed(evt);
             }
         });
 
         mmm6.setText("-");
-        mmm6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm6.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm6ActionPerformed(evt);
             }
         });
 
         mmm7.setText("-");
-        mmm7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm7.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm7ActionPerformed(evt);
             }
         });
 
         mmm8.setText("-");
-        mmm8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm8.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm8ActionPerformed(evt);
             }
         });
 
         mmm9.setText("-");
-        mmm9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm9.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm9ActionPerformed(evt);
             }
         });
 
         mmm10.setText("-");
-        mmm10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm10.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm10ActionPerformed(evt);
             }
         });
 
         mmm11.setText("-");
-        mmm11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm11.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm11ActionPerformed(evt);
             }
         });
 
         mmm13.setText("-");
-        mmm13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm13.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm13ActionPerformed(evt);
             }
         });
 
         mmm12.setText("-");
-        mmm12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm12.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm12ActionPerformed(evt);
             }
         });
 
         mmm14.setText("-");
-        mmm14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm14.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm14ActionPerformed(evt);
             }
         });
 
         mmm15.setText("-");
-        mmm15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm15.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm15ActionPerformed(evt);
             }
         });
 
         mmm16.setText("-");
-        mmm16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm16.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm16ActionPerformed(evt);
             }
         });
 
         mmm17.setText("-");
-        mmm17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm17.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm17ActionPerformed(evt);
             }
         });
 
         mmm18.setText("-");
-        mmm18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm18.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm18ActionPerformed(evt);
             }
         });
 
         mmm19.setText("-");
-        mmm19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm19.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm19ActionPerformed(evt);
             }
         });
 
         mmm20.setText("-");
-        mmm20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm20.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm20ActionPerformed(evt);
             }
         });
 
         mmm21.setText("-");
-        mmm21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm21.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm21ActionPerformed(evt);
             }
         });
@@ -3373,36 +3409,36 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rrr20.setText("0");
 
         sss27.setText("+");
-        sss27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss27.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss27ActionPerformed(evt);
             }
         });
 
         sss28.setText("+");
-        sss28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss28.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss28ActionPerformed(evt);
             }
         });
 
         sss29.setText("+");
-        sss29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss29.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss29ActionPerformed(evt);
             }
         });
 
         sss30.setText("+");
-        sss30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss30.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss30ActionPerformed(evt);
             }
         });
 
         sss31.setText("+");
-        sss31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss31.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss31ActionPerformed(evt);
             }
         });
@@ -3412,285 +3448,284 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rrr7.setText("0");
 
         rrr6.setText("0");
-        rrr6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr6.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr6ActionPerformed(evt);
             }
         });
 
         rrr5.setText("0");
-        rrr5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr5ActionPerformed(evt);
             }
         });
 
         rrr4.setText("0");
-        rrr4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr4ActionPerformed(evt);
             }
         });
 
         rrr3.setText("0");
-        rrr3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr3ActionPerformed(evt);
             }
         });
 
         rrr2.setText("0");
-        rrr2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr2ActionPerformed(evt);
             }
         });
 
         rrr1.setText("0");
-        rrr1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr1ActionPerformed(evt);
             }
         });
 
         sss23.setText("+");
-        sss23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss23.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss23ActionPerformed(evt);
             }
         });
 
         sss24.setText("+");
-        sss24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss24.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss24ActionPerformed(evt);
             }
         });
 
         anio3.setColumns(20);
         anio3.setRows(5);
-        anio3.setPreferredSize(new java.awt.Dimension(190, 30));
-        anio3.setSize(new java.awt.Dimension(190, 30));
+        anio3.setPreferredSize(new Dimension(190, 30));
+        anio3.setSize(new Dimension(190, 30));
 
         sss32.setText("+");
-        sss32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss32.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss32ActionPerformed(evt);
             }
         });
 
         sss33.setText("+");
-        sss33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss33.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss33ActionPerformed(evt);
             }
         });
 
         sss34.setText("+");
-        sss34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss34.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss34ActionPerformed(evt);
             }
         });
 
         sss35.setText("+");
-        sss35.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss35.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss35ActionPerformed(evt);
             }
         });
 
         sss36.setText("+");
-        sss36.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss36.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss36ActionPerformed(evt);
             }
         });
 
         sss37.setText("+");
-        sss37.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss37.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss37ActionPerformed(evt);
             }
         });
 
         sss38.setText("+");
-        sss38.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss38.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss38ActionPerformed(evt);
             }
         });
 
         sss39.setText("+");
-        sss39.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss39.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss39ActionPerformed(evt);
             }
         });
 
         rrr52.setText("0");
-        rrr52.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr52.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr52ActionPerformed(evt);
             }
         });
 
         rrr51.setText("0");
-        rrr51.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr51.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr51ActionPerformed(evt);
             }
         });
 
         rrr50.setText("0");
-        rrr50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr50.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr50ActionPerformed(evt);
             }
         });
 
         mmm48.setText("-");
-        mmm48.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm48.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm48ActionPerformed(evt);
             }
         });
 
         sss48.setText("+");
-        sss48.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss48.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss48ActionPerformed(evt);
             }
         });
 
         sss40.setText("+");
-        sss40.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss40.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss40ActionPerformed(evt);
             }
         });
 
         sss41.setText("+");
-        sss41.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss41.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss41ActionPerformed(evt);
             }
         });
 
         sss42.setText("+");
-        sss42.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss42.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss42ActionPerformed(evt);
             }
         });
 
         sss43.setText("+");
-        sss43.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss43.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss43ActionPerformed(evt);
             }
         });
 
         sss44.setText("+");
-        sss44.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss44.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss44ActionPerformed(evt);
             }
         });
 
         sss45.setText("+");
-        sss45.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss45.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss45ActionPerformed(evt);
             }
         });
 
         sss46.setText("+");
-        sss46.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss46.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss46ActionPerformed(evt);
             }
         });
 
         sss47.setText("+");
-        sss47.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss47.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss47ActionPerformed(evt);
             }
         });
 
         rrr23.setText("0");
-        rrr23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr23.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr23ActionPerformed(evt);
             }
         });
 
         mmm27.setText("-");
-        mmm27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm27.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm27ActionPerformed(evt);
             }
         });
 
         rrr22.setText("0");
-        rrr22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        rrr22.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 rrr22ActionPerformed(evt);
             }
         });
 
         mmm24.setText("-");
-        mmm24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm24.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm24ActionPerformed(evt);
             }
         });
 
         mmm23.setText("-");
-        mmm23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm23.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm23ActionPerformed(evt);
             }
         });
 
         mmm25.setText("-");
-        mmm25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm25.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm25ActionPerformed(evt);
             }
         });
 
         mmm26.setText("-");
-        mmm26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mmm26.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 mmm26ActionPerformed(evt);
             }
         });
 
         sss25.setText("+");
-        sss25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss25.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss25ActionPerformed(evt);
             }
         });
 
         sss26.setText("+");
-        sss26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        sss26.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 sss26ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        GroupLayout jPanel6Layout = new GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanel6Layout.setHorizontalGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                             .addComponent(uno)
                             .addComponent(dos)
                             .addComponent(tres)
@@ -3713,136 +3748,136 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                             .addComponent(veinte)
                             .addComponent(veintiuno))
                         .addGap(111, 111, 111)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r13, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r12, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r11, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r10, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r10, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r9, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r8, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r7, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r6, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r5, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r4, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r21, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r14, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s20)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m20)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r20, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r20, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s19)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m19)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r19, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r18, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s17)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m17)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r17, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r16, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r15, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(anio1, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r1, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
+                            .addComponent(anio1, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r2, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r3, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                             .addComponent(veintisiete)
                             .addComponent(veintiocho)
                             .addComponent(veintinueve)
@@ -3865,1707 +3900,1706 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                             .addComponent(cuarentaseis)
                             .addComponent(cuarentasiete))
                         .addGap(65, 65, 65)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s39)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m39)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r39, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r39, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s38)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m38)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r38, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r38, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s37)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m37)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r37, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r37, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s36)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m36)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r36, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r36, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s35)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m35)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r35, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r35, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s34)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m34)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r34, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r34, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s33)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m33)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r33, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r33, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s32)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m32)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r32, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r32, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s31)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m31)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r31, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r31, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s30)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m30)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r30, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r30, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s29)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m29)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r29, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r29, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s28)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m28)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r28, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s27)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m27)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r27, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r27, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s47)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m47)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r47, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r47, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s40)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m40)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r40, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r40, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s46)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m46)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r46, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r46, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s45)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m45)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r45, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r45, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s44)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m44)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r44, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r44, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s43)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m43)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r43, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r43, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s42)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m42)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r42, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r42, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s41)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m41)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r41, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r41, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                             .addComponent(cuarentaocho)
                             .addComponent(cuarentanueve)
                             .addComponent(cincuenta)
                             .addComponent(cincuentauno)
                             .addComponent(cincuentados))
                         .addGap(135, 135, 135)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s52)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m52)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r52, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r52, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s51)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m51)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r51, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r51, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s50)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m50)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r50, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r50, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s49)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m49)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r49, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r49, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s48)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m48)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r48, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r48, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                             .addComponent(veintidos)
                             .addComponent(veintitres)
                             .addComponent(veinticuatro)
                             .addComponent(veinticinco)
                             .addComponent(veintiseis))
                         .addGap(28, 28, 28)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s26)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m26)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r26, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r26, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s25)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m25)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r25, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s24)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m24)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r24, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r24, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r23, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r23, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(s22)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(m22)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(r22, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)))))
+                .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(67, 67, 67)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr13, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr12, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr11, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr10, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr10, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr9, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr8, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr7, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr6, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr5, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr4, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr3, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr2, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr21, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr14, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss20)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm20)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr20, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr20, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss19)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm19)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr19, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr18, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss17)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm17)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr17, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr16, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr15, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(anio2, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr1, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
+                            .addComponent(anio2, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(68, 68, 68)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss39)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm39)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr39, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr39, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss38)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm38)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr38, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr38, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss37)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm37)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr37, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr37, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss36)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm36)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr36, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr36, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss35)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm35)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr35, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr35, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss34)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm34)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr34, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr34, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss33)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm33)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr33, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr33, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss32)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm32)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr32, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr32, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss31)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm31)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr31, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr31, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss30)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm30)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr30, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr30, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss29)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm29)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr29, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr29, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss28)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm28)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr28, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss27)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm27)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr27, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr27, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss47)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm47)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr47, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr47, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss40)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm40)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr40, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr40, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss46)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm46)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr46, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr46, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss45)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm45)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr45, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr45, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss44)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm44)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr44, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr44, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss43)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm43)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr43, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr43, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss42)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm42)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr42, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr42, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss41)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm41)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr41, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr41, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss52)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm52)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr52, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr52, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss51)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm51)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr51, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr51, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss50)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm50)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr50, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr50, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss49)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm49)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr49, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr49, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss48)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm48)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr48, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr48, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(68, 68, 68)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss26)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm26)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr26, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr26, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss25)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm25)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr25, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss24)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm24)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr24, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr24, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr23, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr23, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(ss22)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mm22)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rr22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rr22, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                    .addGroup(GroupLayout.Alignment.TRAILING, jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss39)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm39)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr39, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr39, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss38)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm38)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr38, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr38, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss37)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm37)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr37, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr37, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss36)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm36)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr36, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr36, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss35)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm35)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr35, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr35, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss34)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm34)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr34, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr34, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss33)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm33)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr33, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr33, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss32)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm32)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr32, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr32, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss31)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm31)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr31, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr31, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss30)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm30)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr30, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr30, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss29)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm29)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr29, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr29, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss28)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm28)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr28, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss27)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm27)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr27, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr27, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss47)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm47)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr47, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr47, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss40)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm40)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr40, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr40, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss46)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm46)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr46, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr46, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss45)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm45)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr45, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr45, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss44)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm44)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr44, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr44, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss43)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm43)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr43, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr43, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss42)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm42)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr42, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr42, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss41)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm41)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr41, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr41, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(GroupLayout.Alignment.TRAILING, jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss26)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm26)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr26, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr26, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss25)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm25)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr25, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss24)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm24)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr24, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr24, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss23)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm23)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr23, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr23, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss22)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm22)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr22, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(GroupLayout.Alignment.TRAILING, jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss13)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm13)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr13, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss12)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm12)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr12, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss11)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm11)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr11, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss10)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm10)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr10, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr10, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss9)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm9)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr9, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss8)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm8)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr8, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss7)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm7)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr7, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss6)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm6)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr6, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss5)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm5)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr5, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss4)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm4)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr4, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss3)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm3)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr3, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss2)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm2)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr2, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss21)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm21)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr21, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss14)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm14)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr14, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss20)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm20)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr20, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr20, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss19)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm19)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr19, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss18)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm18)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr18, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss17)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm17)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr17, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss16)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm16)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr16, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss15)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm15)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr15, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss1)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm1)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(anio3, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr1, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
+                        .addComponent(anio3, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
+                    .addGroup(GroupLayout.Alignment.TRAILING, jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss52)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm52)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr52, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr52, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss51)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm51)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr51, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr51, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss50)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm50)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr50, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr50, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss49)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm49)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr49, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr49, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(sss48)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(mmm48)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(rrr48, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rrr48, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanel6Layout.setVerticalGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addGroup(GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(anio3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(anio3, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss1)
                             .addComponent(mmm1)
-                            .addComponent(rrr1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr1, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss2)
                             .addComponent(mmm2)
-                            .addComponent(rrr2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr2, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss3)
                             .addComponent(mmm3)
-                            .addComponent(rrr3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr3, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss4)
                             .addComponent(mmm4)
-                            .addComponent(rrr4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr4, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss5)
                             .addComponent(mmm5)
-                            .addComponent(rrr5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr5, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss6)
                             .addComponent(mmm6)
-                            .addComponent(rrr6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr6, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss7)
                             .addComponent(mmm7)
-                            .addComponent(rrr7, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr7, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss8)
                             .addComponent(mmm8)
-                            .addComponent(rrr8, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr8, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss9)
                             .addComponent(mmm9)
-                            .addComponent(rrr9, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr9, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss10)
                             .addComponent(mmm10)
-                            .addComponent(rrr10, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr10, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss11)
                             .addComponent(mmm11)
-                            .addComponent(rrr11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr11, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss12)
                             .addComponent(mmm12)
-                            .addComponent(rrr12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr12, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss13)
                             .addComponent(mmm13)
-                            .addComponent(rrr13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr13, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss14)
                             .addComponent(mmm14)
-                            .addComponent(rrr14, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr14, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss15)
                             .addComponent(mmm15)
-                            .addComponent(rrr15, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr15, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss16)
                             .addComponent(mmm16)
-                            .addComponent(rrr16, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr16, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss17)
                             .addComponent(mmm17)
-                            .addComponent(rrr17, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr17, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss18)
                             .addComponent(mmm18)
-                            .addComponent(rrr18, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr18, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss19)
                             .addComponent(mmm19)
-                            .addComponent(rrr19, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr19, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss20)
                             .addComponent(mmm20)
-                            .addComponent(rrr20, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr20, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss21)
                             .addComponent(mmm21)
-                            .addComponent(rrr21, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr21, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss22)
                             .addComponent(mmm22)
-                            .addComponent(rrr22, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr22, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss23)
                             .addComponent(mmm23)
-                            .addComponent(rrr23, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr23, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss24)
                             .addComponent(mmm24)
-                            .addComponent(rrr24, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr24, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss25)
                             .addComponent(mmm25)
-                            .addComponent(rrr25, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr25, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss26)
                             .addComponent(mmm26)
-                            .addComponent(rrr26, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr26, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss27)
                             .addComponent(mmm27)
-                            .addComponent(rrr27, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr27, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss28)
                             .addComponent(mmm28)
-                            .addComponent(rrr28, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr28, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss29)
                             .addComponent(mmm29)
-                            .addComponent(rrr29, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr29, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss30)
                             .addComponent(mmm30)
-                            .addComponent(rrr30, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr30, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss31)
                             .addComponent(mmm31)
-                            .addComponent(rrr31, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr31, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss32)
                             .addComponent(mmm32)
-                            .addComponent(rrr32, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr32, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss33)
                             .addComponent(mmm33)
-                            .addComponent(rrr33, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr33, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss34)
                             .addComponent(mmm34)
-                            .addComponent(rrr34, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr34, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss35)
                             .addComponent(mmm35)
-                            .addComponent(rrr35, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr35, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss36)
                             .addComponent(mmm36)
-                            .addComponent(rrr36, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr36, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss37)
                             .addComponent(mmm37)
-                            .addComponent(rrr37, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr37, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss38)
                             .addComponent(mmm38)
-                            .addComponent(rrr38, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr38, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss39)
                             .addComponent(mmm39)
-                            .addComponent(rrr39, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr39, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss40)
                             .addComponent(mmm40)
-                            .addComponent(rrr40, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr40, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss41)
                             .addComponent(mmm41)
-                            .addComponent(rrr41, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr41, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss42)
                             .addComponent(mmm42)
-                            .addComponent(rrr42, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr42, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss43)
                             .addComponent(mmm43)
-                            .addComponent(rrr43, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr43, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss44)
                             .addComponent(mmm44)
-                            .addComponent(rrr44, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr44, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss45)
                             .addComponent(mmm45)
-                            .addComponent(rrr45, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr45, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss46)
                             .addComponent(mmm46)
-                            .addComponent(rrr46, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr46, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss47)
                             .addComponent(mmm47)
-                            .addComponent(rrr47, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr47, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss48)
                             .addComponent(mmm48)
-                            .addComponent(rrr48, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr48, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss49)
                             .addComponent(mmm49)
-                            .addComponent(rrr49, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr49, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss50)
                             .addComponent(mmm50)
-                            .addComponent(rrr50, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr50, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss51)
                             .addComponent(mmm51)
-                            .addComponent(rrr51, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rrr51, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(sss52)
                             .addComponent(mmm52)
-                            .addComponent(rrr52, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(rrr52, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(anio2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(anio2, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss1)
                             .addComponent(mm1)
-                            .addComponent(rr1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr1, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss2)
                             .addComponent(mm2)
-                            .addComponent(rr2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr2, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss3)
                             .addComponent(mm3)
-                            .addComponent(rr3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr3, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss4)
                             .addComponent(mm4)
-                            .addComponent(rr4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr4, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss5)
                             .addComponent(mm5)
-                            .addComponent(rr5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr5, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss6)
                             .addComponent(mm6)
-                            .addComponent(rr6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr6, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss7)
                             .addComponent(mm7)
-                            .addComponent(rr7, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr7, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss8)
                             .addComponent(mm8)
-                            .addComponent(rr8, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr8, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss9)
                             .addComponent(mm9)
-                            .addComponent(rr9, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr9, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss10)
                             .addComponent(mm10)
-                            .addComponent(rr10, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr10, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss11)
                             .addComponent(mm11)
-                            .addComponent(rr11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr11, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss12)
                             .addComponent(mm12)
-                            .addComponent(rr12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr12, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss13)
                             .addComponent(mm13)
-                            .addComponent(rr13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr13, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss14)
                             .addComponent(mm14)
-                            .addComponent(rr14, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr14, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss15)
                             .addComponent(mm15)
-                            .addComponent(rr15, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr15, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss16)
                             .addComponent(mm16)
-                            .addComponent(rr16, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr16, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss17)
                             .addComponent(mm17)
-                            .addComponent(rr17, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr17, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss18)
                             .addComponent(mm18)
-                            .addComponent(rr18, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr18, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss19)
                             .addComponent(mm19)
-                            .addComponent(rr19, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr19, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss20)
                             .addComponent(mm20)
-                            .addComponent(rr20, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr20, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss21)
                             .addComponent(mm21)
-                            .addComponent(rr21, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr21, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss22)
                             .addComponent(mm22)
-                            .addComponent(rr22, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr22, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss23)
                             .addComponent(mm23)
-                            .addComponent(rr23, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr23, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss24)
                             .addComponent(mm24)
-                            .addComponent(rr24, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr24, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss25)
                             .addComponent(mm25)
-                            .addComponent(rr25, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr25, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss26)
                             .addComponent(mm26)
-                            .addComponent(rr26, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr26, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss27)
                             .addComponent(mm27)
-                            .addComponent(rr27, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr27, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss28)
                             .addComponent(mm28)
-                            .addComponent(rr28, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr28, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss29)
                             .addComponent(mm29)
-                            .addComponent(rr29, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr29, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss30)
                             .addComponent(mm30)
-                            .addComponent(rr30, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr30, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss31)
                             .addComponent(mm31)
-                            .addComponent(rr31, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr31, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss32)
                             .addComponent(mm32)
-                            .addComponent(rr32, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr32, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss33)
                             .addComponent(mm33)
-                            .addComponent(rr33, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr33, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss34)
                             .addComponent(mm34)
-                            .addComponent(rr34, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr34, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss35)
                             .addComponent(mm35)
-                            .addComponent(rr35, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr35, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss36)
                             .addComponent(mm36)
-                            .addComponent(rr36, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr36, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss37)
                             .addComponent(mm37)
-                            .addComponent(rr37, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr37, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss38)
                             .addComponent(mm38)
-                            .addComponent(rr38, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr38, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss39)
                             .addComponent(mm39)
-                            .addComponent(rr39, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr39, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss40)
                             .addComponent(mm40)
-                            .addComponent(rr40, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr40, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss41)
                             .addComponent(mm41)
-                            .addComponent(rr41, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr41, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss42)
                             .addComponent(mm42)
-                            .addComponent(rr42, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr42, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss43)
                             .addComponent(mm43)
-                            .addComponent(rr43, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr43, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss44)
                             .addComponent(mm44)
-                            .addComponent(rr44, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr44, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss45)
                             .addComponent(mm45)
-                            .addComponent(rr45, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr45, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss46)
                             .addComponent(mm46)
-                            .addComponent(rr46, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr46, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss47)
                             .addComponent(mm47)
-                            .addComponent(rr47, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr47, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss48)
                             .addComponent(mm48)
-                            .addComponent(rr48, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr48, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss49)
                             .addComponent(mm49)
-                            .addComponent(rr49, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr49, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss50)
                             .addComponent(mm50)
-                            .addComponent(rr50, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr50, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss51)
                             .addComponent(mm51)
-                            .addComponent(rr51, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr51, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ss52)
                             .addComponent(mm52)
-                            .addComponent(rr52, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(rr52, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(anio1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(anio1, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(uno)
                             .addComponent(s1)
                             .addComponent(m1)
-                            .addComponent(r1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r1, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(dos)
                             .addComponent(s2)
                             .addComponent(m2)
-                            .addComponent(r2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r2, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(tres)
                             .addComponent(s3)
                             .addComponent(m3)
-                            .addComponent(r3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r3, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cuatro)
                             .addComponent(s4)
                             .addComponent(m4)
-                            .addComponent(r4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r4, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cinco)
                             .addComponent(s5)
                             .addComponent(m5)
-                            .addComponent(r5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r5, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(seis)
                             .addComponent(s6)
                             .addComponent(m6)
-                            .addComponent(r6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r6, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(siete)
                             .addComponent(s7)
                             .addComponent(m7)
-                            .addComponent(r7, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r7, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(ocho)
                             .addComponent(s8)
                             .addComponent(m8)
-                            .addComponent(r8, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r8, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(nueve)
                             .addComponent(s9)
                             .addComponent(m9)
-                            .addComponent(r9, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r9, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(diez)
                             .addComponent(s10)
                             .addComponent(m10)
-                            .addComponent(r10, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r10, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(once)
                             .addComponent(s11)
                             .addComponent(m11)
-                            .addComponent(r11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r11, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(doce)
                             .addComponent(s12)
                             .addComponent(m12)
-                            .addComponent(r12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r12, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(trece)
                             .addComponent(s13)
                             .addComponent(m13)
-                            .addComponent(r13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r13, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(catorce)
                             .addComponent(s14)
                             .addComponent(m14)
-                            .addComponent(r14, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r14, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(quince)
                             .addComponent(s15)
                             .addComponent(m15)
-                            .addComponent(r15, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r15, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(dieciseis)
                             .addComponent(s16)
                             .addComponent(m16)
-                            .addComponent(r16, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r16, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(diecisiete)
                             .addComponent(s17)
                             .addComponent(m17)
-                            .addComponent(r17, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r17, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(dieciocho)
                             .addComponent(s18)
                             .addComponent(m18)
-                            .addComponent(r18, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r18, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(diecinueve)
                             .addComponent(s19)
                             .addComponent(m19)
-                            .addComponent(r19, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r19, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(veinte)
                             .addComponent(s20)
                             .addComponent(m20)
-                            .addComponent(r20, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r20, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(veintiuno)
                             .addComponent(s21)
                             .addComponent(m21)
-                            .addComponent(r21, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r21, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(veintidos)
                             .addComponent(s22)
                             .addComponent(m22)
-                            .addComponent(r22, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r22, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(veintitres)
                             .addComponent(s23)
                             .addComponent(m23)
-                            .addComponent(r23, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r23, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(veinticuatro)
                             .addComponent(s24)
                             .addComponent(m24)
-                            .addComponent(r24, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r24, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(veinticinco)
                             .addComponent(s25)
                             .addComponent(m25)
-                            .addComponent(r25, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r25, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(veintiseis)
                             .addComponent(s26)
                             .addComponent(m26)
-                            .addComponent(r26, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r26, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(veintisiete)
                             .addComponent(s27)
                             .addComponent(m27)
-                            .addComponent(r27, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r27, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(veintiocho)
                             .addComponent(s28)
                             .addComponent(m28)
-                            .addComponent(r28, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r28, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(veintinueve)
                             .addComponent(s29)
                             .addComponent(m29)
-                            .addComponent(r29, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r29, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(treinta)
                             .addComponent(s30)
                             .addComponent(m30)
-                            .addComponent(r30, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r30, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(treintauno)
                             .addComponent(s31)
                             .addComponent(m31)
-                            .addComponent(r31, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r31, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(treintados)
                             .addComponent(s32)
                             .addComponent(m32)
-                            .addComponent(r32, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r32, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(treintatres)
                             .addComponent(s33)
                             .addComponent(m33)
-                            .addComponent(r33, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r33, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(treintacuatro)
                             .addComponent(s34)
                             .addComponent(m34)
-                            .addComponent(r34, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r34, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(treintacinco)
                             .addComponent(s35)
                             .addComponent(m35)
-                            .addComponent(r35, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r35, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(treintaseis)
                             .addComponent(s36)
                             .addComponent(m36)
-                            .addComponent(r36, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r36, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(treintasiete)
                             .addComponent(s37)
                             .addComponent(m37)
-                            .addComponent(r37, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r37, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(treintaocho)
                             .addComponent(s38)
                             .addComponent(m38)
-                            .addComponent(r38, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r38, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(treintanueve)
                             .addComponent(s39)
                             .addComponent(m39)
-                            .addComponent(r39, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r39, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarenta)
                             .addComponent(s40)
                             .addComponent(m40)
-                            .addComponent(r40, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r40, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentauno)
                             .addComponent(s41)
                             .addComponent(m41)
-                            .addComponent(r41, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r41, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentados)
                             .addComponent(s42)
                             .addComponent(m42)
-                            .addComponent(r42, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r42, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentatres)
                             .addComponent(s43)
                             .addComponent(m43)
-                            .addComponent(r43, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r43, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentacuatro)
                             .addComponent(s44)
                             .addComponent(m44)
-                            .addComponent(r44, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r44, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentacinco)
                             .addComponent(s45)
                             .addComponent(m45)
-                            .addComponent(r45, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r45, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentaseis)
                             .addComponent(s46)
                             .addComponent(m46)
-                            .addComponent(r46, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r46, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentasiete)
                             .addComponent(s47)
                             .addComponent(m47)
-                            .addComponent(r47, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r47, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentaocho)
                             .addComponent(s48)
                             .addComponent(m48)
-                            .addComponent(r48, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r48, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cuarentanueve)
                             .addComponent(s49)
                             .addComponent(m49)
-                            .addComponent(r49, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r49, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cincuenta)
                             .addComponent(s50)
                             .addComponent(m50)
-                            .addComponent(r50, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r50, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cincuentauno)
                             .addComponent(s51)
                             .addComponent(m51)
-                            .addComponent(r51, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(r51, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(cincuentados)
                             .addComponent(s52)
                             .addComponent(m52)
-                            .addComponent(r52, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(r52, GroupLayout.PREFERRED_SIZE, 26, GroupLayout.PREFERRED_SIZE)))))
         );
 
         jScrollPane4.setViewportView(jPanel6);
 
-        jPanel3.add(jScrollPane4, java.awt.BorderLayout.CENTER);
+        jPanel3.add(jScrollPane4, BorderLayout.CENTER);
 
-        jPanel1.add(jPanel3, java.awt.BorderLayout.CENTER);
+        jPanel1.add(jPanel3, BorderLayout.CENTER);
 
-        getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
+        getContentPane().add(jPanel1, BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -5575,7 +5609,21 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         resultado.setText(Integer.toString(nuevo));
     }
     
-    private void generarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generarActionPerformed
+    public void limpiarTabla(JTable tabla){
+        try {
+            DefaultTableModel modelo = (DefaultTableModel) tabla.getModel();
+            int filas = tabla.getRowCount();
+            
+            for (int i = 0; filas > i; i++) {
+                modelo.removeRow(0);
+            }
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error al limpiar la tabla.");
+        }
+    }
+    
+    private void generarActionPerformed(ActionEvent evt) {//GEN-FIRST:event_generarActionPerformed
         // TODO add your handling code here:
         
         Object[] revistas = new Object[52];
@@ -5790,12 +5838,16 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         resultados[51][1] = rr52.getText(); 
         resultados[51][2] = rrr52.getText(); 
         
-        
         DefaultTableModel modelo = (DefaultTableModel) generado.getModel();
         
-        modelo.addColumn(anio1.getText());
-        modelo.addColumn(anio2.getText());
-        modelo.addColumn(anio3.getText());
+        if(generado.getRowCount() > 0){
+            limpiarTabla(generado);
+        }
+        else{
+            modelo.addColumn(anio1.getText());
+            modelo.addColumn(anio2.getText());
+            modelo.addColumn(anio3.getText());
+        }
         
         Object[] fila = new Object[4]; 
         for (int i = 0; i < revistas.length; i ++) {
@@ -5807,710 +5859,707 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             modelo.addRow(fila);     
         }
         
-        
         generado.setModel(modelo); 
         
         impacto.setVisible(true);
     }//GEN-LAST:event_generarActionPerformed
 
-    private void limpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpiarActionPerformed
+    private void limpiarActionPerformed(ActionEvent evt) {//GEN-FIRST:event_limpiarActionPerformed
         // TODO add your handling code here:
         seguridad.setVisible(true);
     }//GEN-LAST:event_limpiarActionPerformed
 
-    private void s48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s48ActionPerformed
+    private void s48ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s48ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r48.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r48);
     }//GEN-LAST:event_s48ActionPerformed
 
-    private void r50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r50ActionPerformed
+    private void r50ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r50ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r50ActionPerformed
 
-    private void r51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r51ActionPerformed
+    private void r51ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r51ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r51ActionPerformed
 
-    private void r52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r52ActionPerformed
+    private void r52ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r52ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r52ActionPerformed
 
-    private void s27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s27ActionPerformed
+    private void s27ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s27ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r27.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r27);
     }//GEN-LAST:event_s27ActionPerformed
 
-    private void r48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r48ActionPerformed
+    private void r48ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r48ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r48ActionPerformed
 
-    private void r49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r49ActionPerformed
+    private void r49ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r49ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r49ActionPerformed
 
-    private void r27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r27ActionPerformed
+    private void r27ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r27ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r27ActionPerformed
 
-    private void r28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r28ActionPerformed
+    private void r28ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r28ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r28ActionPerformed
 
-    private void r29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r29ActionPerformed
+    private void r29ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r29ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r29ActionPerformed
 
-    private void r30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r30ActionPerformed
+    private void r30ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r30ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r30ActionPerformed
 
-    private void r31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r31ActionPerformed
+    private void r31ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r31ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r31ActionPerformed
 
-    private void r32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r32ActionPerformed
+    private void r32ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r32ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r32ActionPerformed
 
-    private void s22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s22ActionPerformed
+    private void s22ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s22ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r22.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r22);
     }//GEN-LAST:event_s22ActionPerformed
 
-    private void r24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r24ActionPerformed
+    private void r24ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r24ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r24ActionPerformed
 
-    private void r25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r25ActionPerformed
+    private void r25ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r25ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r25ActionPerformed
 
-    private void r26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r26ActionPerformed
+    private void r26ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r26ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r26ActionPerformed
 
-    private void r22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r22ActionPerformed
+    private void r22ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r22ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r22ActionPerformed
 
-    private void r23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r23ActionPerformed
+    private void r23ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r23ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r23ActionPerformed
 
-    private void r1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r1ActionPerformed
+    private void r1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r1ActionPerformed
 
-    private void r2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r2ActionPerformed
+    private void r2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r2ActionPerformed
 
-    private void r3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r3ActionPerformed
+    private void r3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r3ActionPerformed
 
-    private void r4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r4ActionPerformed
+    private void r4ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r4ActionPerformed
 
-    private void r5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r5ActionPerformed
+    private void r5ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r5ActionPerformed
 
-    private void r6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r6ActionPerformed
+    private void r6ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_r6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_r6ActionPerformed
 
-    private void s1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
+    private void s1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s1ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r1.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r1);
     }//GEN-LAST:event_s1ActionPerformed
 
-    private void rr26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr26ActionPerformed
+    private void rr26ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr26ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr26ActionPerformed
 
-    private void rr25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr25ActionPerformed
+    private void rr25ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr25ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr25ActionPerformed
 
-    private void rr24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr24ActionPerformed
+    private void rr24ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr24ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr24ActionPerformed
 
-    private void ss22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss22ActionPerformed
+    private void ss22ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss22ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr22.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr22);
     }//GEN-LAST:event_ss22ActionPerformed
 
-    private void ss1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss1ActionPerformed
+    private void ss1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss1ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr1.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr1);
     }//GEN-LAST:event_ss1ActionPerformed
 
-    private void rr32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr32ActionPerformed
+    private void rr32ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr32ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr32ActionPerformed
 
-    private void rr31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr31ActionPerformed
+    private void rr31ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr31ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr31ActionPerformed
 
-    private void rr30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr30ActionPerformed
+    private void rr30ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr30ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr30ActionPerformed
 
-    private void rr29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr29ActionPerformed
+    private void rr29ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr29ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr29ActionPerformed
 
-    private void rr28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr28ActionPerformed
+    private void rr28ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr28ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr28ActionPerformed
 
-    private void rr27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr27ActionPerformed
+    private void rr27ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr27ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr27ActionPerformed
 
-    private void rr49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr49ActionPerformed
+    private void rr49ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr49ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr49ActionPerformed
 
-    private void rr48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr48ActionPerformed
+    private void rr48ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr48ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr48ActionPerformed
 
-    private void ss27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss27ActionPerformed
+    private void ss27ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss27ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr27.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr27);
     }//GEN-LAST:event_ss27ActionPerformed
 
-    private void rr6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr6ActionPerformed
+    private void rr6ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr6ActionPerformed
 
-    private void rr5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr5ActionPerformed
+    private void rr5ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr5ActionPerformed
 
-    private void rr4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr4ActionPerformed
+    private void rr4ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr4ActionPerformed
 
-    private void rr3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr3ActionPerformed
+    private void rr3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr3ActionPerformed
 
-    private void rr2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr2ActionPerformed
+    private void rr2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr2ActionPerformed
 
-    private void rr1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr1ActionPerformed
+    private void rr1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr1ActionPerformed
 
-    private void rr52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr52ActionPerformed
+    private void rr52ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr52ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr52ActionPerformed
 
-    private void rr51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr51ActionPerformed
+    private void rr51ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr51ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr51ActionPerformed
 
-    private void rr50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr50ActionPerformed
+    private void rr50ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr50ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr50ActionPerformed
 
-    private void ss48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss48ActionPerformed
+    private void ss48ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss48ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr48.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr48);
     }//GEN-LAST:event_ss48ActionPerformed
 
-    private void rr23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr23ActionPerformed
+    private void rr23ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr23ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr23ActionPerformed
 
-    private void rr22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rr22ActionPerformed
+    private void rr22ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rr22ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rr22ActionPerformed
 
-    private void rrr26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr26ActionPerformed
+    private void rrr26ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr26ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr26ActionPerformed
 
-    private void rrr25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr25ActionPerformed
+    private void rrr25ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr25ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr25ActionPerformed
 
-    private void rrr24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr24ActionPerformed
+    private void rrr24ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr24ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr24ActionPerformed
 
-    private void sss22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss22ActionPerformed
+    private void sss22ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss22ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr22.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr22);
     }//GEN-LAST:event_sss22ActionPerformed
 
-    private void sss1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss1ActionPerformed
+    private void sss1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss1ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr1.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr1);
     }//GEN-LAST:event_sss1ActionPerformed
 
-    private void rrr32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr32ActionPerformed
+    private void rrr32ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr32ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr32ActionPerformed
 
-    private void rrr31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr31ActionPerformed
+    private void rrr31ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr31ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr31ActionPerformed
 
-    private void rrr30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr30ActionPerformed
+    private void rrr30ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr30ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr30ActionPerformed
 
-    private void rrr29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr29ActionPerformed
+    private void rrr29ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr29ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr29ActionPerformed
 
-    private void rrr28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr28ActionPerformed
+    private void rrr28ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr28ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr28ActionPerformed
 
-    private void rrr27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr27ActionPerformed
+    private void rrr27ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr27ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr27ActionPerformed
 
-    private void rrr49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr49ActionPerformed
+    private void rrr49ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr49ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr49ActionPerformed
 
-    private void rrr48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr48ActionPerformed
+    private void rrr48ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr48ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr48ActionPerformed
 
-    private void sss27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss27ActionPerformed
+    private void sss27ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss27ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr27.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr27);
     }//GEN-LAST:event_sss27ActionPerformed
 
-    private void rrr6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr6ActionPerformed
+    private void rrr6ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr6ActionPerformed
 
-    private void rrr5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr5ActionPerformed
+    private void rrr5ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr5ActionPerformed
 
-    private void rrr4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr4ActionPerformed
+    private void rrr4ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr4ActionPerformed
 
-    private void rrr3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr3ActionPerformed
+    private void rrr3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr3ActionPerformed
 
-    private void rrr2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr2ActionPerformed
+    private void rrr2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr2ActionPerformed
 
-    private void rrr1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr1ActionPerformed
+    private void rrr1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr1ActionPerformed
 
-    private void rrr52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr52ActionPerformed
+    private void rrr52ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr52ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr52ActionPerformed
 
-    private void rrr51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr51ActionPerformed
+    private void rrr51ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr51ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr51ActionPerformed
 
-    private void rrr50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr50ActionPerformed
+    private void rrr50ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr50ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr50ActionPerformed
 
-    private void sss48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss48ActionPerformed
+    private void sss48ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss48ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr48.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr48);
     }//GEN-LAST:event_sss48ActionPerformed
 
-    private void rrr23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr23ActionPerformed
+    private void rrr23ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr23ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr23ActionPerformed
 
-    private void rrr22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrr22ActionPerformed
+    private void rrr22ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_rrr22ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rrr22ActionPerformed
 
-    private void s2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s2ActionPerformed
+    private void s2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s2ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r2.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r2);
     }//GEN-LAST:event_s2ActionPerformed
 
-    private void s3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s3ActionPerformed
+    private void s3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s3ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r3.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r3);
     }//GEN-LAST:event_s3ActionPerformed
 
-    private void s4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s4ActionPerformed
+    private void s4ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s4ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r4.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r4);
     }//GEN-LAST:event_s4ActionPerformed
 
-    private void s5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s5ActionPerformed
+    private void s5ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s5ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r5.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r5);
     }//GEN-LAST:event_s5ActionPerformed
 
-    private void s6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s6ActionPerformed
+    private void s6ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s6ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r6.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r6);
     }//GEN-LAST:event_s6ActionPerformed
 
-    private void s7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s7ActionPerformed
+    private void s7ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s7ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r7.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r7);
     }//GEN-LAST:event_s7ActionPerformed
 
-    private void s8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s8ActionPerformed
+    private void s8ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s8ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r8.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r8);
     }//GEN-LAST:event_s8ActionPerformed
 
-    private void s9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s9ActionPerformed
+    private void s9ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s9ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r9.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r9);
     }//GEN-LAST:event_s9ActionPerformed
 
-    private void s10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s10ActionPerformed
+    private void s10ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s10ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r10.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r10);
     }//GEN-LAST:event_s10ActionPerformed
 
-    private void s11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s11ActionPerformed
+    private void s11ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s11ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r11.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r11);
     }//GEN-LAST:event_s11ActionPerformed
 
-    private void s12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s12ActionPerformed
+    private void s12ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s12ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r12.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r12);
     }//GEN-LAST:event_s12ActionPerformed
 
-    private void s13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s13ActionPerformed
+    private void s13ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s13ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r13.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r13);
     }//GEN-LAST:event_s13ActionPerformed
 
-    private void s14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s14ActionPerformed
+    private void s14ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s14ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r14.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r14);
     }//GEN-LAST:event_s14ActionPerformed
 
-    private void s15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s15ActionPerformed
+    private void s15ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s15ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r15.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r15);
     }//GEN-LAST:event_s15ActionPerformed
 
-    private void s16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s16ActionPerformed
+    private void s16ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s16ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r16.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r16);
     }//GEN-LAST:event_s16ActionPerformed
 
-    private void s17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s17ActionPerformed
+    private void s17ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s17ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r17.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r17);
     }//GEN-LAST:event_s17ActionPerformed
 
-    private void s18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s18ActionPerformed
+    private void s18ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s18ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r18.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r18);
     }//GEN-LAST:event_s18ActionPerformed
 
-    private void s19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s19ActionPerformed
+    private void s19ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s19ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r19.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r19);
     }//GEN-LAST:event_s19ActionPerformed
 
-    private void s20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s20ActionPerformed
+    private void s20ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s20ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r20.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r20);
     }//GEN-LAST:event_s20ActionPerformed
 
-    private void s21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s21ActionPerformed
+    private void s21ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s21ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r21.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r21);
     }//GEN-LAST:event_s21ActionPerformed
 
-    private void s23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s23ActionPerformed
+    private void s23ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s23ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r23.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r23);
     }//GEN-LAST:event_s23ActionPerformed
 
-    private void s24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s24ActionPerformed
+    private void s24ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s24ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r24.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r24);
     }//GEN-LAST:event_s24ActionPerformed
 
-    private void s25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s25ActionPerformed
+    private void s25ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s25ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r25.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r25);
     }//GEN-LAST:event_s25ActionPerformed
 
-    private void s26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s26ActionPerformed
+    private void s26ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s26ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r26.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r26);
     }//GEN-LAST:event_s26ActionPerformed
 
-    private void s28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s28ActionPerformed
+    private void s28ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s28ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r28.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r28);
     }//GEN-LAST:event_s28ActionPerformed
 
-    private void s30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s30ActionPerformed
+    private void s30ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s30ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r30.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r30);
     }//GEN-LAST:event_s30ActionPerformed
 
-    private void s29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s29ActionPerformed
+    private void s29ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s29ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r29.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r29);
     }//GEN-LAST:event_s29ActionPerformed
 
-    private void s31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s31ActionPerformed
+    private void s31ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s31ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r31.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r31);
     }//GEN-LAST:event_s31ActionPerformed
 
-    private void s32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s32ActionPerformed
+    private void s32ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s32ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r32.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r32);
     }//GEN-LAST:event_s32ActionPerformed
 
-    private void s33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s33ActionPerformed
+    private void s33ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s33ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r33.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r33);
     }//GEN-LAST:event_s33ActionPerformed
 
-    private void s34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s34ActionPerformed
+    private void s34ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s34ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r34.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r34);
     }//GEN-LAST:event_s34ActionPerformed
 
-    private void s35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s35ActionPerformed
+    private void s35ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s35ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r35.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r35);
     }//GEN-LAST:event_s35ActionPerformed
 
-    private void s36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s36ActionPerformed
+    private void s36ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s36ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r36.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r36);
     }//GEN-LAST:event_s36ActionPerformed
 
-    private void s37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s37ActionPerformed
+    private void s37ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s37ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r37.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r37);
     }//GEN-LAST:event_s37ActionPerformed
 
-    private void s38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s38ActionPerformed
+    private void s38ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s38ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r38.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r38);
     }//GEN-LAST:event_s38ActionPerformed
 
-    private void s39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s39ActionPerformed
+    private void s39ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s39ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r39.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r39);
     }//GEN-LAST:event_s39ActionPerformed
 
-    private void s40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s40ActionPerformed
+    private void s40ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s40ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r40.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r40);
     }//GEN-LAST:event_s40ActionPerformed
 
-    private void s41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s41ActionPerformed
+    private void s41ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s41ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r41.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r41);
     }//GEN-LAST:event_s41ActionPerformed
 
-    private void s42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s42ActionPerformed
+    private void s42ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s42ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r42.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r42);
     }//GEN-LAST:event_s42ActionPerformed
 
-    private void s43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s43ActionPerformed
+    private void s43ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s43ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r43.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r43);
     }//GEN-LAST:event_s43ActionPerformed
 
-    private void s44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s44ActionPerformed
+    private void s44ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s44ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r44.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r44);
     }//GEN-LAST:event_s44ActionPerformed
 
-    private void s45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s45ActionPerformed
+    private void s45ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s45ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r45.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r45);
     }//GEN-LAST:event_s45ActionPerformed
 
-    private void s46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s46ActionPerformed
+    private void s46ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s46ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r46.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r46);
     }//GEN-LAST:event_s46ActionPerformed
 
-    private void s47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s47ActionPerformed
+    private void s47ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s47ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r47.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r47);
     }//GEN-LAST:event_s47ActionPerformed
 
-    private void s49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s49ActionPerformed
+    private void s49ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s49ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r49.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r49);
     }//GEN-LAST:event_s49ActionPerformed
 
-    private void s50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s50ActionPerformed
+    private void s50ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s50ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r50.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r50);
     }//GEN-LAST:event_s50ActionPerformed
 
-    private void s51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s51ActionPerformed
+    private void s51ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s51ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r51.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r51);
     }//GEN-LAST:event_s51ActionPerformed
 
-    private void s52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s52ActionPerformed
+    private void s52ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_s52ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r52.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, r52);
     }//GEN-LAST:event_s52ActionPerformed
 
-    private void cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarActionPerformed
+    private void cancelarActionPerformed(ActionEvent evt) {//GEN-FIRST:event_cancelarActionPerformed
         // TODO add your handling code here:
         seguridad.setVisible(false);
     }//GEN-LAST:event_cancelarActionPerformed
 
-    private void aceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarActionPerformed
+    private void aceptarActionPerformed(ActionEvent evt) {//GEN-FIRST:event_aceptarActionPerformed
         // TODO add your handling code here:
-        otras.selectAll();
-        otras.replaceSelection("");
         anio1.selectAll();
         anio1.replaceSelection("");
         anio2.selectAll();
@@ -6835,1771 +6884,1771 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         seguridad.setVisible(false);
     }//GEN-LAST:event_aceptarActionPerformed
 
-    private void m1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m1ActionPerformed
+    private void m1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m1ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r1.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r1);
     }//GEN-LAST:event_m1ActionPerformed
 
-    private void m2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m2ActionPerformed
+    private void m2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m2ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r2.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r2);
     }//GEN-LAST:event_m2ActionPerformed
 
-    private void m3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m3ActionPerformed
+    private void m3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m3ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r3.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r3);
     }//GEN-LAST:event_m3ActionPerformed
 
-    private void m4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m4ActionPerformed
+    private void m4ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m4ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r4.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r4);
     }//GEN-LAST:event_m4ActionPerformed
 
-    private void m5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m5ActionPerformed
+    private void m5ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m5ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r5.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r5);
     }//GEN-LAST:event_m5ActionPerformed
 
-    private void m6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m6ActionPerformed
+    private void m6ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m6ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r6.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r6);
     }//GEN-LAST:event_m6ActionPerformed
 
-    private void m7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m7ActionPerformed
+    private void m7ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m7ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r7.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r7);
     }//GEN-LAST:event_m7ActionPerformed
 
-    private void m8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m8ActionPerformed
+    private void m8ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m8ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r8.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r8);
     }//GEN-LAST:event_m8ActionPerformed
 
-    private void m9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m9ActionPerformed
+    private void m9ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m9ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r9.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r9);
     }//GEN-LAST:event_m9ActionPerformed
 
-    private void m10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m10ActionPerformed
+    private void m10ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m10ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r10.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r10);
     }//GEN-LAST:event_m10ActionPerformed
 
-    private void m11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m11ActionPerformed
+    private void m11ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m11ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r11.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r11);
     }//GEN-LAST:event_m11ActionPerformed
 
-    private void m12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m12ActionPerformed
+    private void m12ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m12ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r12.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r12);
     }//GEN-LAST:event_m12ActionPerformed
 
-    private void m13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m13ActionPerformed
+    private void m13ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m13ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r13.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r13);
     }//GEN-LAST:event_m13ActionPerformed
 
-    private void m16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m16ActionPerformed
+    private void m16ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m16ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r16.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r16);
     }//GEN-LAST:event_m16ActionPerformed
 
-    private void m14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m14ActionPerformed
+    private void m14ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m14ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r14.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r14);
     }//GEN-LAST:event_m14ActionPerformed
 
-    private void m15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m15ActionPerformed
+    private void m15ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m15ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r15.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r15);
     }//GEN-LAST:event_m15ActionPerformed
 
-    private void m17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m17ActionPerformed
+    private void m17ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m17ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r17.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r17);
     }//GEN-LAST:event_m17ActionPerformed
 
-    private void m18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m18ActionPerformed
+    private void m18ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m18ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r18.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r18);
     }//GEN-LAST:event_m18ActionPerformed
 
-    private void m19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m19ActionPerformed
+    private void m19ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m19ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r19.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r19);
     }//GEN-LAST:event_m19ActionPerformed
 
-    private void m20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m20ActionPerformed
+    private void m20ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m20ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r20.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r20);
     }//GEN-LAST:event_m20ActionPerformed
 
-    private void m21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m21ActionPerformed
+    private void m21ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m21ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r21.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r21);
     }//GEN-LAST:event_m21ActionPerformed
 
-    private void m22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m22ActionPerformed
+    private void m22ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m22ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r22.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r22);
     }//GEN-LAST:event_m22ActionPerformed
 
-    private void m23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m23ActionPerformed
+    private void m23ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m23ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r23.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r23);
     }//GEN-LAST:event_m23ActionPerformed
 
-    private void m24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m24ActionPerformed
+    private void m24ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m24ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r24.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r24);
     }//GEN-LAST:event_m24ActionPerformed
 
-    private void m25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m25ActionPerformed
+    private void m25ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m25ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r25.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r25);
     }//GEN-LAST:event_m25ActionPerformed
 
-    private void m26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m26ActionPerformed
+    private void m26ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m26ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r26.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r26);
     }//GEN-LAST:event_m26ActionPerformed
 
-    private void m27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m27ActionPerformed
+    private void m27ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m27ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r27.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r27);
     }//GEN-LAST:event_m27ActionPerformed
 
-    private void m28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m28ActionPerformed
+    private void m28ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m28ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r28.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r28);
     }//GEN-LAST:event_m28ActionPerformed
 
-    private void m29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m29ActionPerformed
+    private void m29ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m29ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r29.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r29);
     }//GEN-LAST:event_m29ActionPerformed
 
-    private void m30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m30ActionPerformed
+    private void m30ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m30ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r30.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r30);
     }//GEN-LAST:event_m30ActionPerformed
 
-    private void m31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m31ActionPerformed
+    private void m31ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m31ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r31.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r31);
     }//GEN-LAST:event_m31ActionPerformed
 
-    private void m32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m32ActionPerformed
+    private void m32ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m32ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r32.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r32);
     }//GEN-LAST:event_m32ActionPerformed
 
-    private void m33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m33ActionPerformed
+    private void m33ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m33ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r33.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r33);
     }//GEN-LAST:event_m33ActionPerformed
 
-    private void m34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m34ActionPerformed
+    private void m34ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m34ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r34.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r34);
     }//GEN-LAST:event_m34ActionPerformed
 
-    private void m35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m35ActionPerformed
+    private void m35ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m35ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r35.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r35);
     }//GEN-LAST:event_m35ActionPerformed
 
-    private void m36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m36ActionPerformed
+    private void m36ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m36ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r36.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r36);
     }//GEN-LAST:event_m36ActionPerformed
 
-    private void m37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m37ActionPerformed
+    private void m37ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m37ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r37.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r37);
     }//GEN-LAST:event_m37ActionPerformed
 
-    private void m38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m38ActionPerformed
+    private void m38ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m38ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r38.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r38);
     }//GEN-LAST:event_m38ActionPerformed
 
-    private void m39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m39ActionPerformed
+    private void m39ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m39ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r39.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r39);
     }//GEN-LAST:event_m39ActionPerformed
 
-    private void m40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m40ActionPerformed
+    private void m40ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m40ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r40.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r40);
     }//GEN-LAST:event_m40ActionPerformed
 
-    private void m41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m41ActionPerformed
+    private void m41ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m41ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r41.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r41);
     }//GEN-LAST:event_m41ActionPerformed
 
-    private void m42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m42ActionPerformed
+    private void m42ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m42ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r42.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r42);
     }//GEN-LAST:event_m42ActionPerformed
 
-    private void m43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m43ActionPerformed
+    private void m43ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m43ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r43.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r43);
     }//GEN-LAST:event_m43ActionPerformed
 
-    private void m44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m44ActionPerformed
+    private void m44ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m44ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r44.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r44);
     }//GEN-LAST:event_m44ActionPerformed
 
-    private void m45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m45ActionPerformed
+    private void m45ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m45ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r45.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r45);
     }//GEN-LAST:event_m45ActionPerformed
 
-    private void m46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m46ActionPerformed
+    private void m46ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m46ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r46.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r46);
     }//GEN-LAST:event_m46ActionPerformed
 
-    private void m47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m47ActionPerformed
+    private void m47ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m47ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r47.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r47);
     }//GEN-LAST:event_m47ActionPerformed
 
-    private void m48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m48ActionPerformed
+    private void m48ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m48ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r48.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r48);
     }//GEN-LAST:event_m48ActionPerformed
 
-    private void m49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m49ActionPerformed
+    private void m49ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m49ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r49.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r49);
     }//GEN-LAST:event_m49ActionPerformed
 
-    private void m50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m50ActionPerformed
+    private void m50ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m50ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r50.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r50);
     }//GEN-LAST:event_m50ActionPerformed
 
-    private void m51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m51ActionPerformed
+    private void m51ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m51ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r51.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r51);
     }//GEN-LAST:event_m51ActionPerformed
 
-    private void m52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m52ActionPerformed
+    private void m52ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_m52ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(r52.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, r52);
     }//GEN-LAST:event_m52ActionPerformed
 
-    private void ss2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss2ActionPerformed
+    private void ss2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss2ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr2.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr2);
     }//GEN-LAST:event_ss2ActionPerformed
 
-    private void ss3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss3ActionPerformed
+    private void ss3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss3ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr3.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr3);
     }//GEN-LAST:event_ss3ActionPerformed
 
-    private void ss4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss4ActionPerformed
+    private void ss4ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss4ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr4.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr4);
     }//GEN-LAST:event_ss4ActionPerformed
 
-    private void ss5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss5ActionPerformed
+    private void ss5ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss5ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr5.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr5);
     }//GEN-LAST:event_ss5ActionPerformed
 
-    private void ss6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss6ActionPerformed
+    private void ss6ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss6ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr6.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr6);
     }//GEN-LAST:event_ss6ActionPerformed
 
-    private void ss7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss7ActionPerformed
+    private void ss7ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss7ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr7.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr7);
     }//GEN-LAST:event_ss7ActionPerformed
 
-    private void ss8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss8ActionPerformed
+    private void ss8ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss8ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr8.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr8);
     }//GEN-LAST:event_ss8ActionPerformed
 
-    private void ss9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss9ActionPerformed
+    private void ss9ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss9ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr9.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr9);
     }//GEN-LAST:event_ss9ActionPerformed
 
-    private void ss10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss10ActionPerformed
+    private void ss10ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss10ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr10.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr10);
     }//GEN-LAST:event_ss10ActionPerformed
 
-    private void ss11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss11ActionPerformed
+    private void ss11ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss11ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr11.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr11);
     }//GEN-LAST:event_ss11ActionPerformed
 
-    private void ss12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss12ActionPerformed
+    private void ss12ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss12ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr12.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr12);
     }//GEN-LAST:event_ss12ActionPerformed
 
-    private void ss13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss13ActionPerformed
+    private void ss13ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss13ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr13.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr13);
     }//GEN-LAST:event_ss13ActionPerformed
 
-    private void ss14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss14ActionPerformed
+    private void ss14ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss14ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr14.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr14);
     }//GEN-LAST:event_ss14ActionPerformed
 
-    private void ss15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss15ActionPerformed
+    private void ss15ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss15ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr15.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr15);
     }//GEN-LAST:event_ss15ActionPerformed
 
-    private void ss16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss16ActionPerformed
+    private void ss16ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss16ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr16.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr16);
     }//GEN-LAST:event_ss16ActionPerformed
 
-    private void ss17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss17ActionPerformed
+    private void ss17ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss17ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr17.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr17);
     }//GEN-LAST:event_ss17ActionPerformed
 
-    private void ss18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss18ActionPerformed
+    private void ss18ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss18ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr18.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr18);
     }//GEN-LAST:event_ss18ActionPerformed
 
-    private void ss19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss19ActionPerformed
+    private void ss19ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss19ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr19.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr19);
     }//GEN-LAST:event_ss19ActionPerformed
 
-    private void ss20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss20ActionPerformed
+    private void ss20ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss20ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr20.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr20);
     }//GEN-LAST:event_ss20ActionPerformed
 
-    private void ss21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss21ActionPerformed
+    private void ss21ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss21ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr21.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr21);
     }//GEN-LAST:event_ss21ActionPerformed
 
-    private void ss23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss23ActionPerformed
+    private void ss23ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss23ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr23.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr23);
     }//GEN-LAST:event_ss23ActionPerformed
 
-    private void ss24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss24ActionPerformed
+    private void ss24ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss24ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr24.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr24);
     }//GEN-LAST:event_ss24ActionPerformed
 
-    private void ss25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss25ActionPerformed
+    private void ss25ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss25ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr25.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr25);
     }//GEN-LAST:event_ss25ActionPerformed
 
-    private void ss26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss26ActionPerformed
+    private void ss26ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss26ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr26.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr26);
     }//GEN-LAST:event_ss26ActionPerformed
 
-    private void ss28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss28ActionPerformed
+    private void ss28ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss28ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr28.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr28);
     }//GEN-LAST:event_ss28ActionPerformed
 
-    private void ss29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss29ActionPerformed
+    private void ss29ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss29ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr29.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr29);
     }//GEN-LAST:event_ss29ActionPerformed
 
-    private void ss30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss30ActionPerformed
+    private void ss30ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss30ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr30.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr30);
     }//GEN-LAST:event_ss30ActionPerformed
 
-    private void ss31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss31ActionPerformed
+    private void ss31ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss31ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr31.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr31);
     }//GEN-LAST:event_ss31ActionPerformed
 
-    private void ss32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss32ActionPerformed
+    private void ss32ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss32ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr32.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr32);
     }//GEN-LAST:event_ss32ActionPerformed
 
-    private void ss33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss33ActionPerformed
+    private void ss33ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss33ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr33.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr33);
     }//GEN-LAST:event_ss33ActionPerformed
 
-    private void ss34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss34ActionPerformed
+    private void ss34ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss34ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr34.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr34);
     }//GEN-LAST:event_ss34ActionPerformed
 
-    private void ss35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss35ActionPerformed
+    private void ss35ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss35ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr35.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr35);
     }//GEN-LAST:event_ss35ActionPerformed
 
-    private void ss36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss36ActionPerformed
+    private void ss36ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss36ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr36.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr36);
     }//GEN-LAST:event_ss36ActionPerformed
 
-    private void ss37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss37ActionPerformed
+    private void ss37ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss37ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr37.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr37);
     }//GEN-LAST:event_ss37ActionPerformed
 
-    private void ss38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss38ActionPerformed
+    private void ss38ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss38ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr38.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr38);
     }//GEN-LAST:event_ss38ActionPerformed
 
-    private void ss39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss39ActionPerformed
+    private void ss39ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss39ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr39.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr39);
     }//GEN-LAST:event_ss39ActionPerformed
 
-    private void ss40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss40ActionPerformed
+    private void ss40ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss40ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr40.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr40);
     }//GEN-LAST:event_ss40ActionPerformed
 
-    private void ss41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss41ActionPerformed
+    private void ss41ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss41ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr41.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr41);
     }//GEN-LAST:event_ss41ActionPerformed
 
-    private void ss42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss42ActionPerformed
+    private void ss42ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss42ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr42.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr42);
     }//GEN-LAST:event_ss42ActionPerformed
 
-    private void ss43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss43ActionPerformed
+    private void ss43ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss43ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr43.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr43);
     }//GEN-LAST:event_ss43ActionPerformed
 
-    private void ss44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss44ActionPerformed
+    private void ss44ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss44ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr44.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr44);
     }//GEN-LAST:event_ss44ActionPerformed
 
-    private void ss45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss45ActionPerformed
+    private void ss45ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss45ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr45.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr45);
     }//GEN-LAST:event_ss45ActionPerformed
 
-    private void ss46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss46ActionPerformed
+    private void ss46ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss46ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr46.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr46);
     }//GEN-LAST:event_ss46ActionPerformed
 
-    private void ss47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss47ActionPerformed
+    private void ss47ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss47ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr47.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr47);
     }//GEN-LAST:event_ss47ActionPerformed
 
-    private void ss49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss49ActionPerformed
+    private void ss49ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss49ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr49.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr49);
     }//GEN-LAST:event_ss49ActionPerformed
 
-    private void ss50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss50ActionPerformed
+    private void ss50ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss50ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr50.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr50);
     }//GEN-LAST:event_ss50ActionPerformed
 
-    private void ss51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss51ActionPerformed
+    private void ss51ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss51ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr51.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr51);
     }//GEN-LAST:event_ss51ActionPerformed
 
-    private void ss52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ss52ActionPerformed
+    private void ss52ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_ss52ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr52.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rr52);
     }//GEN-LAST:event_ss52ActionPerformed
 
-    private void mm1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm1ActionPerformed
+    private void mm1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm1ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr1.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr1);
     }//GEN-LAST:event_mm1ActionPerformed
 
-    private void mm2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm2ActionPerformed
+    private void mm2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm2ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr2.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr2);
     }//GEN-LAST:event_mm2ActionPerformed
 
-    private void mm3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm3ActionPerformed
+    private void mm3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm3ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr3.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr3);
     }//GEN-LAST:event_mm3ActionPerformed
 
-    private void mm4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm4ActionPerformed
+    private void mm4ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm4ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr4.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr4);
     }//GEN-LAST:event_mm4ActionPerformed
 
-    private void mm5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm5ActionPerformed
+    private void mm5ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm5ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr5.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr5);
     }//GEN-LAST:event_mm5ActionPerformed
 
-    private void mm6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm6ActionPerformed
+    private void mm6ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm6ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr6.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr6);
     }//GEN-LAST:event_mm6ActionPerformed
 
-    private void mm7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm7ActionPerformed
+    private void mm7ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm7ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr7.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr7);
     }//GEN-LAST:event_mm7ActionPerformed
 
-    private void mm8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm8ActionPerformed
+    private void mm8ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm8ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr8.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr8);
     }//GEN-LAST:event_mm8ActionPerformed
 
-    private void mm9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm9ActionPerformed
+    private void mm9ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm9ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr9.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr9);
     }//GEN-LAST:event_mm9ActionPerformed
 
-    private void mm10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm10ActionPerformed
+    private void mm10ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm10ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr10.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr10);
     }//GEN-LAST:event_mm10ActionPerformed
 
-    private void mm11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm11ActionPerformed
+    private void mm11ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm11ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr11.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr11);
     }//GEN-LAST:event_mm11ActionPerformed
 
-    private void mm12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm12ActionPerformed
+    private void mm12ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm12ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr12.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr12);
     }//GEN-LAST:event_mm12ActionPerformed
 
-    private void mm13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm13ActionPerformed
+    private void mm13ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm13ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr13.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr13);
     }//GEN-LAST:event_mm13ActionPerformed
 
-    private void mm14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm14ActionPerformed
+    private void mm14ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm14ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr14.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr14);
     }//GEN-LAST:event_mm14ActionPerformed
 
-    private void mm15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm15ActionPerformed
+    private void mm15ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm15ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr15.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr15);
     }//GEN-LAST:event_mm15ActionPerformed
 
-    private void mm16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm16ActionPerformed
+    private void mm16ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm16ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr16.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr16);
     }//GEN-LAST:event_mm16ActionPerformed
 
-    private void mm17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm17ActionPerformed
+    private void mm17ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm17ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr17.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr17);
     }//GEN-LAST:event_mm17ActionPerformed
 
-    private void mm18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm18ActionPerformed
+    private void mm18ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm18ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr18.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr18);
     }//GEN-LAST:event_mm18ActionPerformed
 
-    private void mm19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm19ActionPerformed
+    private void mm19ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm19ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr19.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr19);
     }//GEN-LAST:event_mm19ActionPerformed
 
-    private void mm20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm20ActionPerformed
+    private void mm20ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm20ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr20.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr20);
     }//GEN-LAST:event_mm20ActionPerformed
 
-    private void mm21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm21ActionPerformed
+    private void mm21ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm21ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr21.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr21);
     }//GEN-LAST:event_mm21ActionPerformed
 
-    private void mm22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm22ActionPerformed
+    private void mm22ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm22ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr22.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr22);
     }//GEN-LAST:event_mm22ActionPerformed
 
-    private void mm23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm23ActionPerformed
+    private void mm23ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm23ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr23.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr23);
     }//GEN-LAST:event_mm23ActionPerformed
 
-    private void mm24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm24ActionPerformed
+    private void mm24ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm24ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr24.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr24);
     }//GEN-LAST:event_mm24ActionPerformed
 
-    private void mm25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm25ActionPerformed
+    private void mm25ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm25ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr25.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr25);
     }//GEN-LAST:event_mm25ActionPerformed
 
-    private void mm26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm26ActionPerformed
+    private void mm26ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm26ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr26.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr26);
     }//GEN-LAST:event_mm26ActionPerformed
 
-    private void mm27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm27ActionPerformed
+    private void mm27ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm27ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr27.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr27);
     }//GEN-LAST:event_mm27ActionPerformed
 
-    private void mm28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm28ActionPerformed
+    private void mm28ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm28ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr28.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr28);
     }//GEN-LAST:event_mm28ActionPerformed
 
-    private void mm29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm29ActionPerformed
+    private void mm29ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm29ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr29.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr29);
     }//GEN-LAST:event_mm29ActionPerformed
 
-    private void mm30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm30ActionPerformed
+    private void mm30ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm30ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr30.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr30);
     }//GEN-LAST:event_mm30ActionPerformed
 
-    private void mm31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm31ActionPerformed
+    private void mm31ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm31ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr31.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr31);
     }//GEN-LAST:event_mm31ActionPerformed
 
-    private void mm32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm32ActionPerformed
+    private void mm32ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm32ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr32.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr32);
     }//GEN-LAST:event_mm32ActionPerformed
 
-    private void mm33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm33ActionPerformed
+    private void mm33ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm33ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr33.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr33);
     }//GEN-LAST:event_mm33ActionPerformed
 
-    private void mm34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm34ActionPerformed
+    private void mm34ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm34ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr34.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr34);
     }//GEN-LAST:event_mm34ActionPerformed
 
-    private void mm35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm35ActionPerformed
+    private void mm35ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm35ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr35.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr35);
     }//GEN-LAST:event_mm35ActionPerformed
 
-    private void mm36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm36ActionPerformed
+    private void mm36ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm36ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr36.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr36);
     }//GEN-LAST:event_mm36ActionPerformed
 
-    private void mm37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm37ActionPerformed
+    private void mm37ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm37ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr37.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr37);
     }//GEN-LAST:event_mm37ActionPerformed
 
-    private void mm38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm38ActionPerformed
+    private void mm38ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm38ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr38.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr38);
     }//GEN-LAST:event_mm38ActionPerformed
 
-    private void mm39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm39ActionPerformed
+    private void mm39ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm39ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr39.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr39);
     }//GEN-LAST:event_mm39ActionPerformed
 
-    private void mm40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm40ActionPerformed
+    private void mm40ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm40ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr40.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr40);
     }//GEN-LAST:event_mm40ActionPerformed
 
-    private void mm41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm41ActionPerformed
+    private void mm41ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm41ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr41.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr41);
     }//GEN-LAST:event_mm41ActionPerformed
 
-    private void mm42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm42ActionPerformed
+    private void mm42ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm42ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr42.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr42);
     }//GEN-LAST:event_mm42ActionPerformed
 
-    private void mm43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm43ActionPerformed
+    private void mm43ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm43ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr43.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr43);
     }//GEN-LAST:event_mm43ActionPerformed
 
-    private void mm44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm44ActionPerformed
+    private void mm44ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm44ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr44.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr44);
     }//GEN-LAST:event_mm44ActionPerformed
 
-    private void mm45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm45ActionPerformed
+    private void mm45ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm45ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr45.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr45);
     }//GEN-LAST:event_mm45ActionPerformed
 
-    private void mm46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm46ActionPerformed
+    private void mm46ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm46ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr46.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr46);
     }//GEN-LAST:event_mm46ActionPerformed
 
-    private void mm47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm47ActionPerformed
+    private void mm47ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm47ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr47.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr47);
     }//GEN-LAST:event_mm47ActionPerformed
 
-    private void mm48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm48ActionPerformed
+    private void mm48ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm48ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr48.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr48);
     }//GEN-LAST:event_mm48ActionPerformed
 
-    private void mm49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm49ActionPerformed
+    private void mm49ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm49ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr49.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr49);
     }//GEN-LAST:event_mm49ActionPerformed
 
-    private void mm50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm50ActionPerformed
+    private void mm50ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm50ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr50.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr50);
     }//GEN-LAST:event_mm50ActionPerformed
 
-    private void mm51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm51ActionPerformed
+    private void mm51ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm51ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr51.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr51);
     }//GEN-LAST:event_mm51ActionPerformed
 
-    private void mm52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mm52ActionPerformed
+    private void mm52ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mm52ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rr52.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rr52);
     }//GEN-LAST:event_mm52ActionPerformed
 
-    private void sss2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss2ActionPerformed
+    private void sss2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss2ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr2.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr2);
     }//GEN-LAST:event_sss2ActionPerformed
 
-    private void sss3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss3ActionPerformed
+    private void sss3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss3ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr3.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr3);
     }//GEN-LAST:event_sss3ActionPerformed
 
-    private void sss4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss4ActionPerformed
+    private void sss4ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss4ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr4.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr4);
     }//GEN-LAST:event_sss4ActionPerformed
 
-    private void sss5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss5ActionPerformed
+    private void sss5ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss5ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr5.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr5);
     }//GEN-LAST:event_sss5ActionPerformed
 
-    private void sss6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss6ActionPerformed
+    private void sss6ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss6ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr6.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr6);
     }//GEN-LAST:event_sss6ActionPerformed
 
-    private void sss7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss7ActionPerformed
+    private void sss7ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss7ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr7.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr7);
     }//GEN-LAST:event_sss7ActionPerformed
 
-    private void sss8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss8ActionPerformed
+    private void sss8ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss8ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr8.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr8);
     }//GEN-LAST:event_sss8ActionPerformed
 
-    private void sss9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss9ActionPerformed
+    private void sss9ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss9ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr9.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr9);
     }//GEN-LAST:event_sss9ActionPerformed
 
-    private void sss10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss10ActionPerformed
+    private void sss10ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss10ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr10.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr10);
     }//GEN-LAST:event_sss10ActionPerformed
 
-    private void sss11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss11ActionPerformed
+    private void sss11ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss11ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr11.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr11);
     }//GEN-LAST:event_sss11ActionPerformed
 
-    private void sss12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss12ActionPerformed
+    private void sss12ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss12ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr12.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr12);
     }//GEN-LAST:event_sss12ActionPerformed
 
-    private void sss13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss13ActionPerformed
+    private void sss13ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss13ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr13.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr13);
     }//GEN-LAST:event_sss13ActionPerformed
 
-    private void sss14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss14ActionPerformed
+    private void sss14ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss14ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr14.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr14);
     }//GEN-LAST:event_sss14ActionPerformed
 
-    private void sss15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss15ActionPerformed
+    private void sss15ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss15ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr15.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr15);
     }//GEN-LAST:event_sss15ActionPerformed
 
-    private void sss16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss16ActionPerformed
+    private void sss16ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss16ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr16.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr16);
     }//GEN-LAST:event_sss16ActionPerformed
 
-    private void sss17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss17ActionPerformed
+    private void sss17ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss17ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr17.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr17);
     }//GEN-LAST:event_sss17ActionPerformed
 
-    private void sss18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss18ActionPerformed
+    private void sss18ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss18ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr18.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr18);
     }//GEN-LAST:event_sss18ActionPerformed
 
-    private void sss19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss19ActionPerformed
+    private void sss19ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss19ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr19.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr19);
     }//GEN-LAST:event_sss19ActionPerformed
 
-    private void sss20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss20ActionPerformed
+    private void sss20ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss20ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr20.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr20);
     }//GEN-LAST:event_sss20ActionPerformed
 
-    private void sss21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss21ActionPerformed
+    private void sss21ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss21ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr21.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr21);
     }//GEN-LAST:event_sss21ActionPerformed
 
-    private void sss23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss23ActionPerformed
+    private void sss23ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss23ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr23.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr23);
     }//GEN-LAST:event_sss23ActionPerformed
 
-    private void sss24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss24ActionPerformed
+    private void sss24ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss24ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr24.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr24);
     }//GEN-LAST:event_sss24ActionPerformed
 
-    private void sss25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss25ActionPerformed
+    private void sss25ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss25ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr25.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr25);
     }//GEN-LAST:event_sss25ActionPerformed
 
-    private void sss26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss26ActionPerformed
+    private void sss26ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss26ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr26.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr26);
     }//GEN-LAST:event_sss26ActionPerformed
 
-    private void sss28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss28ActionPerformed
+    private void sss28ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss28ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr28.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr28);
     }//GEN-LAST:event_sss28ActionPerformed
 
-    private void sss29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss29ActionPerformed
+    private void sss29ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss29ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr29.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr29);
     }//GEN-LAST:event_sss29ActionPerformed
 
-    private void mmm44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm44ActionPerformed
+    private void mmm44ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm44ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr44.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr44);
     }//GEN-LAST:event_mmm44ActionPerformed
 
-    private void sss30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss30ActionPerformed
+    private void sss30ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss30ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr30.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr30);
     }//GEN-LAST:event_sss30ActionPerformed
 
-    private void sss31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss31ActionPerformed
+    private void sss31ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss31ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr31.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr31);
     }//GEN-LAST:event_sss31ActionPerformed
 
-    private void sss32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss32ActionPerformed
+    private void sss32ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss32ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr32.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr32);
     }//GEN-LAST:event_sss32ActionPerformed
 
-    private void sss33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss33ActionPerformed
+    private void sss33ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss33ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr33.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr33);
     }//GEN-LAST:event_sss33ActionPerformed
 
-    private void sss34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss34ActionPerformed
+    private void sss34ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss34ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr34.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr34);
     }//GEN-LAST:event_sss34ActionPerformed
 
-    private void sss35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss35ActionPerformed
+    private void sss35ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss35ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr35.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr35);
     }//GEN-LAST:event_sss35ActionPerformed
 
-    private void sss36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss36ActionPerformed
+    private void sss36ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss36ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr36.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr36);
     }//GEN-LAST:event_sss36ActionPerformed
 
-    private void sss37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss37ActionPerformed
+    private void sss37ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss37ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr37.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr37);
     }//GEN-LAST:event_sss37ActionPerformed
 
-    private void sss38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss38ActionPerformed
+    private void sss38ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss38ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr38.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr38);
     }//GEN-LAST:event_sss38ActionPerformed
 
-    private void sss39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss39ActionPerformed
+    private void sss39ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss39ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr39.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr39);
     }//GEN-LAST:event_sss39ActionPerformed
 
-    private void sss40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss40ActionPerformed
+    private void sss40ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss40ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr40.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr40);
     }//GEN-LAST:event_sss40ActionPerformed
 
-    private void sss41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss41ActionPerformed
+    private void sss41ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss41ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr41.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr41);
     }//GEN-LAST:event_sss41ActionPerformed
 
-    private void sss42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss42ActionPerformed
+    private void sss42ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss42ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr42.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr42);
     }//GEN-LAST:event_sss42ActionPerformed
 
-    private void sss43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss43ActionPerformed
+    private void sss43ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss43ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr43.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr43);
     }//GEN-LAST:event_sss43ActionPerformed
 
-    private void sss44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss44ActionPerformed
+    private void sss44ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss44ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr44.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr44);
     }//GEN-LAST:event_sss44ActionPerformed
 
-    private void sss45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss45ActionPerformed
+    private void sss45ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss45ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr45.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr45);
     }//GEN-LAST:event_sss45ActionPerformed
 
-    private void sss46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss46ActionPerformed
+    private void sss46ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss46ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr46.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr46);
     }//GEN-LAST:event_sss46ActionPerformed
 
-    private void sss47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss47ActionPerformed
+    private void sss47ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss47ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr47.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr47);
     }//GEN-LAST:event_sss47ActionPerformed
 
-    private void sss49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss49ActionPerformed
+    private void sss49ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss49ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr49.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr49);
     }//GEN-LAST:event_sss49ActionPerformed
 
-    private void sss50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss50ActionPerformed
+    private void sss50ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss50ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr50.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr50);
     }//GEN-LAST:event_sss50ActionPerformed
 
-    private void sss51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss51ActionPerformed
+    private void sss51ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss51ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr51.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr51);
     }//GEN-LAST:event_sss51ActionPerformed
 
-    private void sss52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sss52ActionPerformed
+    private void sss52ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_sss52ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr52.getText());
         int nuevo = antiguo + 1;
         actualizar(nuevo, rrr52);
     }//GEN-LAST:event_sss52ActionPerformed
 
-    private void mmm1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm1ActionPerformed
+    private void mmm1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm1ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr1.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr1);
     }//GEN-LAST:event_mmm1ActionPerformed
 
-    private void mmm2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm2ActionPerformed
+    private void mmm2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm2ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr2.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr2);
     }//GEN-LAST:event_mmm2ActionPerformed
 
-    private void mmm3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm3ActionPerformed
+    private void mmm3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm3ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr3.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr3);
     }//GEN-LAST:event_mmm3ActionPerformed
 
-    private void mmm4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm4ActionPerformed
+    private void mmm4ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm4ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr4.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr4);
     }//GEN-LAST:event_mmm4ActionPerformed
 
-    private void mmm5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm5ActionPerformed
+    private void mmm5ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm5ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr5.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr5);
     }//GEN-LAST:event_mmm5ActionPerformed
 
-    private void mmm6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm6ActionPerformed
+    private void mmm6ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm6ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr6.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr6);
     }//GEN-LAST:event_mmm6ActionPerformed
 
-    private void mmm7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm7ActionPerformed
+    private void mmm7ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm7ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr7.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr7);
     }//GEN-LAST:event_mmm7ActionPerformed
 
-    private void mmm8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm8ActionPerformed
+    private void mmm8ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm8ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr8.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr8);
     }//GEN-LAST:event_mmm8ActionPerformed
 
-    private void mmm9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm9ActionPerformed
+    private void mmm9ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm9ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr9.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr9);
     }//GEN-LAST:event_mmm9ActionPerformed
 
-    private void mmm10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm10ActionPerformed
+    private void mmm10ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm10ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr10.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr10);
     }//GEN-LAST:event_mmm10ActionPerformed
 
-    private void mmm11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm11ActionPerformed
+    private void mmm11ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm11ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr11.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr11);
     }//GEN-LAST:event_mmm11ActionPerformed
 
-    private void mmm12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm12ActionPerformed
+    private void mmm12ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm12ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr12.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr12);
     }//GEN-LAST:event_mmm12ActionPerformed
 
-    private void mmm13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm13ActionPerformed
+    private void mmm13ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm13ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr13.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr13);
     }//GEN-LAST:event_mmm13ActionPerformed
 
-    private void mmm14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm14ActionPerformed
+    private void mmm14ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm14ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr14.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr14);
     }//GEN-LAST:event_mmm14ActionPerformed
 
-    private void mmm15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm15ActionPerformed
+    private void mmm15ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm15ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr15.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr15);
     }//GEN-LAST:event_mmm15ActionPerformed
 
-    private void mmm16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm16ActionPerformed
+    private void mmm16ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm16ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr16.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr16);
     }//GEN-LAST:event_mmm16ActionPerformed
 
-    private void mmm17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm17ActionPerformed
+    private void mmm17ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm17ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr17.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr17);
     }//GEN-LAST:event_mmm17ActionPerformed
 
-    private void mmm18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm18ActionPerformed
+    private void mmm18ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm18ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr18.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr18);
     }//GEN-LAST:event_mmm18ActionPerformed
 
-    private void mmm19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm19ActionPerformed
+    private void mmm19ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm19ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr19.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr19);
     }//GEN-LAST:event_mmm19ActionPerformed
 
-    private void mmm20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm20ActionPerformed
+    private void mmm20ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm20ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr20.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr20);
     }//GEN-LAST:event_mmm20ActionPerformed
 
-    private void mmm21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm21ActionPerformed
+    private void mmm21ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm21ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr21.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr21);
     }//GEN-LAST:event_mmm21ActionPerformed
 
-    private void mmm22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm22ActionPerformed
+    private void mmm22ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm22ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr22.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr22);
     }//GEN-LAST:event_mmm22ActionPerformed
 
-    private void mmm23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm23ActionPerformed
+    private void mmm23ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm23ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr23.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr23);
     }//GEN-LAST:event_mmm23ActionPerformed
 
-    private void mmm24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm24ActionPerformed
+    private void mmm24ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm24ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr24.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr24);
     }//GEN-LAST:event_mmm24ActionPerformed
 
-    private void mmm25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm25ActionPerformed
+    private void mmm25ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm25ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr25.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr25);
     }//GEN-LAST:event_mmm25ActionPerformed
 
-    private void mmm26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm26ActionPerformed
+    private void mmm26ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm26ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr26.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr26);
     }//GEN-LAST:event_mmm26ActionPerformed
 
-    private void mmm27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm27ActionPerformed
+    private void mmm27ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm27ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr27.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr27);
     }//GEN-LAST:event_mmm27ActionPerformed
 
-    private void mmm28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm28ActionPerformed
+    private void mmm28ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm28ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr28.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr28);
     }//GEN-LAST:event_mmm28ActionPerformed
 
-    private void mmm29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm29ActionPerformed
+    private void mmm29ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm29ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr29.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr29);
     }//GEN-LAST:event_mmm29ActionPerformed
 
-    private void mmm30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm30ActionPerformed
+    private void mmm30ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm30ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr30.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr30);
     }//GEN-LAST:event_mmm30ActionPerformed
 
-    private void mmm31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm31ActionPerformed
+    private void mmm31ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm31ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr31.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr31);
     }//GEN-LAST:event_mmm31ActionPerformed
 
-    private void mmm32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm32ActionPerformed
+    private void mmm32ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm32ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr32.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr32);
     }//GEN-LAST:event_mmm32ActionPerformed
 
-    private void mmm33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm33ActionPerformed
+    private void mmm33ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm33ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr33.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr33);
     }//GEN-LAST:event_mmm33ActionPerformed
 
-    private void mmm34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm34ActionPerformed
+    private void mmm34ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm34ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr34.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr34);
     }//GEN-LAST:event_mmm34ActionPerformed
 
-    private void mmm35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm35ActionPerformed
+    private void mmm35ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm35ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr35.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr35);
     }//GEN-LAST:event_mmm35ActionPerformed
 
-    private void mmm36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm36ActionPerformed
+    private void mmm36ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm36ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr36.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr36);
     }//GEN-LAST:event_mmm36ActionPerformed
 
-    private void mmm37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm37ActionPerformed
+    private void mmm37ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm37ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr37.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr37);
     }//GEN-LAST:event_mmm37ActionPerformed
 
-    private void mmm38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm38ActionPerformed
+    private void mmm38ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm38ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr38.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr38);
     }//GEN-LAST:event_mmm38ActionPerformed
 
-    private void mmm39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm39ActionPerformed
+    private void mmm39ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm39ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr39.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr39);
     }//GEN-LAST:event_mmm39ActionPerformed
 
-    private void mmm40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm40ActionPerformed
+    private void mmm40ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm40ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr40.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr40);
     }//GEN-LAST:event_mmm40ActionPerformed
 
-    private void mmm41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm41ActionPerformed
+    private void mmm41ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm41ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr41.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr41);
     }//GEN-LAST:event_mmm41ActionPerformed
 
-    private void mmm42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm42ActionPerformed
+    private void mmm42ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm42ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr42.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr42);
     }//GEN-LAST:event_mmm42ActionPerformed
 
-    private void mmm43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm43ActionPerformed
+    private void mmm43ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm43ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr43.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr43);
     }//GEN-LAST:event_mmm43ActionPerformed
 
-    private void mmm45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm45ActionPerformed
+    private void mmm45ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm45ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr45.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr45);
     }//GEN-LAST:event_mmm45ActionPerformed
 
-    private void mmm46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm46ActionPerformed
+    private void mmm46ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm46ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr46.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr46);
     }//GEN-LAST:event_mmm46ActionPerformed
 
-    private void mmm47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm47ActionPerformed
+    private void mmm47ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm47ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr47.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr47);
     }//GEN-LAST:event_mmm47ActionPerformed
 
-    private void mmm48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm48ActionPerformed
+    private void mmm48ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm48ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr48.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr48);
     }//GEN-LAST:event_mmm48ActionPerformed
 
-    private void mmm49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm49ActionPerformed
+    private void mmm49ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm49ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr49.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr49);
     }//GEN-LAST:event_mmm49ActionPerformed
 
-    private void mmm50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm50ActionPerformed
+    private void mmm50ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm50ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr50.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr50);
     }//GEN-LAST:event_mmm50ActionPerformed
 
-    private void mmm51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm51ActionPerformed
+    private void mmm51ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm51ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr51.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr51);
     }//GEN-LAST:event_mmm51ActionPerformed
 
-    private void mmm52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmm52ActionPerformed
+    private void mmm52ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_mmm52ActionPerformed
         // TODO add your handling code here:
         int antiguo = Integer.parseInt(rrr52.getText());
         int nuevo = antiguo - 1;
         actualizar(nuevo, rrr52);
     }//GEN-LAST:event_mmm52ActionPerformed
 
-    private void exportarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exportarActionPerformed
+    private void exportarActionPerformed(ActionEvent evt) {//GEN-FIRST:event_exportarActionPerformed
         // TODO add your handling code here:
         if (generado.getRowCount() > 0) {
             JFileChooser chooser = new JFileChooser();
@@ -8629,550 +8678,551 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_exportarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton aceptar;
-    private javax.swing.JTextArea anio1;
-    private javax.swing.JTextArea anio2;
-    private javax.swing.JTextArea anio3;
-    private javax.swing.JButton cancelar;
-    private javax.swing.JLabel catorce;
-    private javax.swing.JLabel cinco;
-    private javax.swing.JLabel cincuenta;
-    private javax.swing.JLabel cincuentados;
-    private javax.swing.JLabel cincuentauno;
-    private javax.swing.JLabel cuarenta;
-    private javax.swing.JLabel cuarentacinco;
-    private javax.swing.JLabel cuarentacuatro;
-    private javax.swing.JLabel cuarentados;
-    private javax.swing.JLabel cuarentanueve;
-    private javax.swing.JLabel cuarentaocho;
-    private javax.swing.JLabel cuarentaseis;
-    private javax.swing.JLabel cuarentasiete;
-    private javax.swing.JLabel cuarentatres;
-    private javax.swing.JLabel cuarentauno;
-    private javax.swing.JLabel cuatro;
-    private javax.swing.JLabel diecinueve;
-    private javax.swing.JLabel dieciocho;
-    private javax.swing.JLabel dieciseis;
-    private javax.swing.JLabel diecisiete;
-    private javax.swing.JLabel diez;
-    private javax.swing.JLabel doce;
-    private javax.swing.JLabel dos;
-    private javax.swing.JButton exportar;
-    private javax.swing.JTable generado;
-    private javax.swing.JButton generar;
-    private javax.swing.JFrame impacto;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JButton limpiar;
-    private javax.swing.JButton m1;
-    private javax.swing.JButton m10;
-    private javax.swing.JButton m11;
-    private javax.swing.JButton m12;
-    private javax.swing.JButton m13;
-    private javax.swing.JButton m14;
-    private javax.swing.JButton m15;
-    private javax.swing.JButton m16;
-    private javax.swing.JButton m17;
-    private javax.swing.JButton m18;
-    private javax.swing.JButton m19;
-    private javax.swing.JButton m2;
-    private javax.swing.JButton m20;
-    private javax.swing.JButton m21;
-    private javax.swing.JButton m22;
-    private javax.swing.JButton m23;
-    private javax.swing.JButton m24;
-    private javax.swing.JButton m25;
-    private javax.swing.JButton m26;
-    private javax.swing.JButton m27;
-    private javax.swing.JButton m28;
-    private javax.swing.JButton m29;
-    private javax.swing.JButton m3;
-    private javax.swing.JButton m30;
-    private javax.swing.JButton m31;
-    private javax.swing.JButton m32;
-    private javax.swing.JButton m33;
-    private javax.swing.JButton m34;
-    private javax.swing.JButton m35;
-    private javax.swing.JButton m36;
-    private javax.swing.JButton m37;
-    private javax.swing.JButton m38;
-    private javax.swing.JButton m39;
-    private javax.swing.JButton m4;
-    private javax.swing.JButton m40;
-    private javax.swing.JButton m41;
-    private javax.swing.JButton m42;
-    private javax.swing.JButton m43;
-    private javax.swing.JButton m44;
-    private javax.swing.JButton m45;
-    private javax.swing.JButton m46;
-    private javax.swing.JButton m47;
-    private javax.swing.JButton m48;
-    private javax.swing.JButton m49;
-    private javax.swing.JButton m5;
-    private javax.swing.JButton m50;
-    private javax.swing.JButton m51;
-    private javax.swing.JButton m52;
-    private javax.swing.JButton m6;
-    private javax.swing.JButton m7;
-    private javax.swing.JButton m8;
-    private javax.swing.JButton m9;
-    private javax.swing.JButton mm1;
-    private javax.swing.JButton mm10;
-    private javax.swing.JButton mm11;
-    private javax.swing.JButton mm12;
-    private javax.swing.JButton mm13;
-    private javax.swing.JButton mm14;
-    private javax.swing.JButton mm15;
-    private javax.swing.JButton mm16;
-    private javax.swing.JButton mm17;
-    private javax.swing.JButton mm18;
-    private javax.swing.JButton mm19;
-    private javax.swing.JButton mm2;
-    private javax.swing.JButton mm20;
-    private javax.swing.JButton mm21;
-    private javax.swing.JButton mm22;
-    private javax.swing.JButton mm23;
-    private javax.swing.JButton mm24;
-    private javax.swing.JButton mm25;
-    private javax.swing.JButton mm26;
-    private javax.swing.JButton mm27;
-    private javax.swing.JButton mm28;
-    private javax.swing.JButton mm29;
-    private javax.swing.JButton mm3;
-    private javax.swing.JButton mm30;
-    private javax.swing.JButton mm31;
-    private javax.swing.JButton mm32;
-    private javax.swing.JButton mm33;
-    private javax.swing.JButton mm34;
-    private javax.swing.JButton mm35;
-    private javax.swing.JButton mm36;
-    private javax.swing.JButton mm37;
-    private javax.swing.JButton mm38;
-    private javax.swing.JButton mm39;
-    private javax.swing.JButton mm4;
-    private javax.swing.JButton mm40;
-    private javax.swing.JButton mm41;
-    private javax.swing.JButton mm42;
-    private javax.swing.JButton mm43;
-    private javax.swing.JButton mm44;
-    private javax.swing.JButton mm45;
-    private javax.swing.JButton mm46;
-    private javax.swing.JButton mm47;
-    private javax.swing.JButton mm48;
-    private javax.swing.JButton mm49;
-    private javax.swing.JButton mm5;
-    private javax.swing.JButton mm50;
-    private javax.swing.JButton mm51;
-    private javax.swing.JButton mm52;
-    private javax.swing.JButton mm6;
-    private javax.swing.JButton mm7;
-    private javax.swing.JButton mm8;
-    private javax.swing.JButton mm9;
-    private javax.swing.JButton mmm1;
-    private javax.swing.JButton mmm10;
-    private javax.swing.JButton mmm11;
-    private javax.swing.JButton mmm12;
-    private javax.swing.JButton mmm13;
-    private javax.swing.JButton mmm14;
-    private javax.swing.JButton mmm15;
-    private javax.swing.JButton mmm16;
-    private javax.swing.JButton mmm17;
-    private javax.swing.JButton mmm18;
-    private javax.swing.JButton mmm19;
-    private javax.swing.JButton mmm2;
-    private javax.swing.JButton mmm20;
-    private javax.swing.JButton mmm21;
-    private javax.swing.JButton mmm22;
-    private javax.swing.JButton mmm23;
-    private javax.swing.JButton mmm24;
-    private javax.swing.JButton mmm25;
-    private javax.swing.JButton mmm26;
-    private javax.swing.JButton mmm27;
-    private javax.swing.JButton mmm28;
-    private javax.swing.JButton mmm29;
-    private javax.swing.JButton mmm3;
-    private javax.swing.JButton mmm30;
-    private javax.swing.JButton mmm31;
-    private javax.swing.JButton mmm32;
-    private javax.swing.JButton mmm33;
-    private javax.swing.JButton mmm34;
-    private javax.swing.JButton mmm35;
-    private javax.swing.JButton mmm36;
-    private javax.swing.JButton mmm37;
-    private javax.swing.JButton mmm38;
-    private javax.swing.JButton mmm39;
-    private javax.swing.JButton mmm4;
-    private javax.swing.JButton mmm40;
-    private javax.swing.JButton mmm41;
-    private javax.swing.JButton mmm42;
-    private javax.swing.JButton mmm43;
-    private javax.swing.JButton mmm44;
-    private javax.swing.JButton mmm45;
-    private javax.swing.JButton mmm46;
-    private javax.swing.JButton mmm47;
-    private javax.swing.JButton mmm48;
-    private javax.swing.JButton mmm49;
-    private javax.swing.JButton mmm5;
-    private javax.swing.JButton mmm50;
-    private javax.swing.JButton mmm51;
-    private javax.swing.JButton mmm52;
-    private javax.swing.JButton mmm6;
-    private javax.swing.JButton mmm7;
-    private javax.swing.JButton mmm8;
-    private javax.swing.JButton mmm9;
-    private javax.swing.JLabel nueve;
-    private javax.swing.JLabel ocho;
-    private javax.swing.JLabel once;
-    private javax.swing.JTextArea otras;
-    private javax.swing.JLabel quince;
-    private javax.swing.JTextField r1;
-    private javax.swing.JTextField r10;
-    private javax.swing.JTextField r11;
-    private javax.swing.JTextField r12;
-    private javax.swing.JTextField r13;
-    private javax.swing.JTextField r14;
-    private javax.swing.JTextField r15;
-    private javax.swing.JTextField r16;
-    private javax.swing.JTextField r17;
-    private javax.swing.JTextField r18;
-    private javax.swing.JTextField r19;
-    private javax.swing.JTextField r2;
-    private javax.swing.JTextField r20;
-    private javax.swing.JTextField r21;
-    private javax.swing.JTextField r22;
-    private javax.swing.JTextField r23;
-    private javax.swing.JTextField r24;
-    private javax.swing.JTextField r25;
-    private javax.swing.JTextField r26;
-    private javax.swing.JTextField r27;
-    private javax.swing.JTextField r28;
-    private javax.swing.JTextField r29;
-    private javax.swing.JTextField r3;
-    private javax.swing.JTextField r30;
-    private javax.swing.JTextField r31;
-    private javax.swing.JTextField r32;
-    private javax.swing.JTextField r33;
-    private javax.swing.JTextField r34;
-    private javax.swing.JTextField r35;
-    private javax.swing.JTextField r36;
-    private javax.swing.JTextField r37;
-    private javax.swing.JTextField r38;
-    private javax.swing.JTextField r39;
-    private javax.swing.JTextField r4;
-    private javax.swing.JTextField r40;
-    private javax.swing.JTextField r41;
-    private javax.swing.JTextField r42;
-    private javax.swing.JTextField r43;
-    private javax.swing.JTextField r44;
-    private javax.swing.JTextField r45;
-    private javax.swing.JTextField r46;
-    private javax.swing.JTextField r47;
-    private javax.swing.JTextField r48;
-    private javax.swing.JTextField r49;
-    private javax.swing.JTextField r5;
-    private javax.swing.JTextField r50;
-    private javax.swing.JTextField r51;
-    private javax.swing.JTextField r52;
-    private javax.swing.JTextField r6;
-    private javax.swing.JTextField r7;
-    private javax.swing.JTextField r8;
-    private javax.swing.JTextField r9;
-    private javax.swing.JTextField rr1;
-    private javax.swing.JTextField rr10;
-    private javax.swing.JTextField rr11;
-    private javax.swing.JTextField rr12;
-    private javax.swing.JTextField rr13;
-    private javax.swing.JTextField rr14;
-    private javax.swing.JTextField rr15;
-    private javax.swing.JTextField rr16;
-    private javax.swing.JTextField rr17;
-    private javax.swing.JTextField rr18;
-    private javax.swing.JTextField rr19;
-    private javax.swing.JTextField rr2;
-    private javax.swing.JTextField rr20;
-    private javax.swing.JTextField rr21;
-    private javax.swing.JTextField rr22;
-    private javax.swing.JTextField rr23;
-    private javax.swing.JTextField rr24;
-    private javax.swing.JTextField rr25;
-    private javax.swing.JTextField rr26;
-    private javax.swing.JTextField rr27;
-    private javax.swing.JTextField rr28;
-    private javax.swing.JTextField rr29;
-    private javax.swing.JTextField rr3;
-    private javax.swing.JTextField rr30;
-    private javax.swing.JTextField rr31;
-    private javax.swing.JTextField rr32;
-    private javax.swing.JTextField rr33;
-    private javax.swing.JTextField rr34;
-    private javax.swing.JTextField rr35;
-    private javax.swing.JTextField rr36;
-    private javax.swing.JTextField rr37;
-    private javax.swing.JTextField rr38;
-    private javax.swing.JTextField rr39;
-    private javax.swing.JTextField rr4;
-    private javax.swing.JTextField rr40;
-    private javax.swing.JTextField rr41;
-    private javax.swing.JTextField rr42;
-    private javax.swing.JTextField rr43;
-    private javax.swing.JTextField rr44;
-    private javax.swing.JTextField rr45;
-    private javax.swing.JTextField rr46;
-    private javax.swing.JTextField rr47;
-    private javax.swing.JTextField rr48;
-    private javax.swing.JTextField rr49;
-    private javax.swing.JTextField rr5;
-    private javax.swing.JTextField rr50;
-    private javax.swing.JTextField rr51;
-    private javax.swing.JTextField rr52;
-    private javax.swing.JTextField rr6;
-    private javax.swing.JTextField rr7;
-    private javax.swing.JTextField rr8;
-    private javax.swing.JTextField rr9;
-    private javax.swing.JTextField rrr1;
-    private javax.swing.JTextField rrr10;
-    private javax.swing.JTextField rrr11;
-    private javax.swing.JTextField rrr12;
-    private javax.swing.JTextField rrr13;
-    private javax.swing.JTextField rrr14;
-    private javax.swing.JTextField rrr15;
-    private javax.swing.JTextField rrr16;
-    private javax.swing.JTextField rrr17;
-    private javax.swing.JTextField rrr18;
-    private javax.swing.JTextField rrr19;
-    private javax.swing.JTextField rrr2;
-    private javax.swing.JTextField rrr20;
-    private javax.swing.JTextField rrr21;
-    private javax.swing.JTextField rrr22;
-    private javax.swing.JTextField rrr23;
-    private javax.swing.JTextField rrr24;
-    private javax.swing.JTextField rrr25;
-    private javax.swing.JTextField rrr26;
-    private javax.swing.JTextField rrr27;
-    private javax.swing.JTextField rrr28;
-    private javax.swing.JTextField rrr29;
-    private javax.swing.JTextField rrr3;
-    private javax.swing.JTextField rrr30;
-    private javax.swing.JTextField rrr31;
-    private javax.swing.JTextField rrr32;
-    private javax.swing.JTextField rrr33;
-    private javax.swing.JTextField rrr34;
-    private javax.swing.JTextField rrr35;
-    private javax.swing.JTextField rrr36;
-    private javax.swing.JTextField rrr37;
-    private javax.swing.JTextField rrr38;
-    private javax.swing.JTextField rrr39;
-    private javax.swing.JTextField rrr4;
-    private javax.swing.JTextField rrr40;
-    private javax.swing.JTextField rrr41;
-    private javax.swing.JTextField rrr42;
-    private javax.swing.JTextField rrr43;
-    private javax.swing.JTextField rrr44;
-    private javax.swing.JTextField rrr45;
-    private javax.swing.JTextField rrr46;
-    private javax.swing.JTextField rrr47;
-    private javax.swing.JTextField rrr48;
-    private javax.swing.JTextField rrr49;
-    private javax.swing.JTextField rrr5;
-    private javax.swing.JTextField rrr50;
-    private javax.swing.JTextField rrr51;
-    private javax.swing.JTextField rrr52;
-    private javax.swing.JTextField rrr6;
-    private javax.swing.JTextField rrr7;
-    private javax.swing.JTextField rrr8;
-    private javax.swing.JTextField rrr9;
-    private javax.swing.JButton s1;
-    private javax.swing.JButton s10;
-    private javax.swing.JButton s11;
-    private javax.swing.JButton s12;
-    private javax.swing.JButton s13;
-    private javax.swing.JButton s14;
-    private javax.swing.JButton s15;
-    private javax.swing.JButton s16;
-    private javax.swing.JButton s17;
-    private javax.swing.JButton s18;
-    private javax.swing.JButton s19;
-    private javax.swing.JButton s2;
-    private javax.swing.JButton s20;
-    private javax.swing.JButton s21;
-    private javax.swing.JButton s22;
-    private javax.swing.JButton s23;
-    private javax.swing.JButton s24;
-    private javax.swing.JButton s25;
-    private javax.swing.JButton s26;
-    private javax.swing.JButton s27;
-    private javax.swing.JButton s28;
-    private javax.swing.JButton s29;
-    private javax.swing.JButton s3;
-    private javax.swing.JButton s30;
-    private javax.swing.JButton s31;
-    private javax.swing.JButton s32;
-    private javax.swing.JButton s33;
-    private javax.swing.JButton s34;
-    private javax.swing.JButton s35;
-    private javax.swing.JButton s36;
-    private javax.swing.JButton s37;
-    private javax.swing.JButton s38;
-    private javax.swing.JButton s39;
-    private javax.swing.JButton s4;
-    private javax.swing.JButton s40;
-    private javax.swing.JButton s41;
-    private javax.swing.JButton s42;
-    private javax.swing.JButton s43;
-    private javax.swing.JButton s44;
-    private javax.swing.JButton s45;
-    private javax.swing.JButton s46;
-    private javax.swing.JButton s47;
-    private javax.swing.JButton s48;
-    private javax.swing.JButton s49;
-    private javax.swing.JButton s5;
-    private javax.swing.JButton s50;
-    private javax.swing.JButton s51;
-    private javax.swing.JButton s52;
-    private javax.swing.JButton s6;
-    private javax.swing.JButton s7;
-    private javax.swing.JButton s8;
-    private javax.swing.JButton s9;
-    private javax.swing.JDialog seguridad;
-    private javax.swing.JLabel seis;
-    private javax.swing.JLabel siete;
-    private javax.swing.JButton ss1;
-    private javax.swing.JButton ss10;
-    private javax.swing.JButton ss11;
-    private javax.swing.JButton ss12;
-    private javax.swing.JButton ss13;
-    private javax.swing.JButton ss14;
-    private javax.swing.JButton ss15;
-    private javax.swing.JButton ss16;
-    private javax.swing.JButton ss17;
-    private javax.swing.JButton ss18;
-    private javax.swing.JButton ss19;
-    private javax.swing.JButton ss2;
-    private javax.swing.JButton ss20;
-    private javax.swing.JButton ss21;
-    private javax.swing.JButton ss22;
-    private javax.swing.JButton ss23;
-    private javax.swing.JButton ss24;
-    private javax.swing.JButton ss25;
-    private javax.swing.JButton ss26;
-    private javax.swing.JButton ss27;
-    private javax.swing.JButton ss28;
-    private javax.swing.JButton ss29;
-    private javax.swing.JButton ss3;
-    private javax.swing.JButton ss30;
-    private javax.swing.JButton ss31;
-    private javax.swing.JButton ss32;
-    private javax.swing.JButton ss33;
-    private javax.swing.JButton ss34;
-    private javax.swing.JButton ss35;
-    private javax.swing.JButton ss36;
-    private javax.swing.JButton ss37;
-    private javax.swing.JButton ss38;
-    private javax.swing.JButton ss39;
-    private javax.swing.JButton ss4;
-    private javax.swing.JButton ss40;
-    private javax.swing.JButton ss41;
-    private javax.swing.JButton ss42;
-    private javax.swing.JButton ss43;
-    private javax.swing.JButton ss44;
-    private javax.swing.JButton ss45;
-    private javax.swing.JButton ss46;
-    private javax.swing.JButton ss47;
-    private javax.swing.JButton ss48;
-    private javax.swing.JButton ss49;
-    private javax.swing.JButton ss5;
-    private javax.swing.JButton ss50;
-    private javax.swing.JButton ss51;
-    private javax.swing.JButton ss52;
-    private javax.swing.JButton ss6;
-    private javax.swing.JButton ss7;
-    private javax.swing.JButton ss8;
-    private javax.swing.JButton ss9;
-    private javax.swing.JButton sss1;
-    private javax.swing.JButton sss10;
-    private javax.swing.JButton sss11;
-    private javax.swing.JButton sss12;
-    private javax.swing.JButton sss13;
-    private javax.swing.JButton sss14;
-    private javax.swing.JButton sss15;
-    private javax.swing.JButton sss16;
-    private javax.swing.JButton sss17;
-    private javax.swing.JButton sss18;
-    private javax.swing.JButton sss19;
-    private javax.swing.JButton sss2;
-    private javax.swing.JButton sss20;
-    private javax.swing.JButton sss21;
-    private javax.swing.JButton sss22;
-    private javax.swing.JButton sss23;
-    private javax.swing.JButton sss24;
-    private javax.swing.JButton sss25;
-    private javax.swing.JButton sss26;
-    private javax.swing.JButton sss27;
-    private javax.swing.JButton sss28;
-    private javax.swing.JButton sss29;
-    private javax.swing.JButton sss3;
-    private javax.swing.JButton sss30;
-    private javax.swing.JButton sss31;
-    private javax.swing.JButton sss32;
-    private javax.swing.JButton sss33;
-    private javax.swing.JButton sss34;
-    private javax.swing.JButton sss35;
-    private javax.swing.JButton sss36;
-    private javax.swing.JButton sss37;
-    private javax.swing.JButton sss38;
-    private javax.swing.JButton sss39;
-    private javax.swing.JButton sss4;
-    private javax.swing.JButton sss40;
-    private javax.swing.JButton sss41;
-    private javax.swing.JButton sss42;
-    private javax.swing.JButton sss43;
-    private javax.swing.JButton sss44;
-    private javax.swing.JButton sss45;
-    private javax.swing.JButton sss46;
-    private javax.swing.JButton sss47;
-    private javax.swing.JButton sss48;
-    private javax.swing.JButton sss49;
-    private javax.swing.JButton sss5;
-    private javax.swing.JButton sss50;
-    private javax.swing.JButton sss51;
-    private javax.swing.JButton sss52;
-    private javax.swing.JButton sss6;
-    private javax.swing.JButton sss7;
-    private javax.swing.JButton sss8;
-    private javax.swing.JButton sss9;
-    private javax.swing.JLabel trece;
-    private javax.swing.JLabel treinta;
-    private javax.swing.JLabel treintacinco;
-    private javax.swing.JLabel treintacuatro;
-    private javax.swing.JLabel treintados;
-    private javax.swing.JLabel treintanueve;
-    private javax.swing.JLabel treintaocho;
-    private javax.swing.JLabel treintaseis;
-    private javax.swing.JLabel treintasiete;
-    private javax.swing.JLabel treintatres;
-    private javax.swing.JLabel treintauno;
-    private javax.swing.JLabel tres;
-    private javax.swing.JLabel uno;
-    private javax.swing.JLabel veinte;
-    private javax.swing.JLabel veinticinco;
-    private javax.swing.JLabel veinticuatro;
-    private javax.swing.JLabel veintidos;
-    private javax.swing.JLabel veintinueve;
-    private javax.swing.JLabel veintiocho;
-    private javax.swing.JLabel veintiseis;
-    private javax.swing.JLabel veintisiete;
-    private javax.swing.JLabel veintitres;
-    private javax.swing.JLabel veintiuno;
+    private JButton aceptar;
+    private JTextArea anio1;
+    private JTextArea anio2;
+    private JTextArea anio3;
+    private JButton cancelar;
+    private JLabel catorce;
+    private JLabel cinco;
+    private JLabel cincuenta;
+    private JLabel cincuentados;
+    private JLabel cincuentauno;
+    private JLabel cuarenta;
+    private JLabel cuarentacinco;
+    private JLabel cuarentacuatro;
+    private JLabel cuarentados;
+    private JLabel cuarentanueve;
+    private JLabel cuarentaocho;
+    private JLabel cuarentaseis;
+    private JLabel cuarentasiete;
+    private JLabel cuarentatres;
+    private JLabel cuarentauno;
+    private JLabel cuatro;
+    private JLabel diecinueve;
+    private JLabel dieciocho;
+    private JLabel dieciseis;
+    private JLabel diecisiete;
+    private JLabel diez;
+    private JLabel doce;
+    private JLabel dos;
+    private JButton exportar;
+    private JTable generado;
+    private JButton generar;
+    private JFrame impacto;
+    private JLabel jLabel1;
+    private JLabel jLabel2;
+    private JPanel jPanel1;
+    private JPanel jPanel2;
+    private JPanel jPanel3;
+    private JPanel jPanel4;
+    private JPanel jPanel5;
+    private JPanel jPanel6;
+    private JPanel jPanel7;
+    private JPanel jPanel8;
+    private JPanel jPanel9;
+    private JScrollPane jScrollPane1;
+    private JScrollPane jScrollPane3;
+    private JScrollPane jScrollPane4;
+    private JTable jTable1;
+    private JButton limpiar;
+    private JButton m1;
+    private JButton m10;
+    private JButton m11;
+    private JButton m12;
+    private JButton m13;
+    private JButton m14;
+    private JButton m15;
+    private JButton m16;
+    private JButton m17;
+    private JButton m18;
+    private JButton m19;
+    private JButton m2;
+    private JButton m20;
+    private JButton m21;
+    private JButton m22;
+    private JButton m23;
+    private JButton m24;
+    private JButton m25;
+    private JButton m26;
+    private JButton m27;
+    private JButton m28;
+    private JButton m29;
+    private JButton m3;
+    private JButton m30;
+    private JButton m31;
+    private JButton m32;
+    private JButton m33;
+    private JButton m34;
+    private JButton m35;
+    private JButton m36;
+    private JButton m37;
+    private JButton m38;
+    private JButton m39;
+    private JButton m4;
+    private JButton m40;
+    private JButton m41;
+    private JButton m42;
+    private JButton m43;
+    private JButton m44;
+    private JButton m45;
+    private JButton m46;
+    private JButton m47;
+    private JButton m48;
+    private JButton m49;
+    private JButton m5;
+    private JButton m50;
+    private JButton m51;
+    private JButton m52;
+    private JButton m6;
+    private JButton m7;
+    private JButton m8;
+    private JButton m9;
+    private JButton mm1;
+    private JButton mm10;
+    private JButton mm11;
+    private JButton mm12;
+    private JButton mm13;
+    private JButton mm14;
+    private JButton mm15;
+    private JButton mm16;
+    private JButton mm17;
+    private JButton mm18;
+    private JButton mm19;
+    private JButton mm2;
+    private JButton mm20;
+    private JButton mm21;
+    private JButton mm22;
+    private JButton mm23;
+    private JButton mm24;
+    private JButton mm25;
+    private JButton mm26;
+    private JButton mm27;
+    private JButton mm28;
+    private JButton mm29;
+    private JButton mm3;
+    private JButton mm30;
+    private JButton mm31;
+    private JButton mm32;
+    private JButton mm33;
+    private JButton mm34;
+    private JButton mm35;
+    private JButton mm36;
+    private JButton mm37;
+    private JButton mm38;
+    private JButton mm39;
+    private JButton mm4;
+    private JButton mm40;
+    private JButton mm41;
+    private JButton mm42;
+    private JButton mm43;
+    private JButton mm44;
+    private JButton mm45;
+    private JButton mm46;
+    private JButton mm47;
+    private JButton mm48;
+    private JButton mm49;
+    private JButton mm5;
+    private JButton mm50;
+    private JButton mm51;
+    private JButton mm52;
+    private JButton mm6;
+    private JButton mm7;
+    private JButton mm8;
+    private JButton mm9;
+    private JButton mmm1;
+    private JButton mmm10;
+    private JButton mmm11;
+    private JButton mmm12;
+    private JButton mmm13;
+    private JButton mmm14;
+    private JButton mmm15;
+    private JButton mmm16;
+    private JButton mmm17;
+    private JButton mmm18;
+    private JButton mmm19;
+    private JButton mmm2;
+    private JButton mmm20;
+    private JButton mmm21;
+    private JButton mmm22;
+    private JButton mmm23;
+    private JButton mmm24;
+    private JButton mmm25;
+    private JButton mmm26;
+    private JButton mmm27;
+    private JButton mmm28;
+    private JButton mmm29;
+    private JButton mmm3;
+    private JButton mmm30;
+    private JButton mmm31;
+    private JButton mmm32;
+    private JButton mmm33;
+    private JButton mmm34;
+    private JButton mmm35;
+    private JButton mmm36;
+    private JButton mmm37;
+    private JButton mmm38;
+    private JButton mmm39;
+    private JButton mmm4;
+    private JButton mmm40;
+    private JButton mmm41;
+    private JButton mmm42;
+    private JButton mmm43;
+    private JButton mmm44;
+    private JButton mmm45;
+    private JButton mmm46;
+    private JButton mmm47;
+    private JButton mmm48;
+    private JButton mmm49;
+    private JButton mmm5;
+    private JButton mmm50;
+    private JButton mmm51;
+    private JButton mmm52;
+    private JButton mmm6;
+    private JButton mmm7;
+    private JButton mmm8;
+    private JButton mmm9;
+    private JLabel nueve;
+    private JLabel ocho;
+    private JLabel once;
+    private JLabel quince;
+    private JTextField r1;
+    private JTextField r10;
+    private JTextField r11;
+    private JTextField r12;
+    private JTextField r13;
+    private JTextField r14;
+    private JTextField r15;
+    private JTextField r16;
+    private JTextField r17;
+    private JTextField r18;
+    private JTextField r19;
+    private JTextField r2;
+    private JTextField r20;
+    private JTextField r21;
+    private JTextField r22;
+    private JTextField r23;
+    private JTextField r24;
+    private JTextField r25;
+    private JTextField r26;
+    private JTextField r27;
+    private JTextField r28;
+    private JTextField r29;
+    private JTextField r3;
+    private JTextField r30;
+    private JTextField r31;
+    private JTextField r32;
+    private JTextField r33;
+    private JTextField r34;
+    private JTextField r35;
+    private JTextField r36;
+    private JTextField r37;
+    private JTextField r38;
+    private JTextField r39;
+    private JTextField r4;
+    private JTextField r40;
+    private JTextField r41;
+    private JTextField r42;
+    private JTextField r43;
+    private JTextField r44;
+    private JTextField r45;
+    private JTextField r46;
+    private JTextField r47;
+    private JTextField r48;
+    private JTextField r49;
+    private JTextField r5;
+    private JTextField r50;
+    private JTextField r51;
+    private JTextField r52;
+    private JTextField r6;
+    private JTextField r7;
+    private JTextField r8;
+    private JTextField r9;
+    private JTextField rr1;
+    private JTextField rr10;
+    private JTextField rr11;
+    private JTextField rr12;
+    private JTextField rr13;
+    private JTextField rr14;
+    private JTextField rr15;
+    private JTextField rr16;
+    private JTextField rr17;
+    private JTextField rr18;
+    private JTextField rr19;
+    private JTextField rr2;
+    private JTextField rr20;
+    private JTextField rr21;
+    private JTextField rr22;
+    private JTextField rr23;
+    private JTextField rr24;
+    private JTextField rr25;
+    private JTextField rr26;
+    private JTextField rr27;
+    private JTextField rr28;
+    private JTextField rr29;
+    private JTextField rr3;
+    private JTextField rr30;
+    private JTextField rr31;
+    private JTextField rr32;
+    private JTextField rr33;
+    private JTextField rr34;
+    private JTextField rr35;
+    private JTextField rr36;
+    private JTextField rr37;
+    private JTextField rr38;
+    private JTextField rr39;
+    private JTextField rr4;
+    private JTextField rr40;
+    private JTextField rr41;
+    private JTextField rr42;
+    private JTextField rr43;
+    private JTextField rr44;
+    private JTextField rr45;
+    private JTextField rr46;
+    private JTextField rr47;
+    private JTextField rr48;
+    private JTextField rr49;
+    private JTextField rr5;
+    private JTextField rr50;
+    private JTextField rr51;
+    private JTextField rr52;
+    private JTextField rr6;
+    private JTextField rr7;
+    private JTextField rr8;
+    private JTextField rr9;
+    private JTextField rrr1;
+    private JTextField rrr10;
+    private JTextField rrr11;
+    private JTextField rrr12;
+    private JTextField rrr13;
+    private JTextField rrr14;
+    private JTextField rrr15;
+    private JTextField rrr16;
+    private JTextField rrr17;
+    private JTextField rrr18;
+    private JTextField rrr19;
+    private JTextField rrr2;
+    private JTextField rrr20;
+    private JTextField rrr21;
+    private JTextField rrr22;
+    private JTextField rrr23;
+    private JTextField rrr24;
+    private JTextField rrr25;
+    private JTextField rrr26;
+    private JTextField rrr27;
+    private JTextField rrr28;
+    private JTextField rrr29;
+    private JTextField rrr3;
+    private JTextField rrr30;
+    private JTextField rrr31;
+    private JTextField rrr32;
+    private JTextField rrr33;
+    private JTextField rrr34;
+    private JTextField rrr35;
+    private JTextField rrr36;
+    private JTextField rrr37;
+    private JTextField rrr38;
+    private JTextField rrr39;
+    private JTextField rrr4;
+    private JTextField rrr40;
+    private JTextField rrr41;
+    private JTextField rrr42;
+    private JTextField rrr43;
+    private JTextField rrr44;
+    private JTextField rrr45;
+    private JTextField rrr46;
+    private JTextField rrr47;
+    private JTextField rrr48;
+    private JTextField rrr49;
+    private JTextField rrr5;
+    private JTextField rrr50;
+    private JTextField rrr51;
+    private JTextField rrr52;
+    private JTextField rrr6;
+    private JTextField rrr7;
+    private JTextField rrr8;
+    private JTextField rrr9;
+    private JButton s1;
+    private JButton s10;
+    private JButton s11;
+    private JButton s12;
+    private JButton s13;
+    private JButton s14;
+    private JButton s15;
+    private JButton s16;
+    private JButton s17;
+    private JButton s18;
+    private JButton s19;
+    private JButton s2;
+    private JButton s20;
+    private JButton s21;
+    private JButton s22;
+    private JButton s23;
+    private JButton s24;
+    private JButton s25;
+    private JButton s26;
+    private JButton s27;
+    private JButton s28;
+    private JButton s29;
+    private JButton s3;
+    private JButton s30;
+    private JButton s31;
+    private JButton s32;
+    private JButton s33;
+    private JButton s34;
+    private JButton s35;
+    private JButton s36;
+    private JButton s37;
+    private JButton s38;
+    private JButton s39;
+    private JButton s4;
+    private JButton s40;
+    private JButton s41;
+    private JButton s42;
+    private JButton s43;
+    private JButton s44;
+    private JButton s45;
+    private JButton s46;
+    private JButton s47;
+    private JButton s48;
+    private JButton s49;
+    private JButton s5;
+    private JButton s50;
+    private JButton s51;
+    private JButton s52;
+    private JButton s6;
+    private JButton s7;
+    private JButton s8;
+    private JButton s9;
+    private JDialog seguridad;
+    private JLabel seis;
+    private JLabel siete;
+    private JButton ss1;
+    private JButton ss10;
+    private JButton ss11;
+    private JButton ss12;
+    private JButton ss13;
+    private JButton ss14;
+    private JButton ss15;
+    private JButton ss16;
+    private JButton ss17;
+    private JButton ss18;
+    private JButton ss19;
+    private JButton ss2;
+    private JButton ss20;
+    private JButton ss21;
+    private JButton ss22;
+    private JButton ss23;
+    private JButton ss24;
+    private JButton ss25;
+    private JButton ss26;
+    private JButton ss27;
+    private JButton ss28;
+    private JButton ss29;
+    private JButton ss3;
+    private JButton ss30;
+    private JButton ss31;
+    private JButton ss32;
+    private JButton ss33;
+    private JButton ss34;
+    private JButton ss35;
+    private JButton ss36;
+    private JButton ss37;
+    private JButton ss38;
+    private JButton ss39;
+    private JButton ss4;
+    private JButton ss40;
+    private JButton ss41;
+    private JButton ss42;
+    private JButton ss43;
+    private JButton ss44;
+    private JButton ss45;
+    private JButton ss46;
+    private JButton ss47;
+    private JButton ss48;
+    private JButton ss49;
+    private JButton ss5;
+    private JButton ss50;
+    private JButton ss51;
+    private JButton ss52;
+    private JButton ss6;
+    private JButton ss7;
+    private JButton ss8;
+    private JButton ss9;
+    private JButton sss1;
+    private JButton sss10;
+    private JButton sss11;
+    private JButton sss12;
+    private JButton sss13;
+    private JButton sss14;
+    private JButton sss15;
+    private JButton sss16;
+    private JButton sss17;
+    private JButton sss18;
+    private JButton sss19;
+    private JButton sss2;
+    private JButton sss20;
+    private JButton sss21;
+    private JButton sss22;
+    private JButton sss23;
+    private JButton sss24;
+    private JButton sss25;
+    private JButton sss26;
+    private JButton sss27;
+    private JButton sss28;
+    private JButton sss29;
+    private JButton sss3;
+    private JButton sss30;
+    private JButton sss31;
+    private JButton sss32;
+    private JButton sss33;
+    private JButton sss34;
+    private JButton sss35;
+    private JButton sss36;
+    private JButton sss37;
+    private JButton sss38;
+    private JButton sss39;
+    private JButton sss4;
+    private JButton sss40;
+    private JButton sss41;
+    private JButton sss42;
+    private JButton sss43;
+    private JButton sss44;
+    private JButton sss45;
+    private JButton sss46;
+    private JButton sss47;
+    private JButton sss48;
+    private JButton sss49;
+    private JButton sss5;
+    private JButton sss50;
+    private JButton sss51;
+    private JButton sss52;
+    private JButton sss6;
+    private JButton sss7;
+    private JButton sss8;
+    private JButton sss9;
+    private JLabel trece;
+    private JLabel treinta;
+    private JLabel treintacinco;
+    private JLabel treintacuatro;
+    private JLabel treintados;
+    private JLabel treintanueve;
+    private JLabel treintaocho;
+    private JLabel treintaseis;
+    private JLabel treintasiete;
+    private JLabel treintatres;
+    private JLabel treintauno;
+    private JLabel tres;
+    private JLabel uno;
+    private JLabel veinte;
+    private JLabel veinticinco;
+    private JLabel veinticuatro;
+    private JLabel veintidos;
+    private JLabel veintinueve;
+    private JLabel veintiocho;
+    private JLabel veintiseis;
+    private JLabel veintisiete;
+    private JLabel veintitres;
+    private JLabel veintiuno;
     // End of variables declaration//GEN-END:variables
 }
