@@ -617,7 +617,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         seguridad.getContentPane().add(jPanel5, java.awt.BorderLayout.CENTER);
 
-        impacto.setMinimumSize(new java.awt.Dimension(700, 700));
+        impacto.setMinimumSize(new java.awt.Dimension(930, 700));
 
         jPanel7.setLayout(new java.awt.GridLayout());
 
@@ -635,13 +635,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         generado.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Revistas"
             }
         ));
         jScrollPane1.setViewportView(generado);
@@ -5795,10 +5792,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         
         
         DefaultTableModel modelo = (DefaultTableModel) generado.getModel();
-        modelo.removeRow(0);
-        modelo.removeRow(0);
-        modelo.removeRow(0);
-        modelo.removeRow(0);
+        
+        modelo.addColumn(anio1.getText());
+        modelo.addColumn(anio2.getText());
+        modelo.addColumn(anio3.getText());
         
         Object[] fila = new Object[4]; 
         for (int i = 0; i < revistas.length; i ++) {

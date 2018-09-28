@@ -27,7 +27,7 @@ public class Exportar {
         this.file = file;
         this.tabla = tabla;
         this.nom_files = nom_files;
-        if(nom_files.size()!=tabla.size()){
+        if(nom_files.size()!= tabla.size()){
             throw new Exception("Error");
         }
     }
