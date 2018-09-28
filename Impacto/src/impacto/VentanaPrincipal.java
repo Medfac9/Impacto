@@ -8,7 +8,15 @@ package impacto;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -40,11 +48,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         impacto = new javax.swing.JFrame();
+        jPanel7 = new javax.swing.JPanel();
+        exportar = new javax.swing.JButton();
+        jPanel8 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        generado = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         generar = new javax.swing.JButton();
-        copiar = new javax.swing.JButton();
         limpiar = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -607,6 +619,37 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         impacto.setMinimumSize(new java.awt.Dimension(700, 700));
 
+        jPanel7.setLayout(new java.awt.GridLayout());
+
+        exportar.setText("Exportar a Excel");
+        exportar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exportarActionPerformed(evt);
+            }
+        });
+        jPanel7.add(exportar);
+
+        impacto.getContentPane().add(jPanel7, java.awt.BorderLayout.PAGE_END);
+
+        jPanel8.setLayout(new java.awt.BorderLayout());
+
+        generado.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(generado);
+
+        jPanel8.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+
+        impacto.getContentPane().add(jPanel8, java.awt.BorderLayout.CENTER);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(825, 1000));
 
@@ -625,14 +668,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
         jPanel2.add(generar);
-
-        copiar.setText("Copiar");
-        copiar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                copiarActionPerformed(evt);
-            }
-        });
-        jPanel2.add(copiar);
 
         limpiar.setText("Limpiar");
         limpiar.addActionListener(new java.awt.event.ActionListener() {
@@ -5545,6 +5580,239 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     
     private void generarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generarActionPerformed
         // TODO add your handling code here:
+        
+        Object[] revistas = new Object[52];
+        revistas[0] = uno.getText(); 
+        revistas[1] = dos.getText(); 
+        revistas[2] = tres.getText(); 
+        revistas[3] = cuatro.getText(); 
+        revistas[4] = cinco.getText(); 
+        revistas[5] = seis.getText(); 
+        revistas[6] = siete.getText(); 
+        revistas[7] = ocho.getText(); 
+        revistas[8] = nueve.getText(); 
+        revistas[9] = diez.getText(); 
+        revistas[10] = once.getText(); 
+        revistas[11] = doce.getText(); 
+        revistas[12] = trece.getText(); 
+        revistas[13] = catorce.getText(); 
+        revistas[14] = quince.getText(); 
+        revistas[15] = dieciseis.getText(); 
+        revistas[16] = diecisiete.getText(); 
+        revistas[17] = dieciocho.getText(); 
+        revistas[18] = diecinueve.getText(); 
+        revistas[19] = veinte.getText(); 
+        revistas[20] = veintiuno.getText(); 
+        revistas[21] = veintidos.getText(); 
+        revistas[22] = veintitres.getText(); 
+        revistas[23] = veinticuatro.getText(); 
+        revistas[24] = veinticinco.getText(); 
+        revistas[25] = veintiseis.getText(); 
+        revistas[26] = veintisiete.getText(); 
+        revistas[27] = veintiocho.getText(); 
+        revistas[28] = veintinueve.getText(); 
+        revistas[29] = treinta.getText(); 
+        revistas[30] = treintauno.getText(); 
+        revistas[31] = treintados.getText(); 
+        revistas[32] = treintatres.getText(); 
+        revistas[33] = treintacuatro.getText(); 
+        revistas[34] = treintacinco.getText(); 
+        revistas[35] = treintaseis.getText(); 
+        revistas[36] = treintasiete.getText(); 
+        revistas[37] = treintaocho.getText(); 
+        revistas[38] = treintanueve.getText(); 
+        revistas[39] = cuarenta.getText(); 
+        revistas[40] = cuarentauno.getText(); 
+        revistas[41] = cuarentados.getText(); 
+        revistas[42] = cuarentatres.getText(); 
+        revistas[43] = cuarentacuatro.getText(); 
+        revistas[44] = cuarentacinco.getText(); 
+        revistas[45] = cuarentaseis.getText(); 
+        revistas[46] = cuarentasiete.getText(); 
+        revistas[47] = cuarentaocho.getText(); 
+        revistas[48] = cuarentanueve.getText(); 
+        revistas[49] = cincuenta.getText(); 
+        revistas[50] = cincuentauno.getText(); 
+        revistas[51] = cincuentados.getText(); 
+        
+        Object[][] resultados = new Object[52][3];
+        resultados[0][0] = r1.getText(); 
+        resultados[0][1] = rr1.getText(); 
+        resultados[0][2] = rrr1.getText(); 
+        resultados[1][0] = r2.getText(); 
+        resultados[1][1] = rr2.getText(); 
+        resultados[1][2] = rrr2.getText(); 
+        resultados[2][0] = r3.getText(); 
+        resultados[2][1] = rr3.getText(); 
+        resultados[2][2] = rrr3.getText(); 
+        resultados[3][0] = r4.getText(); 
+        resultados[3][1] = rr4.getText(); 
+        resultados[3][2] = rrr4.getText(); 
+        resultados[4][0] = r5.getText(); 
+        resultados[4][1] = rr5.getText(); 
+        resultados[4][2] = rrr5.getText(); 
+        resultados[5][0] = r6.getText(); 
+        resultados[5][1] = rr6.getText(); 
+        resultados[5][2] = rrr6.getText(); 
+        resultados[6][0] = r7.getText(); 
+        resultados[6][1] = rr7.getText(); 
+        resultados[6][2] = rrr7.getText(); 
+        resultados[7][0] = r8.getText(); 
+        resultados[7][1] = rr8.getText(); 
+        resultados[7][2] = rrr8.getText(); 
+        resultados[8][0] = r9.getText(); 
+        resultados[8][1] = rr9.getText(); 
+        resultados[8][2] = rrr9.getText(); 
+        resultados[9][0] = r10.getText(); 
+        resultados[9][1] = rr10.getText(); 
+        resultados[9][2] = rrr10.getText(); 
+        resultados[10][0] = r11.getText(); 
+        resultados[10][1] = rr11.getText(); 
+        resultados[10][2] = rrr11.getText(); 
+        resultados[11][0] = r12.getText(); 
+        resultados[11][1] = rr12.getText(); 
+        resultados[11][2] = rrr12.getText(); 
+        resultados[12][0] = r13.getText(); 
+        resultados[12][1] = rr13.getText(); 
+        resultados[12][2] = rrr13.getText(); 
+        resultados[13][0] = r14.getText(); 
+        resultados[13][1] = rr14.getText(); 
+        resultados[13][2] = rrr14.getText(); 
+        resultados[14][0] = r15.getText(); 
+        resultados[14][1] = rr15.getText(); 
+        resultados[14][2] = rrr15.getText(); 
+        resultados[15][0] = r16.getText(); 
+        resultados[15][1] = rr16.getText(); 
+        resultados[15][2] = rrr16.getText(); 
+        resultados[16][0] = r17.getText(); 
+        resultados[16][1] = rr17.getText(); 
+        resultados[16][2] = rrr17.getText(); 
+        resultados[17][0] = r18.getText(); 
+        resultados[17][1] = rr18.getText(); 
+        resultados[17][2] = rrr18.getText(); 
+        resultados[18][0] = r19.getText(); 
+        resultados[18][1] = rr19.getText(); 
+        resultados[18][2] = rrr19.getText(); 
+        resultados[19][0] = r20.getText(); 
+        resultados[19][1] = rr20.getText(); 
+        resultados[19][2] = rrr20.getText(); 
+        resultados[20][0] = r21.getText(); 
+        resultados[20][1] = rr21.getText(); 
+        resultados[20][2] = rrr21.getText(); 
+        resultados[21][0] = r22.getText(); 
+        resultados[21][1] = rr22.getText(); 
+        resultados[21][2] = rrr22.getText(); 
+        resultados[22][0] = r23.getText(); 
+        resultados[22][1] = rr23.getText(); 
+        resultados[22][2] = rrr23.getText(); 
+        resultados[23][0] = r24.getText(); 
+        resultados[23][1] = rr24.getText(); 
+        resultados[23][2] = rrr24.getText(); 
+        resultados[24][0] = r25.getText(); 
+        resultados[24][1] = rr25.getText(); 
+        resultados[24][2] = rrr25.getText(); 
+        resultados[25][0] = r26.getText(); 
+        resultados[25][1] = rr26.getText(); 
+        resultados[25][2] = rrr26.getText(); 
+        resultados[26][0] = r27.getText(); 
+        resultados[26][1] = rr27.getText(); 
+        resultados[26][2] = rrr27.getText(); 
+        resultados[27][0] = r28.getText(); 
+        resultados[27][1] = rr28.getText(); 
+        resultados[27][2] = rrr28.getText(); 
+        resultados[28][0] = r29.getText(); 
+        resultados[28][1] = rr29.getText(); 
+        resultados[28][2] = rrr29.getText(); 
+        resultados[29][0] = r30.getText(); 
+        resultados[29][1] = rr30.getText(); 
+        resultados[29][2] = rrr30.getText(); 
+        resultados[30][0] = r31.getText(); 
+        resultados[30][1] = rr31.getText(); 
+        resultados[30][2] = rrr31.getText(); 
+        resultados[31][0] = r32.getText(); 
+        resultados[31][1] = rr32.getText(); 
+        resultados[31][2] = rrr32.getText(); 
+        resultados[32][0] = r33.getText(); 
+        resultados[32][1] = rr33.getText(); 
+        resultados[32][2] = rrr33.getText(); 
+        resultados[33][0] = r34.getText(); 
+        resultados[33][1] = rr34.getText(); 
+        resultados[33][2] = rrr34.getText(); 
+        resultados[34][0] = r35.getText(); 
+        resultados[34][1] = rr35.getText(); 
+        resultados[34][2] = rrr35.getText(); 
+        resultados[35][0] = r36.getText(); 
+        resultados[35][1] = rr36.getText(); 
+        resultados[35][2] = rrr36.getText(); 
+        resultados[36][0] = r37.getText(); 
+        resultados[36][1] = rr37.getText(); 
+        resultados[36][2] = rrr37.getText(); 
+        resultados[37][0] = r38.getText(); 
+        resultados[37][1] = rr38.getText(); 
+        resultados[37][2] = rrr38.getText(); 
+        resultados[38][0] = r39.getText(); 
+        resultados[38][1] = rr39.getText(); 
+        resultados[38][2] = rrr39.getText(); 
+        resultados[39][0] = r40.getText(); 
+        resultados[39][1] = rr40.getText(); 
+        resultados[39][2] = rrr40.getText(); 
+        resultados[40][0] = r41.getText(); 
+        resultados[40][1] = rr41.getText(); 
+        resultados[40][2] = rrr41.getText(); 
+        resultados[41][0] = r42.getText(); 
+        resultados[41][1] = rr42.getText(); 
+        resultados[41][2] = rrr42.getText(); 
+        resultados[42][0] = r43.getText(); 
+        resultados[42][1] = rr43.getText(); 
+        resultados[42][2] = rrr43.getText(); 
+        resultados[43][0] = r44.getText(); 
+        resultados[43][1] = rr44.getText(); 
+        resultados[43][2] = rrr44.getText(); 
+        resultados[44][0] = r45.getText(); 
+        resultados[44][1] = rr45.getText(); 
+        resultados[44][2] = rrr45.getText(); 
+        resultados[45][0] = r46.getText(); 
+        resultados[45][1] = rr46.getText(); 
+        resultados[45][2] = rrr46.getText(); 
+        resultados[46][0] = r47.getText(); 
+        resultados[46][1] = rr47.getText(); 
+        resultados[46][2] = rrr47.getText(); 
+        resultados[47][0] = r48.getText(); 
+        resultados[47][1] = rr48.getText(); 
+        resultados[47][2] = rrr48.getText(); 
+        resultados[48][0] = r49.getText(); 
+        resultados[48][1] = rr49.getText(); 
+        resultados[48][2] = rrr49.getText(); 
+        resultados[49][0] = r50.getText(); 
+        resultados[49][1] = rr50.getText(); 
+        resultados[49][2] = rrr50.getText(); 
+        resultados[50][0] = r51.getText(); 
+        resultados[50][1] = rr51.getText(); 
+        resultados[50][2] = rrr51.getText(); 
+        resultados[51][0] = r52.getText(); 
+        resultados[51][1] = rr52.getText(); 
+        resultados[51][2] = rrr52.getText(); 
+        
+        
+        DefaultTableModel modelo = (DefaultTableModel) generado.getModel();
+        modelo.removeRow(0);
+        modelo.removeRow(0);
+        modelo.removeRow(0);
+        modelo.removeRow(0);
+        
+        Object[] fila = new Object[4]; 
+        for (int i = 0; i < revistas.length; i ++) {
+            fila[0] = revistas[i]; 
+            fila[1] = resultados[i][0]; 
+            fila[2] = resultados[i][1]; 
+            fila[3] = resultados[i][2]; 
+
+            modelo.addRow(fila);     
+        }
+        
+        
+        generado.setModel(modelo); 
+        
         impacto.setVisible(true);
     }//GEN-LAST:event_generarActionPerformed
 
@@ -5552,16 +5820,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         seguridad.setVisible(true);
     }//GEN-LAST:event_limpiarActionPerformed
-
-    private void copiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copiarActionPerformed
-        // TODO add your handling code here:
-        Clipboard cb = Toolkit.getDefaultToolkit().getSystemClipboard();
-        String resultado;
-        
-        resultado = otras.getText();
-        StringSelection ss = new StringSelection(resultado);
-        cb.setContents(ss, ss);
-    }//GEN-LAST:event_copiarActionPerformed
 
     private void s48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_s48ActionPerformed
         // TODO add your handling code here:
@@ -8344,6 +8602,35 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         actualizar(nuevo, rrr52);
     }//GEN-LAST:event_mmm52ActionPerformed
 
+    private void exportarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exportarActionPerformed
+        // TODO add your handling code here:
+        if (generado.getRowCount() > 0) {
+            JFileChooser chooser = new JFileChooser();
+            FileNameExtensionFilter filter = new FileNameExtensionFilter("Archivos de excel", "xls");
+            chooser.setFileFilter(filter);
+            chooser.setDialogTitle("Guardar archivo");
+            chooser.setAcceptAllFileFilterUsed(false);
+            if (chooser.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
+                List tb = new ArrayList();
+                List nom = new ArrayList();
+                tb.add(generado);
+                nom.add("Compras por factura");
+                String file = chooser.getSelectedFile().toString().concat(".xls");
+                try {
+                    impacto.Exportar e = new Exportar(new File(file), tb, nom);
+                    if (e.export()) {
+                        JOptionPane.showMessageDialog(null, "Los datos fueron exportados a excel en el directorio seleccionado", "Mensaje de Informacion", JOptionPane.INFORMATION_MESSAGE);
+                    }
+                } catch (Exception e) {
+                    JOptionPane.showMessageDialog(null, "Hubo un error " + e.getMessage(), " Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "No hay datos para exportar","Mensaje de error",JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_exportarActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton aceptar;
     private javax.swing.JTextArea anio1;
@@ -8355,7 +8642,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel cincuenta;
     private javax.swing.JLabel cincuentados;
     private javax.swing.JLabel cincuentauno;
-    private javax.swing.JButton copiar;
     private javax.swing.JLabel cuarenta;
     private javax.swing.JLabel cuarentacinco;
     private javax.swing.JLabel cuarentacuatro;
@@ -8374,6 +8660,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel diez;
     private javax.swing.JLabel doce;
     private javax.swing.JLabel dos;
+    private javax.swing.JButton exportar;
+    private javax.swing.JTable generado;
     private javax.swing.JButton generar;
     private javax.swing.JFrame impacto;
     private javax.swing.JLabel jLabel1;
@@ -8384,6 +8672,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JButton limpiar;
