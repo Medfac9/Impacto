@@ -6892,6 +6892,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         rrr52.selectAll();
         rrr52.replaceSelection("0");
         
+        limpiarTabla(otras);
+        
         seguridad.setVisible(false);
     }//GEN-LAST:event_aceptarActionPerformed
 
@@ -8696,7 +8698,19 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         DefaultTableModel modelo = (DefaultTableModel) otras.getModel();
         
-        if(modelo.getValueAt(otras.getRowCount() - 1, 0) != null){
+        if(otras.getRowCount() == 0){
+            Object[] fila = new Object[4]; 
+
+            fila[0] = null; 
+            fila[1] = null; 
+            fila[2] = null; 
+            fila[3] = null; 
+
+            modelo.addRow(fila);
+            
+            otras.setModel(modelo); 
+        }
+        else if(modelo.getValueAt(otras.getRowCount() - 1, 0) != null){
             Object[] fila = new Object[4]; 
 
             fila[0] = null; 
