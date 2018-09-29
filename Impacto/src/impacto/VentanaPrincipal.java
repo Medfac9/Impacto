@@ -6,20 +6,20 @@
 package impacto;
 
 import java.awt.BorderLayout;
-import java.awt.Cursor;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.Point;
-import java.awt.Toolkit;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
@@ -36,7 +36,6 @@ import javax.swing.JTextField;
 import javax.swing.LayoutStyle;
 import javax.swing.SwingConstants;
 import javax.swing.WindowConstants;
-import javax.swing.event.TableModelListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 
@@ -52,6 +51,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public VentanaPrincipal() {
         initComponents();
         setTitle("Impacto");
+        otras.setShowGrid(true);
     }
 
     /**
@@ -83,7 +83,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel3 = new JPanel();
         jPanel9 = new JPanel();
         jScrollPane3 = new JScrollPane();
-        jTable1 = new JTable();
+        otras = new JTable();
         jScrollPane4 = new JScrollPane();
         jPanel6 = new JPanel();
         uno = new JLabel();
@@ -702,7 +702,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jPanel9.setLayout(new BorderLayout());
 
-        jTable1.setModel(new DefaultTableModel(
+        otras.setModel(new DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -710,11 +710,22 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Revistas", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jTable1.setPreferredSize(new Dimension(800, 1750));
-        jScrollPane3.setViewportView(jTable1);
+        otras.setGridColor(new Color(0, 0, 0));
+        otras.setPreferredSize(new Dimension(400, 1750));
+        otras.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                otrasMouseClicked(evt);
+            }
+        });
+        otras.addPropertyChangeListener(new PropertyChangeListener() {
+            public void propertyChange(PropertyChangeEvent evt) {
+                otrasPropertyChange(evt);
+            }
+        });
+        jScrollPane3.setViewportView(otras);
 
         jPanel9.add(jScrollPane3, BorderLayout.CENTER);
 
@@ -8677,6 +8688,28 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_exportarActionPerformed
 
+    private void otrasPropertyChange(PropertyChangeEvent evt) {//GEN-FIRST:event_otrasPropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_otrasPropertyChange
+
+    private void otrasMouseClicked(MouseEvent evt) {//GEN-FIRST:event_otrasMouseClicked
+        // TODO add your handling code here:
+        DefaultTableModel modelo = (DefaultTableModel) otras.getModel();
+        
+        if(modelo.getValueAt(otras.getRowCount() - 1, 0) != null){
+            Object[] fila = new Object[4]; 
+
+            fila[0] = null; 
+            fila[1] = null; 
+            fila[2] = null; 
+            fila[3] = null; 
+
+            modelo.addRow(fila);
+            
+            otras.setModel(modelo); 
+        }
+    }//GEN-LAST:event_otrasMouseClicked
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private JButton aceptar;
     private JTextArea anio1;
@@ -8724,7 +8757,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private JScrollPane jScrollPane1;
     private JScrollPane jScrollPane3;
     private JScrollPane jScrollPane4;
-    private JTable jTable1;
     private JButton limpiar;
     private JButton m1;
     private JButton m10;
@@ -8885,6 +8917,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private JLabel nueve;
     private JLabel ocho;
     private JLabel once;
+    private JTable otras;
     private JLabel quince;
     private JTextField r1;
     private JTextField r10;
