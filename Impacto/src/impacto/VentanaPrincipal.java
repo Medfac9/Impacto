@@ -5850,6 +5850,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         resultados[51][2] = rrr52.getText(); 
         
         DefaultTableModel modelo = (DefaultTableModel) generado.getModel();
+        DefaultTableModel modelo2 = (DefaultTableModel) otras.getModel();
         
         if(generado.getRowCount() > 0){
             limpiarTabla(generado);
@@ -5868,6 +5869,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             fila[3] = resultados[i][2]; 
 
             modelo.addRow(fila);     
+        }
+        
+        for (int i = 0; i < modelo2.getRowCount(); i++) {
+            Object copiaFila [] = new Object [modelo2.getColumnCount()];
+            for (int j = 0; j < modelo2.getColumnCount(); j++){
+                  copiaFila[j] = modelo2 .getValueAt(i,j);
+            }
+            modelo.addRow(copiaFila);
         }
         
         generado.setModel(modelo); 
