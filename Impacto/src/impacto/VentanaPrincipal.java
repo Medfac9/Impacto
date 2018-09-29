@@ -700,6 +700,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jPanel3.setLayout(new BorderLayout());
 
+        jPanel9.setPreferredSize(new Dimension(825, 200));
         jPanel9.setLayout(new BorderLayout());
 
         otras.setModel(new DefaultTableModel(
@@ -714,7 +715,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         ));
         otras.setGridColor(new Color(0, 0, 0));
-        otras.setPreferredSize(new Dimension(400, 1750));
         otras.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent evt) {
                 otrasMouseClicked(evt);
@@ -732,8 +732,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel3.add(jPanel9, BorderLayout.PAGE_END);
 
         jScrollPane4.setPreferredSize(new Dimension(825, 1750));
-
-        jPanel6.setPreferredSize(new Dimension(800, 1750));
 
         uno.setText("Acta Paul Enferm");
 
