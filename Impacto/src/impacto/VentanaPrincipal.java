@@ -6901,6 +6901,19 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         
         limpiarTabla(otras);
         
+        DefaultTableModel modelo = (DefaultTableModel) otras.getModel();
+    
+        Object[] fila = new Object[4]; 
+
+        fila[0] = null; 
+        fila[1] = null; 
+        fila[2] = null; 
+        fila[3] = null; 
+
+        modelo.addRow(fila);
+
+        otras.setModel(modelo); 
+        
         seguridad.setVisible(false);
     }//GEN-LAST:event_aceptarActionPerformed
 
